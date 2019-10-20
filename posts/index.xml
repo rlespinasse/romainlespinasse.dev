@@ -51,7 +51,7 @@ run task <span class="m">1</span>
 run task <span class="m">2</span>
 run task <span class="m">3</span></code></pre></div>]]></content></item><item><title>Hacktoberfest | Let&#39;s go for 2019</title><link>https://www.romainlespinasse.dev/posts/hacktoberfest-2019/</link><pubDate>Mon, 30 Sep 2019 10:42:00 +0200</pubDate><guid>https://www.romainlespinasse.dev/posts/hacktoberfest-2019/</guid><description>Once again, I&amp;rsquo;m participate to the 2019 edition of the Hacktoberfest.
 This month, I will focus on my open-source projects
-byteslice, a go library to manipulate a byte array, hoff, a go library to run workflows with high order functions - a new name is required :) , and the new one bitframe, a go library to manipulate bit frames using data protocol with encoder and decoder capabilities. But I don&amp;rsquo;t forget to also work on my shell project : michel.</description><content type="html"><![CDATA[<p><img src="/images/hacktoberfest-2019/banner.png" alt="Hacktoberfest 2019" /></p>
+byteslice, a go library to manipulate a byte array, hoff, a go library to run workflows with high order functions - a new name is required :) , and the new one bitframe, a go library to manipulate bit frames using data protocol with encoder and decoder capabilities. But I don&amp;rsquo;t forget to also work on my shell project : michel.</description><content type="html"><![CDATA[<p><img src="/img/posts/hacktoberfest-2019/banner.png" alt="Hacktoberfest 2019" /></p>
 
 <p>Once again, I&rsquo;m participate to the 2019 edition of the Hacktoberfest.</p>
 
@@ -144,7 +144,7 @@ This allows you to deliver the documentation at the same time as the associated 
 
 <p>The people behind Asciidoctor have recently released an aggregated documentation site generator: <a href="https://antora.org/">Antora</a> in a stable version (<code>1.0.0</code>) to the open-source community.</p>
 
-<p><img src="/images/antora/site.png" alt="Antora" /></p>
+<p><img src="/img/posts/antora/site.png" alt="Antora" /></p>
 
 <h2 id="you-create-your-new-documentation-site-with-antora-asciidoctor">You create your new documentation site with Antora / Asciidoctor</h2>
 
@@ -232,11 +232,11 @@ This allows you to deliver the documentation at the same time as the associated 
 
 <p>The playbook defines the <code>docs</code> folder to make your new documentation site available.</p>
 
-<p><img src="/images/antora/site-preview.png" alt="Site preview" /></p>
+<p><img src="/img/posts/antora/site-preview.png" alt="Site preview" /></p>
 
 <p>For example, to make it accessible on Github, you deploy it via the Github Pages of your <code>docssite</code> project.</p>
 
-<p><img src="/images/antora/github.png" alt="Github document configuration" /></p>
+<p><img src="/img/posts/antora/github.png" alt="Github document configuration" /></p>
 
 <p>The platform will automatically expose the contents of the <code>/docs</code> folder to <a href="https://rlespinasse.github.io/docssite">https://rlespinasse.github.io/docssite</a>.</p>
 
@@ -301,7 +301,7 @@ Cela vous permet de livrer la documentation à jour en même temps que le code a
 
 <p>Les personnes derrière Asciidoctor ont récemment ouvert, à la communauté open-source, un générateur de site de documentations aggrégées: <a href="https://antora.org/">Antora</a> en version stable (<code>1.0.0</code>).</p>
 
-<p><img src="/images/antora/site.png" alt="Antora" /></p>
+<p><img src="/img/posts/antora/site.png" alt="Antora" /></p>
 
 <h2 id="vous-créez-votre-nouveau-site-de-documentation-avec-antora-asciidoctor">Vous créez votre nouveau site de documentation avec Antora / Asciidoctor</h2>
 
@@ -389,11 +389,11 @@ Cela vous permet de livrer la documentation à jour en même temps que le code a
 
 <p>Le playbook défini le dossier <code>docs</code> pour mettre à disposition votre nouveau site de documentation.</p>
 
-<p><img src="/images/antora/site-preview.png" alt="Site preview" /></p>
+<p><img src="/img/posts/antora/site-preview.png" alt="Site preview" /></p>
 
 <p>Par exemple, pour le rendre accessible sur Github, vous le déployez via les Github Pages de votre projet <code>docssite</code>.</p>
 
-<p><img src="/images/antora/github.png" alt="Github document configuration" /></p>
+<p><img src="/img/posts/antora/github.png" alt="Github document configuration" /></p>
 
 <p>La plateforme s&rsquo;occupera automatiquement d&rsquo;exposer le contenu du dossier <code>/docs</code> à l&rsquo;adresse <a href="https://rlespinasse.github.io/docssite">https://rlespinasse.github.io/docssite</a>.</p>
 
