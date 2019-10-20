@@ -3,7 +3,7 @@ title: "Antora | Remplacer votre wiki par un site de documentation"
 date: 2018-04-18T10:42:00+02:00
 draft: false
 images: 
-  - /images/antora/featured.jpg
+  - /img/posts/antora/featured.jpg
 tags: 
   - antora
   - asciidoctor
@@ -50,7 +50,7 @@ Même si votre programme se compose d'un ensemble de projets avec chacun sa docu
 
 Les personnes derrière Asciidoctor ont récemment ouvert, à la communauté open-source, un générateur de site de documentations aggrégées: [Antora](https://antora.org/) en version stable (`1.0.0`).
 
-![Antora](/images/antora/site.png)
+![Antora](/img/posts/antora/site.png)
 
 ## Vous créez votre nouveau site de documentation avec Antora / Asciidoctor
 
@@ -140,11 +140,11 @@ Vous pouvez installer antora via ce [guide](https://docs.antora.org/antora/1.0/i
 
 Le playbook défini le dossier `docs` pour mettre à disposition votre nouveau site de documentation.
 
-![Site preview](/images/antora/site-preview.png)
+![Site preview](/img/posts/antora/site-preview.png)
 
 Par exemple, pour le rendre accessible sur Github, vous le déployez via les Github Pages de votre projet `docssite`.
 
-![Github document configuration](/images/antora/github.png)
+![Github document configuration](/img/posts/antora/github.png)
 
 La plateforme s'occupera automatiquement d'exposer le contenu du dossier `/docs` à l'adresse [https://rlespinasse.github.io/docssite](https://rlespinasse.github.io/docssite).
 

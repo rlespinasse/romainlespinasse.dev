@@ -3,7 +3,7 @@ title: "Homebrew | Utilisez un package manager sous macOS"
 date: 2017-02-28T10:42:00+01:00
 draft: false
 images: 
-  - /images/homebrew/featured.jpg
+  - /img/posts/homebrew/featured.jpg
 tags: 
   - homebrew
   - macos

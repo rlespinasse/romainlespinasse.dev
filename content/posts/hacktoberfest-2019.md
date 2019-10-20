@@ -8,7 +8,7 @@ tags:
   - contributions
 ---
 
-![Hacktoberfest 2019](/images/hacktoberfest-2019/banner.png)
+![Hacktoberfest 2019](/img/posts/hacktoberfest-2019/banner.png)
 
 Once again, I'm participate to the 2019 edition of the Hacktoberfest.
 
