@@ -1,0 +1,932 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Romain Lespinasse</title><link>https://romainlespinasse.dev/posts/</link><description>Recent content in Posts on Romain Lespinasse</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>This work is licensed under a MIT License.</copyright><lastBuildDate>Fri, 18 Oct 2019 10:00:00 +0100</lastBuildDate><atom:link href="https://romainlespinasse.dev/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Makefile | Create a wrapper task</title><link>https://romainlespinasse.dev/posts/makefile-wrapper/</link><pubDate>Fri, 18 Oct 2019 10:00:00 +0100</pubDate><guid>https://romainlespinasse.dev/posts/makefile-wrapper/</guid><description>In makefile, you can define tasks and run them individually
+make run-task1 run-task2 run-task3
+run-task1: @echo &amp;#34;run task 1&amp;#34; run-task2: @echo &amp;#34;run task 2&amp;#34; run-task3: @echo &amp;#34;run task 3&amp;#34; When you want to run tasks from another tasks (e.g. make run-all-tasks), you can
+use makefile prerequisites mechanism
+run-all-tasks: run-task1 run-task2 run-task3 use sub-command line with $(MAKE)
+run-all-tasks: @$(MAKE) run-task1 @$(MAKE) run-task2 @$(MAKE) run-task3 You can also create a wrapper task to run all tasks with a specific naming.</description><content type="html"><![CDATA[<p>In makefile, you can define tasks and run them individually</p>
+
+<blockquote>
+<p><code>make run-task1 run-task2 run-task3</code></p>
+</blockquote>
+<div class="highlight"><pre class="chroma"><code class="language-Makefile" data-lang="Makefile"><span class="nf">run-task1</span><span class="o">:</span>
+	@echo <span class="s2">&#34;run task 1&#34;</span>
+
+<span class="nf">run-task2</span><span class="o">:</span>
+	@echo <span class="s2">&#34;run task 2&#34;</span>
+
+<span class="nf">run-task3</span><span class="o">:</span>
+	@echo <span class="s2">&#34;run task 3&#34;</span>
+</code></pre></div>
+<p>When you want to run tasks from another tasks (e.g. <code>make run-all-tasks</code>), you can</p>
+
+<ul>
+<li><p>use <a href="https://www.gnu.org/software/make/manual/html_node/Prerequisite-Types.html#Prerequisite-Types"><code>makefile</code> prerequisites mechanism</a></p>
+<div class="highlight"><pre class="chroma"><code class="language-Makefile" data-lang="Makefile"><span class="nf">run-all-tasks</span><span class="o">:</span> <span class="n">run</span>-<span class="n">task</span>1 <span class="n">run</span>-<span class="n">task</span>2 <span class="n">run</span>-<span class="n">task</span>3
+</code></pre></div></li>
+
+<li><p>use sub-command line with <a href="https://www.gnu.org/software/make/manual/html_node/MAKE-Variable.html"><code>$(MAKE)</code></a></p>
+<div class="highlight"><pre class="chroma"><code class="language-Makefile" data-lang="Makefile"><span class="nf">run-all-tasks</span><span class="o">:</span>
+	@<span class="k">$(</span>MAKE<span class="k">)</span> run-task1
+	@<span class="k">$(</span>MAKE<span class="k">)</span> run-task2
+	@<span class="k">$(</span>MAKE<span class="k">)</span> run-task3
+</code></pre></div></li>
+</ul>
+
+<p>You can also create a <code>wrapper</code> task to run all tasks with a specific naming.</p>
+
+<blockquote>
+<p>This will enable you to don&rsquo;t known all task names.
+Useful when using <code>include</code> mechanism in your makefile.</p>
+</blockquote>
+<div class="highlight"><pre class="chroma"><code class="language-Makefile" data-lang="Makefile"><span class="err">include</span> <span class="err">makefile-with-run-tasks.mk</span>
+
+<span class="nf">run-all-tasks</span><span class="o">:</span>
+	@grep -E <span class="s1">&#39;^[\.a-zA-Z0-9_%-]+:.*$$&#39;</span> <span class="k">$(</span>MAKEFILE_LIST<span class="k">)</span> <span class="se">\
+</span><span class="se"></span>		<span class="p">|</span> cut -d <span class="s2">&#34;:&#34;</span> -f2 <span class="p">|</span> grep <span class="s2">&#34;^run-task&#34;</span> <span class="p">|</span> sort -u <span class="se">\
+</span><span class="se"></span>		<span class="p">|</span> xargs <span class="k">$(</span>MAKE<span class="k">)</span>
+</code></pre></div>
+<p>So when you run it, the <code>run-all-tasks</code> task will run all <code>run-task</code> tasks.</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ make run-all-tasks
+run task <span class="m">1</span>
+run task <span class="m">2</span>
+run task <span class="m">3</span></code></pre></div>]]></content></item><item><title>Hacktoberfest | Let&#39;s go for 2019</title><link>https://romainlespinasse.dev/posts/hacktoberfest-2019/</link><pubDate>Mon, 30 Sep 2019 10:42:00 +0200</pubDate><guid>https://romainlespinasse.dev/posts/hacktoberfest-2019/</guid><description>Once again, I&amp;rsquo;m participate to the 2019 edition of the Hacktoberfest.
+This month, I will focus on my open-source projects
+byteslice, a go library to manipulate a byte array, hoff, a go library to run workflows with high order functions - a new name is required :) , and the new one bitframe, a go library to manipulate bit frames using data protocol with encoder and decoder capabilities. But I don&amp;rsquo;t forget to also work on my shell project : michel.</description><content type="html"><![CDATA[<p><img src="/images/hacktoberfest-2019/banner.png" alt="Hacktoberfest 2019" /></p>
+
+<p>Once again, I&rsquo;m participate to the 2019 edition of the Hacktoberfest.</p>
+
+<p>This month, I will focus on my open-source projects</p>
+
+<ul>
+<li><a href="https://github.com/rlespinasse/byteslice">byteslice</a>, a go library to manipulate a byte array,</li>
+<li><a href="https://github.com/rlespinasse/hoff">hoff</a>, a go library to run workflows with high order functions - <strong>a new name is required :)</strong> ,</li>
+<li>and the new one <a href="https://github.com/rlespinasse/bitframe">bitframe</a>, a go library to manipulate bit frames using data protocol with encoder and decoder capabilities.</li>
+</ul>
+
+<p>But I don&rsquo;t forget to also work on <code>my shell</code> project : <a href="https://github.com/rlespinasse/michel">michel</a>.</p>
+
+<p>If you want to contribute, some issues are availables to do so.</p>
+
+<p>For the 3rd time, my company <a href="https://sfeir.com/">SFEIR</a> will host events across ours agencies on 8th October with our <a href="https://github.com/sfeir-open-source">Open-Source Program Office</a>.
+I will be at the Lille Agency (<a href="https://www.meetup.com/fr-FR/SFEIR-Lille/events/265175960/">register to our meetup event</a>), see you there.</p>
+
+<p>Happy <strong>Hacktober</strong> month.</p>
+]]></content></item><item><title>Makefile | How to check a mandatory variable</title><link>https://romainlespinasse.dev/posts/makefile-guard/</link><pubDate>Sun, 14 Jul 2019 10:00:00 +0200</pubDate><guid>https://romainlespinasse.dev/posts/makefile-guard/</guid><description>When you use a variable in a Makefile task and you want to make it mandatory and check it before run the effective task,
+You can guard it.
+task-who-need-SPECIFIC_ENVVAR: guard-SPECIFIC_ENVVAR @echo ${SPECIFIC_ENVVAR} You only need to add the following task
+guard-%: @ if [ &amp;#34;${${*}}&amp;#34; = &amp;#34;&amp;#34; ]; then \ echo &amp;#34;Environment variable $*not set&amp;#34;; \ exit 1; \ fi So when you run it, the guard will prevent to run the task</description><content type="html"><![CDATA[<p>When you use a variable in a Makefile task and you want to make it mandatory and check it before run the effective task,</p>
+
+<p>You can <code>guard</code> it.</p>
+<div class="highlight"><pre class="chroma"><code class="language-Makefile" data-lang="Makefile"><span class="nf">task-who-need-SPECIFIC_ENVVAR</span><span class="o">:</span> <span class="n">guard</span>-<span class="n">SPECIFIC_ENVVAR</span>
+	@echo <span class="si">${</span><span class="nv">SPECIFIC_ENVVAR</span><span class="si">}</span>
+</code></pre></div>
+<p>You only need to add the following task</p>
+<div class="highlight"><pre class="chroma"><code class="language-Makefile" data-lang="Makefile"><span class="nf">guard-%</span><span class="o">:</span>
+	@ <span class="k">if</span> <span class="o">[</span> <span class="s2">&#34;</span><span class="si">${${</span><span class="p">*</span><span class="si">}}</span><span class="s2">&#34;</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span> <span class="se">\
+</span><span class="se"></span>		<span class="nb">echo</span> <span class="s2">&#34;Environment variable </span><span class="nv">$*</span><span class="s2"> not set&#34;</span><span class="p">;</span> <span class="se">\
+</span><span class="se"></span>		<span class="nb">exit</span> <span class="m">1</span><span class="p">;</span> <span class="se">\
+</span><span class="se"></span>	<span class="k">fi</span>
+</code></pre></div>
+<p>So when you run it, the <code>guard</code> will prevent to run the task</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ make task-who-need-SPECIFIC_ENVVAR
+Environment variable SPECIFIC_ENVVAR not <span class="nb">set</span>
+make: *** <span class="o">[</span>guard-SPECIFIC_ENVVAR<span class="o">]</span> Error <span class="m">1</span></code></pre></div><div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ <span class="nb">export</span> <span class="nv">SPECIFIC_ENVVAR</span><span class="o">=</span>value
+$ make task-who-need-SPECIFIC_ENVVAR
+value</code></pre></div>
+<p>See <a href="https://stackoverflow.com/a/7367903/1848685">https://stackoverflow.com/a/7367903/1848685</a></p>
+]]></content></item><item><title>Antora | Replace your wiki with a documentation site</title><link>https://romainlespinasse.dev/posts/antora-en/</link><pubDate>Tue, 11 Sep 2018 10:42:00 +0200</pubDate><guid>https://romainlespinasse.dev/posts/antora-en/</guid><description>Bonjour, la version française de cet article peut être lue sur ce site
+No matter what your IT project is, there will always be a need to store some documentation. The choice to use a wiki is quite common in the corporate world.
+Let&amp;rsquo;s talk about you, developer on one of these programs, is documentation of your different projects managed by an easily accessible and editable wiki?</description><content type="html"><![CDATA[
+
+<blockquote>
+<p>Bonjour, la version française de cet article peut être lue <a href="/posts/antora/">sur ce site</a></p>
+</blockquote>
+
+<p>No matter what your IT project is, there will always be a need to store some documentation.
+The choice to use a <a href="https://en.wikipedia.org/wiki/Wiki">wiki</a> is quite common in the corporate world.</p>
+
+<p>Let&rsquo;s talk about you, developer on one of these programs, is documentation of your different projects managed by an easily accessible and editable wiki?</p>
+
+<p>If you look at the content of this wiki, you will probably find:</p>
+
+<ul>
+<li>Pages with sections who <code>still need documentation</code>,</li>
+<li>Pages with incorrect information,</li>
+<li>Deprecated pages,</li>
+<li>Pages only useful for one team or another,</li>
+<li>Pages with documentation on a feature still in development.</li>
+</ul>
+
+<p>So you wonder how to make it easier for people working on different projects.</p>
+
+<p>At this point, the principle of <code>documentation as code</code> seems to be the solution to your needs.</p>
+
+<h2 id="you-embark-on-the-adventure-of-documentation-as-code">You embark on the adventure of documentation as code</h2>
+
+<p>Seeing the documentation as code as the sources of the program is interesting.
+You want to replace your current wiki with a project dedicated to documentation, and allowing you to make <code>code review</code> on these changes.
+But that only corrects part of the problem, you only replaced wiki pages with files written in another format like:</p>
+
+<ul>
+<li>the <a href="https://daringfireball.net/projects/markdown/syntax">Markdown</a> format,</li>
+<li>the <a href="http://www.methods.co.nz/asciidoc/">Asciidoc</a> format.</li>
+</ul>
+
+<p>Due to its simple and accessible syntax, <code>Markdown</code> is one of the most popular formats, especially on sites like github or gitlab, but it is too simple for further documentation.</p>
+
+<p><code>Asciidoc</code> is <a href="https://github.com/asciidoctor/asciidoctor.org/blob/master/docs/_includes/asciidoc-vs-markdown.adoc">more interesting</a>, allowing to be more expressive with your documentation.
+The associated tool <a href="https://asciidoctor.org/">Asciidoctor</a> provides <a href="https://asciidoctor.org/docs/asciidoc-writers-guide/">useful features</a> as well as integrations such as diagram generation with <a href="http://plantuml.com/">plantuml</a>.</p>
+
+<p>You therefore choose to write the <strong>Asciidoctor</strong> documentation in each of your projects.
+This allows you to deliver the documentation at the same time as the associated code.</p>
+
+<p>Even if your program consists of a set of projects, each with its own documentation, you want to keep a single site to access them.</p>
+
+<p>The people behind Asciidoctor have recently released an aggregated documentation site generator: <a href="https://antora.org/">Antora</a> in a stable version (<code>1.0.0</code>) to the open-source community.</p>
+
+<p><img src="/images/antora/site.png" alt="Antora" /></p>
+
+<h2 id="you-create-your-new-documentation-site-with-antora-asciidoctor">You create your new documentation site with Antora / Asciidoctor</h2>
+
+<p>A site generated by Antora is <a href="https://docs.antora.org">composed of three elements</a>:</p>
+
+<ul>
+<li>Your projects that contain their documentation,</li>
+<li>The <a href="https://docs.antora.org/antora/1.0/playbook/"><strong>playbook</strong></a> that configures the generation of the documentation site,</li>
+<li>A <a href="https://docs.antora.org/antora/1.0/playbook/configure-ui/"><strong>UI</strong></a> that defines the visuals of your site (the default one will be appropriate).</li>
+</ul>
+
+<p>To be used by Antora, a project must respect a <a href="https://docs.antora.org/antora/1.0/component-structure/">file structure</a></p>
+<div class="highlight"><pre class="chroma"><code class="language-Text" data-lang="Text">./docs
+├── antora.yml
+└── modules
+    └── ROOT
+        ├── _attributes.adoc
+        ├── nav.adoc
+        └── pages
+            ├── _attributes.adoc
+            └── index.adoc</code></pre></div>
+<h3 id="you-set-up-documentation-as-code-on-your-projects">You set up documentation as code on your projects</h3>
+
+<p>So you apply yourself to put it up on:</p>
+
+<ul>
+<li>Your APIs (<a href="https://github.com/rlespinasse/api-a">api A</a>, <a href="https://github.com/rlespinasse/api-b">api B</a>, <a href="https : //github.com/rlespinasse/api-c">api C</a>)</li>
+<li>Your tools (<a href="https://github.com/rlespinasse/buildtools">build tools</a>),</li>
+<li>Your development guide (<a href="https://github.com/rlespinasse/guidelines">guidelines</a>).</li>
+</ul>
+
+<p>The documentation in <code>Asciidoctor</code> format is available in the <code>docs</code> folder.
+&gt; It is not necessary to use this tree for <code>guideline</code>, which is only a documentation project.</p>
+
+<h3 id="you-are-preparing-to-generate-your-documentation-site">You are preparing to generate your documentation site</h3>
+
+<p>So you create a <a href="https://github.com/rlespinasse/docssite">specific project</a> to store the <strong>playbook</strong>.</p>
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">site<span class="p">:</span><span class="w">
+</span><span class="w">  </span>title<span class="p">:</span><span class="w"> </span><span class="s2">&#34;Romain Lespinasse // Docs&#34;</span><span class="w">
+</span><span class="w">  </span>start_page<span class="p">:</span><span class="w"> </span>guidelines<span class="p">::</span>index<span class="w">
+</span><span class="w">  </span>url<span class="p">:</span><span class="w"> </span>https<span class="p">:</span>//rlespinasse.github.io/docssite<span class="w">
+</span><span class="w"></span>content<span class="p">:</span><span class="w">
+</span><span class="w">  </span>sources<span class="p">:</span><span class="w">
+</span><span class="w">  </span>-<span class="w"> </span>url<span class="p">:</span><span class="w"> </span>https<span class="p">:</span>//github.com/rlespinasse/api-a.git<span class="w">
+</span><span class="w">    </span>branches<span class="p">:</span><span class="w"> </span>master<span class="w">
+</span><span class="w">    </span>tags<span class="p">:</span><span class="w"> </span>v*<span class="w">
+</span><span class="w">    </span>start_path<span class="p">:</span><span class="w"> </span>docs<span class="w">
+</span><span class="w">  </span>-<span class="w"> </span>url<span class="p">:</span><span class="w"> </span>https<span class="p">:</span>//github.com/rlespinasse/api-b.git<span class="w">
+</span><span class="w">    </span>branches<span class="p">:</span><span class="w"> </span>master<span class="w">
+</span><span class="w">    </span>tags<span class="p">:</span><span class="w"> </span>v*<span class="w">
+</span><span class="w">    </span>start_path<span class="p">:</span><span class="w"> </span>docs<span class="w">
+</span><span class="w">  </span>-<span class="w"> </span>url<span class="p">:</span><span class="w"> </span>https<span class="p">:</span>//github.com/rlespinasse/api-c.git<span class="w">
+</span><span class="w">    </span>branches<span class="p">:</span><span class="w"> </span>master<span class="w">
+</span><span class="w">    </span>tags<span class="p">:</span><span class="w"> </span>v*<span class="w">
+</span><span class="w">    </span>start_path<span class="p">:</span><span class="w"> </span>docs<span class="w">
+</span><span class="w">  </span>-<span class="w"> </span>url<span class="p">:</span><span class="w"> </span>https<span class="p">:</span>//github.com/rlespinasse/buildtools.git<span class="w">
+</span><span class="w">    </span>branches<span class="p">:</span><span class="w"> </span>master<span class="w">
+</span><span class="w">    </span>tags<span class="p">:</span><span class="w"> </span>v*<span class="w">
+</span><span class="w">    </span>start_path<span class="p">:</span><span class="w"> </span>docs<span class="w">
+</span><span class="w">  </span>-<span class="w"> </span>url<span class="p">:</span><span class="w"> </span>https<span class="p">:</span>//github.com/rlespinasse/guidelines.git<span class="w">
+</span><span class="w">    </span>branches<span class="p">:</span><span class="w"> </span>master<span class="w">
+</span><span class="w"></span>ui<span class="p">:</span><span class="w">
+</span><span class="w">  </span>bundle<span class="p">:</span><span class="w">
+</span><span class="w">    </span>url<span class="p">:</span><span class="w"> </span>https<span class="p">:</span>//gitlab.com/antora/antora-ui-default/-/jobs/artifacts/master/raw/build/ui-bundle.zip<span class="p">?</span>job=bundle-stable<span class="w">
+</span><span class="w">    </span>snapshot<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w">  </span>output_dir<span class="p">:</span><span class="w"> </span>ui-bundle<span class="w">
+</span><span class="w">  </span>supplemental_files<span class="p">:</span><span class="w"> </span>./supplemental-ui<span class="w">
+</span><span class="w"></span>output<span class="p">:</span><span class="w">
+</span><span class="w">  </span>dir<span class="p">:</span><span class="w"> </span>./docs</code></pre></div>
+<p>The content of the <a href="https://docs.antora.org/antora/1.0/playbook/playbook/">playbook</a> <code>site.yml</code> defines:</p>
+
+<ul>
+<li>the <a href="https://docs.antora.org/antora/1.0/playbook/configure-site/">related information</a> to the site itself via <code>site:</code>,</li>
+<li>the definition of <a href="https://docs.antora.org/antora/1.0/playbook/configure-content-sources/">content</a> via <code>content:</code>,</li>
+<li>the <a href="https://docs.antora.org/antora/1.0/playbook/configure-ui/">theme of the site</a> via <code>ui:</code>,</li>
+<li>The <a href="https://docs.antora.org/antora/1.0/playbook/configure-output/">build folder</a> via <code>output:</code>.</li>
+</ul>
+
+<p>The official documentation does not refer to it because it is a <a href="https://gitlab.com/antora/antora/issues/147">development still experimental</a> but you set up the navigation bar to add the useful links via a <code>header-content.hbs</code> file in <code>supplemental-ui/partials/</code>.
+&gt; Other template files are available for replacement in <a href="https://gitlab.com/antora/antora-ui-default/tree/master/src/partials">Antora Default UI</a>.</p>
+
+<h2 id="you-generate-and-deploy-your-new-documentation-site">You generate and deploy your new documentation site</h2>
+
+<p>You can install antora via this <a href="https://docs.antora.org/antora/1.0/install/install-antora/">guide</a> or use the docker image via the <code>docker run -v `pwd` command: / antora --rm antora / antora --stacktrace site.yml</code> (where <strong>site.yml</strong> is the playbook)</p>
+
+<p>The playbook defines the <code>docs</code> folder to make your new documentation site available.</p>
+
+<p><img src="/images/antora/site-preview.png" alt="Site preview" /></p>
+
+<p>For example, to make it accessible on Github, you deploy it via the Github Pages of your <code>docssite</code> project.</p>
+
+<p><img src="/images/antora/github.png" alt="Github document configuration" /></p>
+
+<p>The platform will automatically expose the contents of the <code>/docs</code> folder to <a href="https://rlespinasse.github.io/docssite">https://rlespinasse.github.io/docssite</a>.</p>
+
+<h2 id="you-make-others-benefit-from-the-new-documentation-site">You make others benefit from the new documentation site</h2>
+
+<p>From now on, people working on the program will be able to add, create, and maintain documentation of each project very easily. Your new documentation site gives the access to all these pages.</p>
+
+<p>The site <a href="https://docs.antora.org">docs.antora.org</a> uses the <code>Antora</code> project itself.</p>
+
+<blockquote>
+<p>Thanks to <a href="https://twitter.com/sn0rks">Aurélien Allienne</a>, <a href="https://twitter.com/AMeausoone">Antoine Méausoone</a>, <a href="https://twitter.com/TanguyBAUDRIN">Tanguy Baudrin</a>, and <a href="https://twitter.com/chezTone">Tony Proum</a> for reviewing the article.
+Thanks to <a href="https://twitter.com/sn0rks">Aurélien Allienne</a>, <a href="http://twitter.com/MrGuiMan">Guillaume Mantopoulos</a> for the review of the translation from french to english of this article .</p>
+</blockquote>
+]]></content></item><item><title>Antora | Remplacer votre wiki par un site de documentation</title><link>https://romainlespinasse.dev/posts/antora/</link><pubDate>Wed, 18 Apr 2018 10:42:00 +0200</pubDate><guid>https://romainlespinasse.dev/posts/antora/</guid><description>Hi, the english version of this article can be read on this site
+Peu importe votre projet informatique, il y aura toujours un besoin de stocker de la documentation. Le choix d&amp;rsquo;utiliser un wiki est assez courant en entreprise.
+Parlons de vous, développeur sur un de ces programmes, la documentation des différents projets est-elle gérée par un wiki facilement accessible et éditable?
+Et si vous regardez le contenu de ce wiki, vous y trouverez surement :</description><content type="html"><![CDATA[
+
+<blockquote>
+<p>Hi, the english version of this article can be read <a href="/posts/antora-en/">on this site</a></p>
+</blockquote>
+
+<p>Peu importe votre projet informatique, il y aura toujours un besoin de stocker de la documentation.
+Le choix d&rsquo;utiliser un <a href="https://fr.wikipedia.org/wiki/Wiki">wiki</a> est assez courant en entreprise.</p>
+
+<p>Parlons de vous, développeur sur un de ces programmes, la documentation des différents projets est-elle gérée par un wiki facilement accessible et éditable?</p>
+
+<p>Et si vous regardez le contenu de ce wiki, vous y trouverez surement :</p>
+
+<ul>
+<li>Des pages avec des sections <code>à documenter</code>,</li>
+<li>Des pages avec des informations erronées,</li>
+<li>Des pages dépréciées,</li>
+<li>Des pages uniquement utiles pour une équipe ou une autre,</li>
+<li>Des pages avec de la documentation sur une future évolution.</li>
+</ul>
+
+<p>Vous vous demandez donc comment faire pour faciliter la tâche des personnes travaillant sur les différents projets.</p>
+
+<p>À ce moment là, le principe de la <code>documentation as code</code> vous paraît être la solution à votre besoin.</p>
+
+<h2 id="vous-vous-lancez-dans-l-aventure-de-la-documentation-as-code">Vous vous lancez dans l&rsquo;aventure de la documentation as code</h2>
+
+<p>Voir la documentation comme du code au même titre que les sources du programme est intéressant.
+Vous souhaitez remplacer votre wiki actuel par un projet dédié à la documentation, et vous permettre de faire des <code>code review</code> sur ces changements.
+Mais cela ne corrige qu&rsquo;une partie du problème, vous avez seulement remplacé des pages wiki par des fichiers écrits dans un autre format comme :</p>
+
+<ul>
+<li>le format <a href="https://daringfireball.net/projects/markdown/syntax">Markdown</a>,</li>
+<li>le format <a href="http://www.methods.co.nz/asciidoc/">Asciidoc</a>.</li>
+</ul>
+
+<p>Du fait de sa syntaxe simple et accessible, le format <code>Markdown</code> est un des plus répandu, surtout sur des sites comme github ou gitlab. Mais le format est trop simple pour une documentation plus approfondie.</p>
+
+<p>Le format <code>Asciidoc</code> est <a href="https://github.com/asciidoctor/asciidoctor.org/blob/master/docs/_includes/asciidoc-vs-markdown.adoc">plus intéressant</a>, il permet d&rsquo;être plus expressif dans votre documentation.
+L&rsquo;outil associé <a href="https://asciidoctor.org/">Asciidoctor</a> apporte des <a href="https://asciidoctor.org/docs/asciidoc-writers-guide/">fonctionnalités utiles</a> ainsi que des intégrations comme la génération de diagrammes avec <a href="http://plantuml.com/">plantuml</a>.</p>
+
+<p>Vous choisissez donc d&rsquo;écrire la documentation en <strong>Asciidoctor</strong> dans chacun des projets.
+Cela vous permet de livrer la documentation à jour en même temps que le code associé.</p>
+
+<p>Même si votre programme se compose d&rsquo;un ensemble de projets avec chacun sa documentation, vous souhaitez garder un site unique pour y accèder.</p>
+
+<p>Les personnes derrière Asciidoctor ont récemment ouvert, à la communauté open-source, un générateur de site de documentations aggrégées: <a href="https://antora.org/">Antora</a> en version stable (<code>1.0.0</code>).</p>
+
+<p><img src="/images/antora/site.png" alt="Antora" /></p>
+
+<h2 id="vous-créez-votre-nouveau-site-de-documentation-avec-antora-asciidoctor">Vous créez votre nouveau site de documentation avec Antora / Asciidoctor</h2>
+
+<p>Un site généré par Antora est <a href="https://docs.antora.org">composé de trois éléments</a> :</p>
+
+<ul>
+<li>Vos projets qui contiennent leurs documentations,</li>
+<li>Le <a href="https://docs.antora.org/antora/1.0/playbook/"><strong>playbook</strong></a> qui configure la génération du site de documentation,</li>
+<li>Une <a href="https://docs.antora.org/antora/1.0/playbook/configure-ui/"><strong>UI</strong></a> qui définit le visuel de votre site (celle par défaut conviendra).</li>
+</ul>
+
+<p>Pour être utilisé par Antora, un projet se doit de respecter une <a href="https://docs.antora.org/antora/1.0/component-structure/">structure de fichiers</a></p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">./docs
+├── antora.yml
+└── modules
+    └── ROOT
+        ├── _attributes.adoc
+        ├── nav.adoc
+        └── pages
+            ├── _attributes.adoc
+            └── index.adoc</code></pre></div>
+<h3 id="vous-mettez-en-place-la-documentation-as-code-sur-vos-projets">Vous mettez en place la documentation as code sur vos projets</h3>
+
+<p>Vous vous appliquez donc à le mettre en place sur :</p>
+
+<ul>
+<li>Vos APIs (<a href="https://github.com/rlespinasse/api-a">api A</a>, <a href="https://github.com/rlespinasse/api-b">api B</a>, <a href="https://github.com/rlespinasse/api-c">api C</a>),</li>
+<li>Vos outils (<a href="https://github.com/rlespinasse/buildtools">build tools</a>),</li>
+<li>Votre guide de development (<a href="https://github.com/rlespinasse/guidelines">guidelines</a>).</li>
+</ul>
+
+<p>La documentation au format <code>Asciidoctor</code> est disponible dans le dossier <code>docs</code>.
+&gt; Il n&rsquo;est pas nécessaire d&rsquo;utiliser cette arborescence pour <code>guideline</code>, qui est uniquement un projet de documentation.</p>
+
+<h3 id="vous-vous-préparez-à-générer-votre-site-de-documentation">Vous vous préparez à générer votre site de documentation</h3>
+
+<p>Vous créez donc un <a href="https://github.com/rlespinasse/docssite">projet spécifique</a> pour stocker le <strong>playbook</strong>.</p>
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">site<span class="p">:</span><span class="w">
+</span><span class="w">  </span>title<span class="p">:</span><span class="w"> </span><span class="s2">&#34;Romain Lespinasse // Docs&#34;</span><span class="w">
+</span><span class="w">  </span>start_page<span class="p">:</span><span class="w"> </span>guidelines<span class="p">::</span>index<span class="w">
+</span><span class="w">  </span>url<span class="p">:</span><span class="w"> </span>https<span class="p">:</span>//rlespinasse.github.io/docssite<span class="w">
+</span><span class="w"></span>content<span class="p">:</span><span class="w">
+</span><span class="w">  </span>sources<span class="p">:</span><span class="w">
+</span><span class="w">  </span>-<span class="w"> </span>url<span class="p">:</span><span class="w"> </span>https<span class="p">:</span>//github.com/rlespinasse/api-a.git<span class="w">
+</span><span class="w">    </span>branches<span class="p">:</span><span class="w"> </span>master<span class="w">
+</span><span class="w">    </span>tags<span class="p">:</span><span class="w"> </span>v*<span class="w">
+</span><span class="w">    </span>start_path<span class="p">:</span><span class="w"> </span>docs<span class="w">
+</span><span class="w">  </span>-<span class="w"> </span>url<span class="p">:</span><span class="w"> </span>https<span class="p">:</span>//github.com/rlespinasse/api-b.git<span class="w">
+</span><span class="w">    </span>branches<span class="p">:</span><span class="w"> </span>master<span class="w">
+</span><span class="w">    </span>tags<span class="p">:</span><span class="w"> </span>v*<span class="w">
+</span><span class="w">    </span>start_path<span class="p">:</span><span class="w"> </span>docs<span class="w">
+</span><span class="w">  </span>-<span class="w"> </span>url<span class="p">:</span><span class="w"> </span>https<span class="p">:</span>//github.com/rlespinasse/api-c.git<span class="w">
+</span><span class="w">    </span>branches<span class="p">:</span><span class="w"> </span>master<span class="w">
+</span><span class="w">    </span>tags<span class="p">:</span><span class="w"> </span>v*<span class="w">
+</span><span class="w">    </span>start_path<span class="p">:</span><span class="w"> </span>docs<span class="w">
+</span><span class="w">  </span>-<span class="w"> </span>url<span class="p">:</span><span class="w"> </span>https<span class="p">:</span>//github.com/rlespinasse/buildtools.git<span class="w">
+</span><span class="w">    </span>branches<span class="p">:</span><span class="w"> </span>master<span class="w">
+</span><span class="w">    </span>tags<span class="p">:</span><span class="w"> </span>v*<span class="w">
+</span><span class="w">    </span>start_path<span class="p">:</span><span class="w"> </span>docs<span class="w">
+</span><span class="w">  </span>-<span class="w"> </span>url<span class="p">:</span><span class="w"> </span>https<span class="p">:</span>//github.com/rlespinasse/guidelines.git<span class="w">
+</span><span class="w">    </span>branches<span class="p">:</span><span class="w"> </span>master<span class="w">
+</span><span class="w"></span>ui<span class="p">:</span><span class="w">
+</span><span class="w">  </span>bundle<span class="p">:</span><span class="w">
+</span><span class="w">    </span>url<span class="p">:</span><span class="w"> </span>https<span class="p">:</span>//gitlab.com/antora/antora-ui-default/-/jobs/artifacts/master/raw/build/ui-bundle.zip<span class="p">?</span>job=bundle-stable<span class="w">
+</span><span class="w">    </span>snapshot<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w">  </span>output_dir<span class="p">:</span><span class="w"> </span>ui-bundle<span class="w">
+</span><span class="w">  </span>supplemental_files<span class="p">:</span><span class="w"> </span>./supplemental-ui<span class="w">
+</span><span class="w"></span>output<span class="p">:</span><span class="w">
+</span><span class="w">  </span>dir<span class="p">:</span><span class="w"> </span>./docs</code></pre></div>
+<p>Le contenu du <a href="https://docs.antora.org/antora/1.0/playbook/playbook/">playbook</a> <code>site.yml</code> définit :</p>
+
+<ul>
+<li>les <a href="https://docs.antora.org/antora/1.0/playbook/configure-site/">informations relatives</a> au site en lui-même via <code>site:</code>,</li>
+<li>la définition du <a href="https://docs.antora.org/antora/1.0/playbook/configure-content-sources/">contenu</a> via <code>content:</code>,</li>
+<li>le <a href="https://docs.antora.org/antora/1.0/playbook/configure-ui/">theme du site</a> via <code>ui:</code>,</li>
+<li>Le <a href="https://docs.antora.org/antora/1.0/playbook/configure-output/">dossier de génération</a> via <code>output:</code>.</li>
+</ul>
+
+<p>La documentation officielle n&rsquo;en fait pas référence, car il s&rsquo;agit d&rsquo;un <a href="https://gitlab.com/antora/antora/issues/147">dévelopement encore au stade expérimental</a> mais vous configurez la barre de navigation pour rajouter les liens utiles via un fichier <code>header-content.hbs</code> dans <code>supplemental-ui/partials/</code>.
+&gt; D&rsquo;autres fichiers templates sont disponibles pour remplacement dans <a href="https://gitlab.com/antora/antora-ui-default/tree/master/src/partials">Antora Default UI</a>.</p>
+
+<h2 id="vous-générez-et-déployez-votre-nouveau-site-de-documentation">Vous générez et déployez votre nouveau site de documentation</h2>
+
+<p>Vous pouvez installer antora via ce <a href="https://docs.antora.org/antora/1.0/install/install-antora/">guide</a> ou utiliser l&rsquo;image docker via la commande <code>docker run -v `pwd`:/antora --rm antora/antora --stacktrace site.yml</code> (où <strong>site.yml</strong> est le playbook)</p>
+
+<p>Le playbook défini le dossier <code>docs</code> pour mettre à disposition votre nouveau site de documentation.</p>
+
+<p><img src="/images/antora/site-preview.png" alt="Site preview" /></p>
+
+<p>Par exemple, pour le rendre accessible sur Github, vous le déployez via les Github Pages de votre projet <code>docssite</code>.</p>
+
+<p><img src="/images/antora/github.png" alt="Github document configuration" /></p>
+
+<p>La plateforme s&rsquo;occupera automatiquement d&rsquo;exposer le contenu du dossier <code>/docs</code> à l&rsquo;adresse <a href="https://rlespinasse.github.io/docssite">https://rlespinasse.github.io/docssite</a>.</p>
+
+<h2 id="vous-faites-profitez-aux-autres-du-nouveau-site-de-documentation">Vous faites profitez aux autres du nouveau site de documentation</h2>
+
+<p>Dorénavant, les personnes, travaillant sur le programme, pourront ajouter, créer, maintenir de la documentation relative à chacun des projets très facilement. Votre nouveau site de documentation permettant d&rsquo;accèder à toutes ces pages.</p>
+
+<p>Le site <a href="https://docs.antora.org">docs.antora.org</a> utilise lui-même le projet <code>Antora</code>.</p>
+
+<blockquote>
+<p>Merci à <a href="https://twitter.com/sn0rks">Aurélien Allienne</a>, <a href="https://twitter.com/AMeausoone">Antoine Méausoone</a>, <a href="https://twitter.com/hsablonniere">Hubert Sablonnière</a>, <a href="https://twitter.com/TanguyBAUDRIN">Tanguy Baudrin</a>, et <a href="https://twitter.com/chezTone">Tony Proum</a> pour la relecture de l&rsquo;article.</p>
+</blockquote>
+
+<p>Cet article a été publié en premier sur <a href="https://sfeir.com">lemag.sfeir.com</a>.</p>
+]]></content></item><item><title>Homebrew | Utilisez un package manager sous macOS</title><link>https://romainlespinasse.dev/posts/homebrew/</link><pubDate>Tue, 28 Feb 2017 10:42:00 +0100</pubDate><guid>https://romainlespinasse.dev/posts/homebrew/</guid><description>Votre société ou votre client vient de vous confier un macbook pour travailler, il ne vous reste plus qu&amp;rsquo;à installer tout un ensemble de programmes pour commencer.
+Sous linux, vous auriez un gestionnaire de formulas qui ferait bien l&amp;rsquo;affaire pour aller plus vite. Mais sous macOS, pas de apt-get, pas de yum, vous voilà parti pour installer tout cela à la main.
+Pas de crainte, des gestionnaires de formulas existent aussi pour macOS comme Homebrew (ou MacPorts)</description><content type="html"><![CDATA[<p>Votre société ou votre client vient de vous confier un macbook pour travailler,
+il ne vous reste plus qu&rsquo;à installer tout un ensemble de programmes pour commencer.</p>
+
+<p>Sous linux, vous auriez un gestionnaire de formulas
+qui ferait bien l&rsquo;affaire pour aller plus vite.
+Mais sous macOS, pas de apt-get, pas de yum,
+vous voilà parti pour installer tout cela à la main.</p>
+
+<p>Pas de crainte, des gestionnaires de formulas existent aussi pour macOS comme <a href="http://brew.sh/"><strong>Homebrew</strong></a> (ou <a href="https://www.macports.org">MacPorts</a>)</p>
+
+<p>Installer homebrew en une ligne de commande</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">/usr/bin/ruby -e <span class="s2">&#34;</span><span class="k">$(</span>curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install<span class="k">)</span><span class="s2">&#34;</span></code></pre></div>
+<blockquote>
+<p><strong>Homebrew</strong> est un gestionnaire basé sur des <strong>formulas</strong> d&rsquo;installation de formula (en <strong>Ruby</strong>)
+et utilise des <strong>repositories git</strong> comme conteneurs de ces <strong>formulas</strong>.</p>
+</blockquote>
+
+<p>Après une simple installation, vous avez à votre disposition une nouvelle commande,
+petit tour du proprietaire :</p>
+
+<p>La commande <strong>&ldquo;brew&rdquo;</strong> vous montre les commandes les plus courantes.</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ brew
+Example usage:
+  brew search <span class="o">[</span>TEXT<span class="p">|</span>/REGEX/<span class="o">]</span>
+  brew <span class="o">(</span>info<span class="p">|</span>home<span class="p">|</span>options<span class="o">)</span> <span class="o">[</span>FORMULA...<span class="o">]</span>
+  brew install FORMULA...
+  brew update
+  brew upgrade <span class="o">[</span>FORMULA...<span class="o">]</span>
+  brew uninstall FORMULA...
+  brew list <span class="o">[</span>FORMULA...<span class="o">]</span>
+
+Troubleshooting:
+  brew config
+  brew doctor
+  brew install -vd FORMULA</code></pre></div>
+<p>Dans ces commandes, on retourne notamment celles pour gérer le <strong>cycle de vie de votre formula</strong></p>
+
+<p>brew install FORMULA&hellip;
+  brew update
+  brew upgrade [FORMULA&hellip;]
+  brew uninstall FORMULA&hellip;</p>
+
+<p>TIP: En executant <code>brew doctor</code>, vous vérifiez que votre installation de Homebrew est correcte.
+La commande vous indiquera les différents problèmes de votre installation (s&rsquo;il y en a).</p>
+
+<p>Maintenant que homebrew est installé, vous souhaitez installer vos premiers formulas.</p>
+
+<p>Vous commencez par vos besoins pour le projet.
+Comme il s&rsquo;agit d&rsquo;un projet en <strong>Java</strong> sous <strong>Gradle</strong> avec des outils écrits en <strong>Go</strong>
+et que l&rsquo;ensemble est géré par Ansible, vous avez votre liste de formulas:</p>
+
+<ul>
+<li>Ansible</li>
+<li>Java</li>
+<li>Go</li>
+<li>Gradle</li>
+</ul>
+
+<p>Vous installez vos formulas hors java</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ brew install ansible go gradle
+
+$ ansible --version
+ansible <span class="m">2</span>.2.0.0
+
+$ go version
+go version go1.7.4 darwin/amd64
+
+$ gradle -v
+Gradle <span class="m">3</span>.3</code></pre></div>
+<p>Vous installer java à part, car vous souhaitez installer java 8.</p>
+
+<p>Vous rechercher donc les <strong>formulas</strong> nommées <strong>java</strong></p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ brew search java
+app-engine-java
+google-java-format
+javarepl
+jslint4java
+libreadline-java
+homebrew/emacs/javaimp
+Caskroom/cask/eclipse-java
+Caskroom/cask/java
+Caskroom/cask/netbeans-java-ee
+Caskroom/cask/netbeans-java-se
+Caskroom/cask/yourkit-java-profiler
+Caskroom/versions/charles-applejava
+Caskroom/versions/charles-beta-applejava
+Caskroom/versions/java-beta
+Caskroom/versions/java6
+Caskroom/versions/java7
+Caskroom/versions/java9-beta</code></pre></div>
+<p><strong>Aie</strong>, il n&rsquo;y a pas de <strong>formula</strong> nommée <strong>java</strong> ou <strong>java8</strong>.
+Par contre la recherche vous propose les formulas contenant le mot <strong>java</strong>.
+Parmis les formulas, ceux avec un chemin (<strong>a/b/formula</strong>) sont des formulas contenues dans des <strong>taps</strong>.</p>
+
+<p><strong>Mais qu&rsquo;est-ce qu&rsquo;un tap</strong>, il s&rsquo;agit d&rsquo;un autre <strong>repository git</strong>
+contenant des formulas dédiées ou des nouvelles commandes.</p>
+
+<blockquote>
+<p>On installe un <strong>tap</strong> via la commande <code>brew tap utilisateur/nom_tap</code>.</p>
+
+<p>Avec le tap <strong>utilisateur/nom_tap</strong>, brew installera le <strong>repository git</strong> associé à l&rsquo;url <a href="https://github.com/utilisateur/homebrew-nom_tap">https://github.com/utilisateur/homebrew-nom_tap</a>.</p>
+
+<p>Pour les autres possibilités, utilisez <code>brew tap -h</code>.</p>
+</blockquote>
+
+<p>TIP: <code>brew install a/b/formula</code> installera le <strong>tap</strong> et la formula en même temps.</p>
+
+<p>Parmis les <strong>taps</strong> officiels, on peut trouver :</p>
+
+<ul>
+<li><a href="https://github.com/Homebrew/homebrew-core"><strong>homebrew/core</strong></a> - <strong>Core formulae for the Homebrew formula manager</strong> <strong>(the default tap)</strong></li>
+<li><a href="https://github.com/Homebrew/homebrew-science"><strong>homebrew/science</strong></a> - <strong>Scientific formulae for the Homebrew formula manager</strong></li>
+<li><a href="https://github.com/Homebrew/homebrew-games"><strong>homebrew/games</strong></a> - <strong>Games formulae for the Homebrew formula manager</strong></li>
+<li><a href="https://github.com/Homebrew/homebrew-completions"><strong>homebrew/completions</strong></a> - <strong>Shell completion formulae for the Homebrew formula manager</strong></li>
+<li><a href="https://github.com/Homebrew/homebrew-command-not-found"><strong>homebrew/command-not-found</strong></a> - <strong>Ubuntu’s command-not-found equivalent for Homebrew on OSX</strong></li>
+<li><a href="https://github.com/Homebrew/homebrew-services"><strong>homebrew/services</strong></a> - <strong>Starts Homebrew formulae&rsquo;s plists with launchctl</strong></li>
+</ul>
+
+<p>Tous ces <strong>taps</strong> sont gérés par la communauté Homebrew,
+mais certains <strong>taps</strong> officiels ne sont pas de Homebrew mais sont bien intégrés comme <strong>Caskroom/cask</strong>.</p>
+
+<p>Les <strong>formulas</strong> de <strong>Caskroom/cask</strong> sont dédiés aux installations d&rsquo;applications macOS</p>
+
+<p>Maintenant, vous installez <strong>java 8</strong></p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ brew install Caskroom/cask/java
+<span class="o">==</span>&gt; brew cask install Caskroom/cask/java
+...
+
+$ java -version
+java version <span class="s2">&#34;1.8.0_112&#34;</span>
+Java<span class="o">(</span>TM<span class="o">)</span> SE Runtime Environment <span class="o">(</span>build <span class="m">1</span>.8.0_112-b16<span class="o">)</span>
+Java HotSpot<span class="o">(</span>TM<span class="o">)</span> <span class="m">64</span>-Bit Server VM <span class="o">(</span>build <span class="m">25</span>.112-b16, mixed mode<span class="o">)</span></code></pre></div>
+<p>Lors du lancement de la commande, brew a transféré votre demande à <code>brew cask install</code> pour son installation.</p>
+
+<p>Avec <strong>Cask</strong>, vous pouvez, en plus de vos formulas, installer votre navigateur, votre éditeur de code,&hellip;</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">brew cask install google-chrome intellij-idea docker slack</code></pre></div>
+<p>TIP: <code>brew tap caskroom/drivers</code> vous permet d&rsquo;installer les drivers pour macOS.
+Les fonts s&rsquo;installent elles via <code>brew tap caskroom/fonts</code>.</p>
+
+<p>Certains formulas sont gérées comme des <strong>services</strong> via macOS <strong>launchd</strong>.
+Pour cela, brew propose, via <a href="https://github.com/Homebrew/homebrew-services"><strong>homebrew/services</strong></a>,
+la commande <strong>brew services</strong> pour faciliter leurs utilisations.</p>
+
+<p>Pour votre projet, vous avez aussi besoin d&rsquo;une base de données <strong>MySQL</strong>.</p>
+
+<p>Vous installez <strong>MySQL</strong> qui possède un service sous macOS</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ brew install mysql
+
+$ brew services list
+Name           Status  User Plist
+mysql          stopped
+
+$ brew services start <span class="nv">mysql</span>
+<span class="o">==</span>&gt; Successfully started <span class="sb">`</span>mysql<span class="sb">`</span> <span class="o">(</span>label: homebrew.mxcl.mysql<span class="o">)</span>
+
+$ brew services list
+Name           Status  User            Plist
+mysql          started &lt;your_username&gt; ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist</code></pre></div>
+<p>Votre installation de poste est terminée. Vous pouvez commencer à travailler.</p>
+
+<p>Au bout d&rsquo;un certain temps, vous souhaiteriez mettre à jour vos formulas.</p>
+
+<p>La procédure de mise à jour se fait en deux commandes <strong>update</strong> + <strong>upgrade</strong>.
+Avec ces 2 commandes, vous pouvez aussi utiliser deux autres commandes <strong>outdated</strong> et <strong>cleanup</strong> utiles suivant vos besoins.</p>
+
+<ul>
+<li><p><strong>update</strong> met à jour les <strong>repositories git</strong> des <strong>taps</strong>,</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ brew update
+Updated <span class="m">2</span> taps <span class="o">(</span>caskroom/cask, homebrew/core<span class="o">)</span>.
+<span class="o">==</span>&gt; New <span class="nv">Formulae</span>
+<span class="o">==</span>&gt; Updated Formulae
+go ✔</code></pre></div></li>
+
+<li><p><strong>upgrade</strong> met à jour les formulas,</p>
+
+<pre><code>$ brew upgrade
+==&gt; Upgrading 1 outdated formula, with result:
+go 1.7.4_1
+==&gt; Upgrading go
+==&gt; Downloading https://homebrew.bintray.com/bottles/go-1.7.4_1.sierra.bottle.tar.gz
+...
+🍺  /usr/local/Cellar/go/1.7.4_1: 6,438 files, 250.7M
+</code></pre></li>
+
+<li><p><strong>outdated</strong> liste les formulas qui doivent être mis à jour,</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ brew outdated
+go <span class="o">(</span><span class="m">1</span>.6<span class="o">)</span> &lt; <span class="m">1</span>.7.4_1</code></pre></div></li>
+
+<li><p><strong>cleanup</strong> supprime les anciennes versions des formulas (car Homebrew les garde indéfiniment).</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ brew cleanup
+Removing: /usr/local/Cellar/go/1.6... <span class="o">(</span><span class="m">6</span>,438 files, <span class="m">250</span>.7M<span class="o">)</span>
+<span class="o">==</span>&gt; This operation has freed approximately <span class="m">250</span>.7M of disk space.</code></pre></div></li>
+</ul>
+
+<blockquote>
+<p>Définissez un alias <strong>bubu</strong> (déjà disponible par défaut dans <strong>zsh</strong>) pour <code>brew update &amp;&amp; brew outdated &amp;&amp; brew upgrade &amp;&amp; brew cleanup</code>, et ainsi en une commande gèrer vos formulas plus simplement.</p>
+</blockquote>
+
+<p>Vous venez d&rsquo;apprendre qu&rsquo;un des mécanismes par défaut de Homebrew
+est de conserver toutes les versions installées de vos formulas.
+Ceci dans le but de vous permettre de facilement switcher entre ces versions.</p>
+
+<blockquote>
+<p><strong>brew install &lt;formula&gt;</strong> ne permet d&rsquo;installer que la version courante du formula, jamais une ancienne version.</p>
+</blockquote>
+
+<p>Par exemple comment passer à une version go 1.6 puis revenir sur une version go 1.7</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ brew switch go <span class="m">1</span>.6
+Cleaning /usr/local/Cellar/go/1.6
+Cleaning /usr/local/Cellar/go/1.7.4_1
+<span class="m">3</span> links created <span class="k">for</span> /usr/local/Cellar/go/1.6
+
+$ brew switch go <span class="m">1</span>.7.4_1
+Cleaning /usr/local/Cellar/go/1.6
+Cleaning /usr/local/Cellar/go/1.7.4_1
+<span class="m">3</span> links created <span class="k">for</span> /usr/local/Cellar/go/1.7.4_1</code></pre></div>
+<p>TIP: Le tap <strong>homebrew/versions</strong> vous permet d&rsquo;accèder à d&rsquo;anciennes versions.</p>
+
+<p>Sur le projet, votre voisin de bureau commence sa première journée
+et vous demande de lui passer votre liste de formulas et d&rsquo;applications
+pour faire lui aussi l&rsquo;installation rapidement.</p>
+
+<p>Vous appliquez la méthode KISS</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">brew list &gt; brew-formulas.txt
+brew cask list &gt; brew-applications.txt</code></pre></div>
+<p>Et votre voisin devrait se débrouiller avec les deux fichers bruts que vous venez de lui envoyer par email.
+C&rsquo;est KISS mais seulement pour vous.</p>
+
+<p>Mais là encore, Homebrew a pensé à faciliter ce genre d&rsquo;actions via <strong>brew bundle</strong>.</p>
+
+<p>Vous créez un Brewfile de votre poste via <code>brew bundle dump</code></p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ brew bundle dump
+$ cat Brewfile
+tap <span class="s1">&#39;caskroom/cask&#39;</span>
+tap <span class="s1">&#39;homebrew/bundle&#39;</span>
+tap <span class="s1">&#39;homebrew/core&#39;</span>
+tap <span class="s1">&#39;homebrew/services&#39;</span>
+brew <span class="s1">&#39;ansible&#39;</span>
+brew <span class="s1">&#39;go&#39;</span>
+brew <span class="s1">&#39;mysql&#39;</span>, restart_service: <span class="nb">true</span>
+brew <span class="s1">&#39;gradle&#39;</span>
+cask <span class="s1">&#39;docker&#39;</span>
+cask <span class="s1">&#39;google-chrome&#39;</span>
+cask <span class="s1">&#39;intellij-idea&#39;</span>
+cask <span class="s1">&#39;java&#39;</span>
+cask <span class="s1">&#39;slack&#39;</span></code></pre></div>
+<p>Un fichier <strong>Brewfile</strong> commence par lister les <strong>taps</strong> installés, puis les formulas installés, ainsi que les applications.
+Il garde même en mémoire les status des services (ici, <strong>mysql</strong> est lancé).</p>
+
+<p>Vous transmettez le fichier <strong>Brewfile</strong> à votre voisin et il n&rsquo;a plus qu&rsquo;à l&rsquo;utiliser.</p>
+
+<p>Votre voisin de bureau installe ce Brewfile sur son poste</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ brew bundle
+Tapping caskroom/cask
+Tapping homebrew/bundle
+Using homebrew/core
+Tapping homebrew/services
+Installing ansible
+Installing go
+Installing gradle
+Installing mysql
+Installing docker
+Installing google-chrome
+Installing intellij-idea
+Installing java
+Installing slack</code></pre></div>
+<p>TIP: Par défaut, <strong>brew bundle</strong> utilise le fichier <strong>Brewfile</strong> depuis le dossier courant.
+L&rsquo;option <code>--file=path</code> permet de définir un autre chemin vers le fichier <strong>Brewfile</strong>.
+L&rsquo;option <code>--global</code> ira lire un fichier <strong>.Brefile</strong> depuis votre <strong>$HOME</strong>.</p>
+
+<p>Après la découverte de <strong>brew bundle</strong>,
+vous vous dites autant partager la liste des formulas nécessaire pour un projet spécifiquement.</p>
+
+<p>Pour cela, il suffit de créer un fichier <strong>Brewfile</strong> dans vos sources de projet et de le commiter.
+Comme cela un nouveau développeur n&rsquo;a qu&rsquo;à lancer <code>brew bundle</code> pour être sûr d&rsquo;avoir le nécessaire pour travailler sur le projet.</p>
+
+<p>Cela tombe bien, vous avez un nouveau projet en Java sous Gradle à faire et qui servira comme outil aux autres développeurs.</p>
+
+<p>Vous créez un <strong>Brewfile</strong> dans votre nouveau projet avec Java et Gradle</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ <span class="nb">cd</span> project-tool
+$ vim Brewfile
+$ cat Brewfile
+tap <span class="s1">&#39;caskroom/cask&#39;</span>
+brew <span class="s1">&#39;gradle&#39;</span>
+cask <span class="s1">&#39;java&#39;</span></code></pre></div>
+<p>Après que ce nouveau projet soit prêt, il est temps que les autres développeurs l&rsquo;utilisent.
+Pour faciliter sa distribution, vous l&rsquo;avez publié dans votre repository manager de votre client (ex. <strong>Nexus</strong>).</p>
+
+<p>Un de vos collègues teste l&rsquo;installation du nouvel outil</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ <span class="nv">tool_url</span><span class="o">=</span><span class="s1">&#39;https://nexus.client.tld/content/repositories/releases/tld/client/project/tool/1.0.0/tool-1.0.0-distribution.zip&#39;</span>
+$ wget <span class="nv">$tool_url</span>
+$ unzip tool-1.0.0-distribution.zip
+$ tree
+tool-1.0.0-distribution
+├── bin
+│   └── tool
+└── lib
+    └── tool-1.0.0.jar
+$ chmod u+x tool-1.0.0-distribution/bin/tool
+$ <span class="nb">echo</span> <span class="s2">&#34;export PATH=\&#34;</span><span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span><span class="s2">/tool-1.0.0-distribution/bin:\$PATH\&#34;&#34;</span> &gt;&gt; ~/.bashrc
+$ . ~/.bashrc
+$ tool --version
+<span class="m">1</span>.0.0</code></pre></div>
+<p>Mais la procédure d&rsquo;installation n&rsquo;est pas aussi simple que d&rsquo;écrire <code>brew install project-tool</code>.
+Pourquoi ne pas créer une <strong>formula</strong> aussi pour ce projet?</p>
+
+<p>Avant de la créer, vous vous demandez comment la sauvegarder?
+Homebrew vous propose déjà des <strong>taps</strong> pour avoir plus de <strong>formulas</strong> disponibles.</p>
+
+<p>Vous pouvez créer un <strong>tap</strong> privé qui est un simple repository git.
+Par défaut, un <strong>tap</strong> ajouté via <code>brew tap utilisateur/nom_tap</code> corresponds à l&rsquo;url <a href="https://github.com/utilisateur/homebrew-nom_tap.git">https://github.com/utilisateur/homebrew-nom_tap.git</a></p>
+
+<p>Si vous voulez le stocker ailleurs, l&rsquo;ajout se fait par <code>brew tap utilisateur/nom_tap git@git.client.tld:utilisateur/homebrew-nom_tap.git</code>.</p>
+
+<p>NOTE: Dans un <strong>Brewfile</strong>, ajouter la ligne <code>tap 'utilisateur/nom_tap', 'git@git.client.tld:utilisateur/homebrew-nom_tap.git'</code> pour déclarer ce tap.</p>
+
+<p>Une fois que vous avez créé et ajouté ce <strong>tap</strong> privé, vous pouvez passer à la création de la <strong>formula</strong> via la commande <code>create</code>.</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ brew create <span class="nv">$tool_url</span> --set-name project-tool --set-version <span class="m">1</span>.0.0 --tap utilisateur/nom_tap
+<span class="o">==</span>&gt; Downloading https://nexus.client.tld/content/repositories/releases/tld/client/project/tool/1.0.0/tool-1.0.0-distribution.zip
+<span class="c1">######################################################################## 100,0%</span>
+Please <span class="sb">`</span>brew audit --new-formula project-tool<span class="sb">`</span> before submitting, thanks.
+Editing /usr/local/Homebrew/Library/Taps/utilisateur/nom_tap/project-tool.rb</code></pre></div>
+<p>Suite à la création de votre <strong>formula</strong>, homebrew ouvre automatiquement le fichier associé.</p>
+<div class="highlight"><pre class="chroma"><code class="language-ruby" data-lang="ruby"><span class="c1"># Documentation: http://docs.brew.sh/Formula-Cookbook.html # &lt;1&gt;</span>
+<span class="c1">#                http://www.rubydoc.info/github/Homebrew/brew/master/Formula</span>
+<span class="c1"># PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!</span>
+
+<span class="k">class</span> <span class="nc">ProjectTool</span> <span class="o">&lt;</span> <span class="no">Formula</span>
+  <span class="n">desc</span> <span class="s2">&#34;&#34;</span>
+  <span class="n">homepage</span> <span class="s2">&#34;&#34;</span>
+  <span class="n">url</span> <span class="s2">&#34;https://nexus.client.tld/content/repositories/releases/tld/client/project/tool/1.0.0/tool-1.0.0-distribution.zip&#34;</span> <span class="c1"># &lt;2&gt;</span>
+  <span class="n">version</span> <span class="s2">&#34;1.0.0&#34;</span>
+  <span class="n">sha256</span> <span class="s2">&#34;12259beb7c5a0954f2193f581a0c11ec63ff4a573ffeb35efba4b6389d36fad7&#34;</span>
+
+  <span class="c1"># depends_on &#34;cmake&#34; =&gt; :build # &lt;3&gt;</span>
+
+  <span class="k">def</span> <span class="nf">install</span>
+    <span class="c1"># ENV.deparallelize  # if your formula fails when building in parallel</span>
+
+    <span class="c1"># Remove unrecognized options if warned by configure</span>
+    <span class="nb">system</span> <span class="s2">&#34;./configure&#34;</span><span class="p">,</span> <span class="s2">&#34;--disable-debug&#34;</span><span class="p">,</span>
+                          <span class="s2">&#34;--disable-dependency-tracking&#34;</span><span class="p">,</span>
+                          <span class="s2">&#34;--disable-silent-rules&#34;</span><span class="p">,</span>
+                          <span class="s2">&#34;--prefix=</span><span class="si">#{</span><span class="n">prefix</span><span class="si">}</span><span class="s2">&#34;</span>
+    <span class="c1"># system &#34;cmake&#34;, &#34;.&#34;, *std_cmake_args</span>
+    <span class="nb">system</span> <span class="s2">&#34;make&#34;</span><span class="p">,</span> <span class="s2">&#34;install&#34;</span> <span class="c1"># if this fails, try separate make/make install steps</span>
+  <span class="k">end</span>
+
+  <span class="nb">test</span> <span class="k">do</span>
+    <span class="c1"># `test do` will create, run in and delete a temporary directory.</span>
+    <span class="c1">#</span>
+    <span class="c1"># This test will fail and we won&#39;t accept that! It&#39;s enough to just replace</span>
+    <span class="c1"># &#34;false&#34; with the main program this formula installs, but it&#39;d be nice if you</span>
+    <span class="c1"># were more thorough. Run the test with `brew test project-tool`. Options passed</span>
+    <span class="c1"># to `brew install` such as `--HEAD` also need to be provided to `brew test`.</span>
+    <span class="c1">#</span>
+    <span class="c1"># The installed folder is not in the path, so use the entire path to any</span>
+    <span class="c1"># executables being tested: `system &#34;#{bin}/program&#34;, &#34;do&#34;, &#34;something&#34;`.</span>
+    <span class="nb">system</span> <span class="s2">&#34;false&#34;</span>
+  <span class="k">end</span>
+<span class="k">end</span></code></pre></div>
+<blockquote>
+<ol>
+<li>La formula vous fournie le lien vers la documentation pour finir sa création,</li>
+<li>La formula contient déjà les informations données (ex. url, version) ou générées (ex. sha256),</li>
+<li>Le reste du code est un template par défaut.</li>
+</ol>
+</blockquote>
+
+<p>Vous pouvez <strong>auditer</strong> la formula pour savoir par où commencer</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ brew audit --new-formula project-tool
+utilisateur/nom_tap/project-tool:
+  * Formula should have a desc <span class="o">(</span>Description<span class="o">)</span>.
+  * The homepage should start with http or https <span class="o">(</span>URL is <span class="o">)</span>.
+  * The homepage  is not reachable <span class="o">(</span>HTTP status code <span class="m">000</span><span class="o">)</span>
+  * Please remove default template comments
+  * Please remove default template comments
+  * Commented-out dep <span class="s2">&#34;cmake&#34;</span> <span class="o">=</span>&gt; :build
+  * Please remove default template comments
+  * Please remove default template comments
+  * Commented cmake call found
+  * Please remove default template comments
+Error: <span class="m">10</span> problems in <span class="m">1</span> formula</code></pre></div>
+<p>Vous devez donc définir la <strong>description</strong> et la <strong>homepage</strong> de la formula (ex. l&rsquo;url du repository git).
+Et comme il ne s&rsquo;agit pas d&rsquo;un <strong>build cmake</strong>, vous pouvez enlever les commentaires ainsi que le code lié à <strong>cmake</strong>.</p>
+
+<p>Vous faites les premiers changements afin que l&rsquo;audit passe</p>
+<div class="highlight"><pre class="chroma"><code class="language-ruby" data-lang="ruby"><span class="k">class</span> <span class="nc">ProjectTool</span> <span class="o">&lt;</span> <span class="no">Formula</span>
+  <span class="n">desc</span> <span class="s2">&#34;Installer l&#39;outil &#39;tool&#39; pour le projet&#34;</span>
+  <span class="n">homepage</span> <span class="s2">&#34;https://git.client.tld/project/tool&#34;</span>
+  <span class="n">url</span> <span class="s2">&#34;https://nexus.client.tld/content/repositories/releases/tld/client/project/tool/1.0.0/tool-1.0.0-distribution.zip&#34;</span>
+  <span class="n">version</span> <span class="s2">&#34;1.0.0&#34;</span>
+  <span class="n">sha256</span> <span class="s2">&#34;12259beb7c5a0954f2193f581a0c11ec63ff4a573ffeb35efba4b6389d36fad7&#34;</span>
+
+  <span class="k">def</span> <span class="nf">install</span>
+    <span class="c1"># Il ne reste plus qu&#39;à faire la procédure d&#39;installation</span>
+  <span class="k">end</span>
+
+  <span class="nb">test</span> <span class="k">do</span>
+    <span class="c1"># Et tester la formula</span>
+    <span class="nb">system</span> <span class="s2">&#34;false&#34;</span>
+  <span class="k">end</span>
+<span class="k">end</span></code></pre></div>
+<p>Puis vous auditez et tentez d&rsquo;installer la formula</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ brew audit --new-formula project-tool
+$ brew install project-tool
+<span class="o">==</span>&gt; Installing project-tool from utilisateur/nom_tap
+<span class="o">==</span>&gt; Downloading https://nexus.client.tld/content/repositories/releases/tld/client/project/tool/1.0.0/tool-1.0.0-distribution.zip
+Already downloaded: /Users/utilisateur/Library/Caches/Homebrew/project-tool-1.0.0.zip
+Error: Empty installation</code></pre></div>
+<p>L&rsquo;audit est bien passé, mais l&rsquo;installation de la formula vous indique que la procédure d&rsquo;installation reste à faire.</p>
+
+<p>La procédure d&rsquo;installation manuelle vous sert de guide dans l&rsquo;écriture de votre formula</p>
+
+<ol>
+<li>Télécharger le zip,</li>
+<li>Décompresser le zip,</li>
+<li>Aller dans le dossier décompressé,</li>
+<li>Rendre éxecutable le script <strong>bin/tool</strong>,</li>
+<li>Ajouter le dossier <strong>bin</strong> au <strong>PATH</strong>,</li>
+<li>Tester que <code>tool --version</code> donne bien le numéro de version de l&rsquo;outil.</li>
+</ol>
+
+<p>Homebrew téléchargera et décompressera le zip du projet automatiquement (via <strong>url</strong> et <strong>sha256</strong>) réalisant les étapes 1 et 2.</p>
+
+<p>Pour l&rsquo;étape 3, la fonction <strong>install</strong> s&rsquo;éxecute dans le dossier décompressé.
+Par contre, ce dossier est temporaire, vous devez demander à garder les dossiers <strong>bin</strong> et <strong>lib</strong> dans <strong>libexec</strong>.</p>
+
+<p>Une <strong>formula</strong> propose plusieurs répertoires pour stocker des fichiers utiles.
+Le dossier <strong>libexec</strong> sert à stocker des fichiers uniquement nécessaire à la <strong>formula</strong>.
+Via <code>libexec.install</code>, vous pouvez demander qu&rsquo;un dossier y soit stocké.</p>
+
+<p>Afin de réaliser l&rsquo;étape 4, vous devez demander à lier le script <strong>libexec/bin/tool</strong> au PATH via <code>bin.install_symlink</code>.
+Cette action réalise également l&rsquo;étape 5 car <code>bin.install_symlink</code> gére aussi les permissions.</p>
+
+<p>Le test de l&rsquo;étape 6 se fera par <code>brew test</code>, ceci une fois la fonction <strong>test</strong> remplie dans la <strong>formula</strong>.
+Ce test peut simplement être que l&rsquo;éxecution de <code>tool --version</code> fonctionne.</p>
+
+<p>De plus, une formula peut définir des pré-requis comme par exemple que Java 8 (ou plus) soit installé.
+Via <code>depends_on :java =&gt; &quot;1.8+&quot;</code> vous définissez un tel prérequis.</p>
+
+<p>Vous ajoutez les différentes étapes dans la formula</p>
+<div class="highlight"><pre class="chroma"><code class="language-ruby" data-lang="ruby"><span class="k">class</span> <span class="nc">ProjectTool</span> <span class="o">&lt;</span> <span class="no">Formula</span>
+  <span class="n">desc</span> <span class="s2">&#34;Installer l&#39;outil &#39;tool&#39; pour le projet&#34;</span>
+  <span class="n">homepage</span> <span class="s2">&#34;https://git.client.tld/project/tool&#34;</span>
+  <span class="n">url</span> <span class="s2">&#34;https://nexus.client.tld/content/repositories/releases/tld/client/project/tool/1.0.0/tool-1.0.0-distribution.zip&#34;</span>
+  <span class="n">version</span> <span class="s2">&#34;1.0.0&#34;</span>
+  <span class="n">sha256</span> <span class="s2">&#34;12259beb7c5a0954f2193f581a0c11ec63ff4a573ffeb35efba4b6389d36fad7&#34;</span>
+
+  <span class="n">depends_on</span> <span class="ss">:java</span> <span class="o">=&gt;</span> <span class="s2">&#34;1.8+&#34;</span>
+
+  <span class="k">def</span> <span class="nf">install</span>
+    <span class="n">libexec</span><span class="o">.</span><span class="n">install</span> <span class="sx">%w[bin lib]</span>
+    <span class="n">bin</span><span class="o">.</span><span class="n">install_symlink</span> <span class="no">Dir</span><span class="o">[</span><span class="s2">&#34;</span><span class="si">#{</span><span class="n">libexec</span><span class="si">}</span><span class="s2">/bin/*&#34;</span><span class="o">]</span>
+  <span class="k">end</span>
+
+  <span class="nb">test</span> <span class="k">do</span>
+    <span class="nb">system</span> <span class="s2">&#34;</span><span class="si">#{</span><span class="n">bin</span><span class="si">}</span><span class="s2">/tool&#34;</span><span class="p">,</span> <span class="s2">&#34;--version&#34;</span>
+  <span class="k">end</span>
+<span class="k">end</span></code></pre></div>
+<p>Afin de correctement tester cette <strong>formula</strong>, vous devez</p>
+
+<ul>
+<li>l&rsquo;auditer avec <code>brew audit</code>,</li>
+<li>l&rsquo;installer avec <code>brew install</code>,</li>
+
+<li><p>la tester avec <code>brew test</code>.</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ brew audit --new-formula project-tool
+$ brew install project-tool
+<span class="o">==</span>&gt; Installing project-tool from utilisateur/nom_tap
+<span class="o">==</span>&gt; Downloading https://nexus.client.tld/content/repositories/releases/tld/client/project/tool/1.0.0/tool-1.0.0-distribution.zip
+Already downloaded: /Users/utilisateur/Library/Caches/Homebrew/project-tool-1.0.0.zip
+🍺  /usr/local/Cellar/project-tool/1.0.0: <span class="m">4</span> files, 100K, built in <span class="m">0</span> seconds
+$ brew <span class="nb">test</span> project-tool
+Testing utilisateur/nom_tap/project-tool
+<span class="o">==</span>&gt; Using the <span class="nv">sandbox</span>
+<span class="o">==</span>&gt; /usr/local/Cellar/project-tool/1.0.0/bin/tool --version</code></pre></div></li>
+</ul>
+
+<blockquote>
+<p>Vous pouvez aussi vérifier le style de la formula via <code>brew style</code>.</p>
+</blockquote>
+
+<p>Comme tout s&rsquo;est bien passé, vous souhaitez maintenant la <strong>commiter</strong> pour que vos collègues puissent l&rsquo;installer plus simplement.</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="nb">cd</span> <span class="k">$(</span>brew --repo utilisateur/nom_tap<span class="k">)</span>
+git add Formula/project-tool.rb
+git commit</code></pre></div>
+<p>Votre collègue apprécie la nouvelle procédure</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">brew tap utilisateur/nom_tap git@git.client.tld:utilisateur/homebrew-nom_tap.git
+brew install project-tool</code></pre></div>
+<p>NOTE: le système de <strong>formula</strong> permet également de gérer l&rsquo;installation depuis les sources (<a href="https://github.com/Homebrew/brew/blob/master/docs/Formula-Cookbook.md#head"><strong>&ndash;HEAD</strong></a>)
+ou les versions bêta (<a href="https://github.com/Homebrew/brew/blob/master/docs/Formula-Cookbook.md#devel"><strong>&ndash;devel</strong></a>).
+La documentation des formulas vous permettera d&rsquo;approfondir vos formulas (<a href="http://docs.brew.sh/Formula-Cookbook.html">http://docs.brew.sh/Formula-Cookbook.html</a>).</p>
+
+<p>Maintenant que vous savez créer des <strong>formulas</strong> pour votre client,
+vous pouvez aussi créer des formulas ou les maintenir sur les <strong>taps</strong> officiels.</p>
+
+<p>Pour contribuer, la formula dans les taps officiels (comme <strong>homebrew-core</strong>) doit respecter <a href="https://github.com/Homebrew/brew/blob/master/docs/Acceptable-Formulae.md">certaines conditions pour être acceptable</a>.</p>
+
+<p>Le projet installé par la formula doit être</p>
+
+<ul>
+<li>open-source,</li>
+<li>stable, maintenu, connu, et utilisé,</li>
+<li>installable depuis ces sources.</li>
+</ul>
+
+<p>Une fois la formula créée ou modifiée, vous pouvez créer une pull-request vers le project <strong>homebrew-core</strong>.
+Votre pull-request sera automatiquement analysée et validée par <a href="https://bot.brew.sh/">bot.brew.sh</a>.</p>
+
+<p>Dans le but d&rsquo;aider les mainteneurs du projet, <a href="https://bot.brew.sh/">bot.brew.sh</a> traite toutes pull-requests
+en testant la formula sur les trois dernières versions supportées de macOS (<strong>yosemite, el capitan, et sierra</strong>).</p>
+
+<p>Concernant votre projet <strong>tool</strong>, il ne vous reste plus qu&rsquo;à le rendre open-source
+et proposer votre <strong>formula</strong> sur <strong>homebrew-core</strong> quand le projet sera plus connu.</p>
+
+<p>En attendant ce jour, n&rsquo;hesitez pas à contribuer sur les formulas existantes et rejoindre les 6200 contibuteurs de <strong>homebrew-core</strong>.</p>
+
+<p>Cet article a été publié en premier sur <a href="https://sfeir.com">lemag.sfeir.com</a>.</p>
+]]></content></item></channel></rss>
