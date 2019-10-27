@@ -12,19 +12,19 @@ to build a static site with Hugo support by Continuous Delivery using Github Act
 <p>I choose</p>
 
 <ul>
-<li>to build a static site with <a href="https://gohugo.io/">Hugo</a></li>
-<li>support by Continuous Delivery using <a href="https://github.com/features/actions">Github Actions</a></li>
-<li>to deploy it on <a href="https://pages.github.com/">GitHub User site</a>.</li>
+<li>to build a static site with <a href="https://gohugo.io/" rel="nofollow noreferrer" target="_blank">Hugo</a></li>
+<li>support by Continuous Delivery using <a href="https://github.com/features/actions" rel="nofollow noreferrer" target="_blank">Github Actions</a></li>
+<li>to deploy it on <a href="https://pages.github.com/" rel="nofollow noreferrer" target="_blank">GitHub User site</a>.</li>
 </ul>
 
 <h2 id="step-1-build-the-site">Step 1 | Build the site</h2>
 
-<p>After <a href="https://gohugo.io/getting-started/installing/">installing Hugo</a>, I bootstrap a site for <code>romainlespinasse.dev</code> and initialize a git repository :</p>
+<p>After <a href="https://gohugo.io/getting-started/installing/" rel="nofollow noreferrer" target="_blank">installing Hugo</a>, I bootstrap a site for <code>romainlespinasse.dev</code> and initialize a git repository :</p>
 <div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">hugo new site rlespinasse.github.io
 <span class="nb">cd</span> rlespinasse.github.io
 git init</code></pre></div>
-<p>To have a good looking site, I choose one of the theme from <a href="https://themes.gohugo.io/">https://themes.gohugo.io/</a>.
-The chosen theme is a simple one, adapt for a personal site : <a href="https://github.com/Track3/hermit.git">Hermit</a>.</p>
+<p>To have a good looking site, I choose one of the theme from <a href="https://themes.gohugo.io/" rel="nofollow noreferrer" target="_blank">https://themes.gohugo.io/</a>.
+The chosen theme is a simple one, adapt for a personal site : <a href="https://github.com/Track3/hermit.git" rel="nofollow noreferrer" target="_blank">Hermit</a>.</p>
 
 <p>As documented, I add it as <code>git submodule</code> :</p>
 <div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">git submodule add https://github.com/Track3/hermit.git themes/hermit</code></pre></div>
@@ -47,7 +47,7 @@ The setup part is managed by the <code>config.toml</code> file :</p>
 <p>I add the <code>hermit</code> additional configuration and made some changes :</p>
 
 <ul>
-<li><code>copyright</code> to set the chosen license for this site: <a href="https://opensource.org/licenses/MIT">MIT License</a>,</li>
+<li><code>copyright</code> to set the chosen license for this site: <a href="https://opensource.org/licenses/MIT" rel="nofollow noreferrer" target="_blank">MIT License</a>,</li>
 <li><code>googleAnalytics</code> to have some analytics about my site,</li>
 <li>Some social links to Twitter, LinkedIn or GitHub accounts.</li>
 </ul>
@@ -87,11 +87,11 @@ public/</code></pre></div>
 <li>a GitHub action to build the site on every branches and pull-requests in order to validate the content of the static site.</li>
 </ul>
 
-<p><a href="https://github.com/peaceiris">peaceiris</a> have created some useful GitHub actions to my usecase :</p>
+<p><a href="https://github.com/peaceiris" rel="nofollow noreferrer" target="_blank">peaceiris</a> have created some useful GitHub actions to my usecase :</p>
 
 <ul>
-<li>Build a <code>Hugo</code> site with <a href="https://github.com/peaceiris/actions-hugo">peaceiris/actions-hugo</a>,</li>
-<li>Push content to a specific branch <a href="https://github.com/peaceiris/actions-gh-pages">peaceiris/actions-gh-pages</a> used to push GitHub pages.</li>
+<li>Build a <code>Hugo</code> site with <a href="https://github.com/peaceiris/actions-hugo" rel="nofollow noreferrer" target="_blank">peaceiris/actions-hugo</a>,</li>
+<li>Push content to a specific branch <a href="https://github.com/peaceiris/actions-gh-pages" rel="nofollow noreferrer" target="_blank">peaceiris/actions-gh-pages</a> used to push GitHub pages.</li>
 </ul>
 
 <p>In <code>.github/workflows/build.yaml</code> file, the following action will, on any branch except <code>sources</code> branch :</p>
@@ -166,13 +166,13 @@ public/</code></pre></div>
 </span><span class="w">    </span>PUBLISH_DIR<span class="p">:</span><span class="w"> </span>./public</code></pre></div></li>
 </ul>
 
-<p>To setup <code>secrets.ACTIONS_DEPLOY_KEY</code>, I follow the <a href="https://github.com/peaceiris/actions-gh-pages#1-add-ssh-deploy-key"><code>peaceiris/actions-gh-pages</code> guideline</a>.</p>
+<p>To setup <code>secrets.ACTIONS_DEPLOY_KEY</code>, I follow the <a href="https://github.com/peaceiris/actions-gh-pages#1-add-ssh-deploy-key" rel="nofollow noreferrer" target="_blank"><code>peaceiris/actions-gh-pages</code> guideline</a>.</p>
 
 <h2 id="step-3-configure-github-user-site">Step 3 | Configure Github User Site</h2>
 
-<p>With a site built and push to <code>master</code> branch, I setup the repository <a href="https://help.github.com/en/github/working-with-github-pages">to use GitHub user pages</a> to serve it.</p>
+<p>With a site built and push to <code>master</code> branch, I setup the repository <a href="https://help.github.com/en/github/working-with-github-pages" rel="nofollow noreferrer" target="_blank">to use GitHub user pages</a> to serve it.</p>
 
-<p>In order to tell my domain <code>romainlespinasse.dev</code> to serve my GitHub pages, I just follow the GitHub guideline <a href="https://help.github.com/en/github/working-with-github-pages/managing-a-custom-domain-for-your-github-pages-site#configuring-an-apex-domain">to configure an APEX domain</a>.
+<p>In order to tell my domain <code>romainlespinasse.dev</code> to serve my GitHub pages, I just follow the GitHub guideline <a href="https://help.github.com/en/github/working-with-github-pages/managing-a-custom-domain-for-your-github-pages-site#configuring-an-apex-domain" rel="nofollow noreferrer" target="_blank">to configure an APEX domain</a>.
 In addition of GitHub pages settings and Domain <code>DNS</code> settings, I need to add a <code>CNAME</code> file to the master branch :</p>
 <div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">www.romainlespinasse.dev</code></pre></div>
 <p>Since the static site is not built by <code>jekyll</code> (the default static site generator), I need to add a <code>.nojekyll</code> file to the <code>master</code> branch.</p>
@@ -183,7 +183,7 @@ In addition of GitHub pages settings and Domain <code>DNS</code> settings, I nee
 </span><span class="sd">        hugo --gc --minify</span><span class="w">
 </span><span class="w">        </span>cp<span class="w"> </span>CNAME<span class="w"> </span>public/<span class="w">
 </span><span class="w">        </span>touch<span class="w"> </span>public/.nojekyll</code></pre></div>
-<p>Now, <a href="https://romainlespinasse.dev">https://romainlespinasse.dev</a> is live.</p>
+<p>Now, <a href="https://romainlespinasse.dev" rel="nofollow noreferrer" target="_blank">https://romainlespinasse.dev</a> is live.</p>
 ]]></content></item><item><title>Makefile | Create a wrapper task</title><link>https://www.romainlespinasse.dev/posts/makefile-wrapper/</link><pubDate>Fri, 18 Oct 2019 10:00:00 +0100</pubDate><guid>https://www.romainlespinasse.dev/posts/makefile-wrapper/</guid><description>In makefile, you can define tasks and run them individually
 make run-task1 run-task2 run-task3
 run-task1: @echo &amp;#34;run task 1&amp;#34; run-task2: @echo &amp;#34;run task 2&amp;#34; run-task3: @echo &amp;#34;run task 3&amp;#34; When you want to run tasks from another tasks (e.g. make run-all-tasks), you can
@@ -206,11 +206,11 @@ run-all-tasks: @$(MAKE) run-task1 @$(MAKE) run-task2 @$(MAKE) run-task3 You can 
 <p>When you want to run tasks from another tasks (e.g. <code>make run-all-tasks</code>), you can</p>
 
 <ul>
-<li><p>use <a href="https://www.gnu.org/software/make/manual/html_node/Prerequisite-Types.html#Prerequisite-Types"><code>makefile</code> prerequisites mechanism</a></p>
+<li><p>use <a href="https://www.gnu.org/software/make/manual/html_node/Prerequisite-Types.html#Prerequisite-Types" rel="nofollow noreferrer" target="_blank"><code>makefile</code> prerequisites mechanism</a></p>
 <div class="highlight"><pre class="chroma"><code class="language-Makefile" data-lang="Makefile"><span class="nf">run-all-tasks</span><span class="o">:</span> <span class="n">run</span>-<span class="n">task</span>1 <span class="n">run</span>-<span class="n">task</span>2 <span class="n">run</span>-<span class="n">task</span>3
 </code></pre></div></li>
 
-<li><p>use sub-command line with <a href="https://www.gnu.org/software/make/manual/html_node/MAKE-Variable.html"><code>$(MAKE)</code></a></p>
+<li><p>use sub-command line with <a href="https://www.gnu.org/software/make/manual/html_node/MAKE-Variable.html" rel="nofollow noreferrer" target="_blank"><code>$(MAKE)</code></a></p>
 <div class="highlight"><pre class="chroma"><code class="language-Makefile" data-lang="Makefile"><span class="nf">run-all-tasks</span><span class="o">:</span>
 	@<span class="k">$(</span>MAKE<span class="k">)</span> run-task1
 	@<span class="k">$(</span>MAKE<span class="k">)</span> run-task2
@@ -244,17 +244,17 @@ byteslice, a go library to manipulate a byte array, hoff, a go library to run wo
 <p>This month, I will focus on my open-source projects</p>
 
 <ul>
-<li><a href="https://github.com/rlespinasse/byteslice">byteslice</a>, a go library to manipulate a byte array,</li>
-<li><a href="https://github.com/rlespinasse/hoff">hoff</a>, a go library to run workflows with high order functions - <strong>a new name is required :)</strong> ,</li>
-<li>and the new one <a href="https://github.com/rlespinasse/bitframe">bitframe</a>, a go library to manipulate bit frames using data protocol with encoder and decoder capabilities.</li>
+<li><a href="https://github.com/rlespinasse/byteslice" rel="nofollow noreferrer" target="_blank">byteslice</a>, a go library to manipulate a byte array,</li>
+<li><a href="https://github.com/rlespinasse/hoff" rel="nofollow noreferrer" target="_blank">hoff</a>, a go library to run workflows with high order functions - <strong>a new name is required :)</strong> ,</li>
+<li>and the new one <a href="https://github.com/rlespinasse/bitframe" rel="nofollow noreferrer" target="_blank">bitframe</a>, a go library to manipulate bit frames using data protocol with encoder and decoder capabilities.</li>
 </ul>
 
-<p>But I don&rsquo;t forget to also work on <code>my shell</code> project : <a href="https://github.com/rlespinasse/michel">michel</a>.</p>
+<p>But I don&rsquo;t forget to also work on <code>my shell</code> project : <a href="https://github.com/rlespinasse/michel" rel="nofollow noreferrer" target="_blank">michel</a>.</p>
 
 <p>If you want to contribute, some issues are availables to do so.</p>
 
-<p>For the 3rd time, my company <a href="https://sfeir.com/">SFEIR</a> will host events across ours agencies on 8th October with our <a href="https://github.com/sfeir-open-source">Open-Source Program Office</a>.
-I will be at the Lille Agency (<a href="https://www.meetup.com/fr-FR/SFEIR-Lille/events/265175960/">register to our meetup event</a>), see you there.</p>
+<p>For the 3rd time, my company <a href="https://sfeir.com/" rel="nofollow noreferrer" target="_blank">SFEIR</a> will host events across ours agencies on 8th October with our <a href="https://github.com/sfeir-open-source" rel="nofollow noreferrer" target="_blank">Open-Source Program Office</a>.
+I will be at the Lille Agency (<a href="https://www.meetup.com/fr-FR/SFEIR-Lille/events/265175960/" rel="nofollow noreferrer" target="_blank">register to our meetup event</a>), see you there.</p>
 
 <p>Happy <strong>Hacktober</strong> month.</p>
 ]]></content></item><item><title>Makefile | How to check a mandatory variable</title><link>https://www.romainlespinasse.dev/posts/makefile-guard/</link><pubDate>Sun, 14 Jul 2019 10:00:00 +0200</pubDate><guid>https://www.romainlespinasse.dev/posts/makefile-guard/</guid><description>When you use a variable in a Makefile task and you want to make it mandatory and check it before run the effective task,
@@ -279,7 +279,7 @@ Environment variable SPECIFIC_ENVVAR not <span class="nb">set</span>
 make: *** <span class="o">[</span>guard-SPECIFIC_ENVVAR<span class="o">]</span> Error <span class="m">1</span></code></pre></div><div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ <span class="nb">export</span> <span class="nv">SPECIFIC_ENVVAR</span><span class="o">=</span>value
 $ make task-who-need-SPECIFIC_ENVVAR
 value</code></pre></div>
-<p>See <a href="https://stackoverflow.com/a/7367903/1848685">https://stackoverflow.com/a/7367903/1848685</a></p>
+<p>See <a href="https://stackoverflow.com/a/7367903/1848685" rel="nofollow noreferrer" target="_blank">https://stackoverflow.com/a/7367903/1848685</a></p>
 ]]></content></item><item><title>Antora | Replace your wiki with a documentation site</title><link>https://www.romainlespinasse.dev/posts/antora-en/</link><pubDate>Tue, 11 Sep 2018 10:42:00 +0200</pubDate><guid>https://www.romainlespinasse.dev/posts/antora-en/</guid><description>Bonjour, la version française de cet article peut être lue sur ce site
 No matter what your IT project is, there will always be a need to store some documentation. The choice to use a wiki is quite common in the corporate world.
 Let&amp;rsquo;s talk about you, developer on one of these programs, is documentation of your different projects managed by an easily accessible and editable wiki?</description><content type="html"><![CDATA[
@@ -289,7 +289,7 @@ Let&amp;rsquo;s talk about you, developer on one of these programs, is documenta
 </blockquote>
 
 <p>No matter what your IT project is, there will always be a need to store some documentation.
-The choice to use a <a href="https://en.wikipedia.org/wiki/Wiki">wiki</a> is quite common in the corporate world.</p>
+The choice to use a <a href="https://en.wikipedia.org/wiki/Wiki" rel="nofollow noreferrer" target="_blank">wiki</a> is quite common in the corporate world.</p>
 
 <p>Let&rsquo;s talk about you, developer on one of these programs, is documentation of your different projects managed by an easily accessible and editable wiki?</p>
 
@@ -314,35 +314,35 @@ You want to replace your current wiki with a project dedicated to documentation,
 But that only corrects part of the problem, you only replaced wiki pages with files written in another format like:</p>
 
 <ul>
-<li>the <a href="https://daringfireball.net/projects/markdown/syntax">Markdown</a> format,</li>
-<li>the <a href="http://www.methods.co.nz/asciidoc/">Asciidoc</a> format.</li>
+<li>the <a href="https://daringfireball.net/projects/markdown/syntax" rel="nofollow noreferrer" target="_blank">Markdown</a> format,</li>
+<li>the <a href="http://www.methods.co.nz/asciidoc/" rel="nofollow noreferrer" target="_blank">Asciidoc</a> format.</li>
 </ul>
 
 <p>Due to its simple and accessible syntax, <code>Markdown</code> is one of the most popular formats, especially on sites like github or gitlab, but it is too simple for further documentation.</p>
 
-<p><code>Asciidoc</code> is <a href="https://github.com/asciidoctor/asciidoctor.org/blob/master/docs/_includes/asciidoc-vs-markdown.adoc">more interesting</a>, allowing to be more expressive with your documentation.
-The associated tool <a href="https://asciidoctor.org/">Asciidoctor</a> provides <a href="https://asciidoctor.org/docs/asciidoc-writers-guide/">useful features</a> as well as integrations such as diagram generation with <a href="http://plantuml.com/">plantuml</a>.</p>
+<p><code>Asciidoc</code> is <a href="https://github.com/asciidoctor/asciidoctor.org/blob/master/docs/_includes/asciidoc-vs-markdown.adoc" rel="nofollow noreferrer" target="_blank">more interesting</a>, allowing to be more expressive with your documentation.
+The associated tool <a href="https://asciidoctor.org/" rel="nofollow noreferrer" target="_blank">Asciidoctor</a> provides <a href="https://asciidoctor.org/docs/asciidoc-writers-guide/" rel="nofollow noreferrer" target="_blank">useful features</a> as well as integrations such as diagram generation with <a href="http://plantuml.com/" rel="nofollow noreferrer" target="_blank">plantuml</a>.</p>
 
 <p>You therefore choose to write the <strong>Asciidoctor</strong> documentation in each of your projects.
 This allows you to deliver the documentation at the same time as the associated code.</p>
 
 <p>Even if your program consists of a set of projects, each with its own documentation, you want to keep a single site to access them.</p>
 
-<p>The people behind Asciidoctor have recently released an aggregated documentation site generator: <a href="https://antora.org/">Antora</a> in a stable version (<code>1.0.0</code>) to the open-source community.</p>
+<p>The people behind Asciidoctor have recently released an aggregated documentation site generator: <a href="https://antora.org/" rel="nofollow noreferrer" target="_blank">Antora</a> in a stable version (<code>1.0.0</code>) to the open-source community.</p>
 
 <p><img src="/img/posts/antora/site.png" alt="Antora" /></p>
 
 <h2 id="you-create-your-new-documentation-site-with-antora-asciidoctor">You create your new documentation site with Antora / Asciidoctor</h2>
 
-<p>A site generated by Antora is <a href="https://docs.antora.org">composed of three elements</a>:</p>
+<p>A site generated by Antora is <a href="https://docs.antora.org" rel="nofollow noreferrer" target="_blank">composed of three elements</a>:</p>
 
 <ul>
 <li>Your projects that contain their documentation,</li>
-<li>The <a href="https://docs.antora.org/antora/1.0/playbook/"><strong>playbook</strong></a> that configures the generation of the documentation site,</li>
-<li>A <a href="https://docs.antora.org/antora/1.0/playbook/configure-ui/"><strong>UI</strong></a> that defines the visuals of your site (the default one will be appropriate).</li>
+<li>The <a href="https://docs.antora.org/antora/1.0/playbook/" rel="nofollow noreferrer" target="_blank"><strong>playbook</strong></a> that configures the generation of the documentation site,</li>
+<li>A <a href="https://docs.antora.org/antora/1.0/playbook/configure-ui/" rel="nofollow noreferrer" target="_blank"><strong>UI</strong></a> that defines the visuals of your site (the default one will be appropriate).</li>
 </ul>
 
-<p>To be used by Antora, a project must respect a <a href="https://docs.antora.org/antora/1.0/component-structure/">file structure</a></p>
+<p>To be used by Antora, a project must respect a <a href="https://docs.antora.org/antora/1.0/component-structure/" rel="nofollow noreferrer" target="_blank">file structure</a></p>
 <div class="highlight"><pre class="chroma"><code class="language-Text" data-lang="Text">./docs
 ├── antora.yml
 └── modules
@@ -357,9 +357,9 @@ This allows you to deliver the documentation at the same time as the associated 
 <p>So you apply yourself to put it up on:</p>
 
 <ul>
-<li>Your APIs (<a href="https://github.com/rlespinasse/api-a">api A</a>, <a href="https://github.com/rlespinasse/api-b">api B</a>, <a href="https : //github.com/rlespinasse/api-c">api C</a>)</li>
-<li>Your tools (<a href="https://github.com/rlespinasse/buildtools">build tools</a>),</li>
-<li>Your development guide (<a href="https://github.com/rlespinasse/guidelines">guidelines</a>).</li>
+<li>Your APIs (<a href="https://github.com/rlespinasse/api-a" rel="nofollow noreferrer" target="_blank">api A</a>, <a href="https://github.com/rlespinasse/api-b" rel="nofollow noreferrer" target="_blank">api B</a>, <a href="https : //github.com/rlespinasse/api-c" rel="nofollow noreferrer" target="_blank">api C</a>)</li>
+<li>Your tools (<a href="https://github.com/rlespinasse/buildtools" rel="nofollow noreferrer" target="_blank">build tools</a>),</li>
+<li>Your development guide (<a href="https://github.com/rlespinasse/guidelines" rel="nofollow noreferrer" target="_blank">guidelines</a>).</li>
 </ul>
 
 <p>The documentation in <code>Asciidoctor</code> format is available in the <code>docs</code> folder.
@@ -367,7 +367,7 @@ This allows you to deliver the documentation at the same time as the associated 
 
 <h3 id="you-are-preparing-to-generate-your-documentation-site">You are preparing to generate your documentation site</h3>
 
-<p>So you create a <a href="https://github.com/rlespinasse/docssite">specific project</a> to store the <strong>playbook</strong>.</p>
+<p>So you create a <a href="https://github.com/rlespinasse/docssite" rel="nofollow noreferrer" target="_blank">specific project</a> to store the <strong>playbook</strong>.</p>
 <div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">site<span class="p">:</span><span class="w">
 </span><span class="w">  </span>title<span class="p">:</span><span class="w"> </span><span class="s2">&#34;Romain Lespinasse // Docs&#34;</span><span class="w">
 </span><span class="w">  </span>start_page<span class="p">:</span><span class="w"> </span>guidelines<span class="p">::</span>index<span class="w">
@@ -400,21 +400,21 @@ This allows you to deliver the documentation at the same time as the associated 
 </span><span class="w">  </span>supplemental_files<span class="p">:</span><span class="w"> </span>./supplemental-ui<span class="w">
 </span><span class="w"></span>output<span class="p">:</span><span class="w">
 </span><span class="w">  </span>dir<span class="p">:</span><span class="w"> </span>./docs</code></pre></div>
-<p>The content of the <a href="https://docs.antora.org/antora/1.0/playbook/playbook/">playbook</a> <code>site.yml</code> defines:</p>
+<p>The content of the <a href="https://docs.antora.org/antora/1.0/playbook/playbook/" rel="nofollow noreferrer" target="_blank">playbook</a> <code>site.yml</code> defines:</p>
 
 <ul>
-<li>the <a href="https://docs.antora.org/antora/1.0/playbook/configure-site/">related information</a> to the site itself via <code>site:</code>,</li>
-<li>the definition of <a href="https://docs.antora.org/antora/1.0/playbook/configure-content-sources/">content</a> via <code>content:</code>,</li>
-<li>the <a href="https://docs.antora.org/antora/1.0/playbook/configure-ui/">theme of the site</a> via <code>ui:</code>,</li>
-<li>The <a href="https://docs.antora.org/antora/1.0/playbook/configure-output/">build folder</a> via <code>output:</code>.</li>
+<li>the <a href="https://docs.antora.org/antora/1.0/playbook/configure-site/" rel="nofollow noreferrer" target="_blank">related information</a> to the site itself via <code>site:</code>,</li>
+<li>the definition of <a href="https://docs.antora.org/antora/1.0/playbook/configure-content-sources/" rel="nofollow noreferrer" target="_blank">content</a> via <code>content:</code>,</li>
+<li>the <a href="https://docs.antora.org/antora/1.0/playbook/configure-ui/" rel="nofollow noreferrer" target="_blank">theme of the site</a> via <code>ui:</code>,</li>
+<li>The <a href="https://docs.antora.org/antora/1.0/playbook/configure-output/" rel="nofollow noreferrer" target="_blank">build folder</a> via <code>output:</code>.</li>
 </ul>
 
-<p>The official documentation does not refer to it because it is a <a href="https://gitlab.com/antora/antora/issues/147">development still experimental</a> but you set up the navigation bar to add the useful links via a <code>header-content.hbs</code> file in <code>supplemental-ui/partials/</code>.
-&gt; Other template files are available for replacement in <a href="https://gitlab.com/antora/antora-ui-default/tree/master/src/partials">Antora Default UI</a>.</p>
+<p>The official documentation does not refer to it because it is a <a href="https://gitlab.com/antora/antora/issues/147" rel="nofollow noreferrer" target="_blank">development still experimental</a> but you set up the navigation bar to add the useful links via a <code>header-content.hbs</code> file in <code>supplemental-ui/partials/</code>.
+&gt; Other template files are available for replacement in <a href="https://gitlab.com/antora/antora-ui-default/tree/master/src/partials" rel="nofollow noreferrer" target="_blank">Antora Default UI</a>.</p>
 
 <h2 id="you-generate-and-deploy-your-new-documentation-site">You generate and deploy your new documentation site</h2>
 
-<p>You can install antora via this <a href="https://docs.antora.org/antora/1.0/install/install-antora/">guide</a> or use the docker image via the <code>docker run -v `pwd` command: / antora --rm antora / antora --stacktrace site.yml</code> (where <strong>site.yml</strong> is the playbook)</p>
+<p>You can install antora via this <a href="https://docs.antora.org/antora/1.0/install/install-antora/" rel="nofollow noreferrer" target="_blank">guide</a> or use the docker image via the <code>docker run -v `pwd` command: / antora --rm antora / antora --stacktrace site.yml</code> (where <strong>site.yml</strong> is the playbook)</p>
 
 <p>The playbook defines the <code>docs</code> folder to make your new documentation site available.</p>
 
@@ -424,17 +424,17 @@ This allows you to deliver the documentation at the same time as the associated 
 
 <p><img src="/img/posts/antora/github.png" alt="Github document configuration" /></p>
 
-<p>The platform will automatically expose the contents of the <code>/docs</code> folder to <a href="https://rlespinasse.github.io/docssite">https://rlespinasse.github.io/docssite</a>.</p>
+<p>The platform will automatically expose the contents of the <code>/docs</code> folder to <a href="https://rlespinasse.github.io/docssite" rel="nofollow noreferrer" target="_blank">https://rlespinasse.github.io/docssite</a>.</p>
 
 <h2 id="you-make-others-benefit-from-the-new-documentation-site">You make others benefit from the new documentation site</h2>
 
 <p>From now on, people working on the program will be able to add, create, and maintain documentation of each project very easily. Your new documentation site gives the access to all these pages.</p>
 
-<p>The site <a href="https://docs.antora.org">docs.antora.org</a> uses the <code>Antora</code> project itself.</p>
+<p>The site <a href="https://docs.antora.org" rel="nofollow noreferrer" target="_blank">docs.antora.org</a> uses the <code>Antora</code> project itself.</p>
 
 <blockquote>
-<p>Thanks to <a href="https://twitter.com/sn0rks">Aurélien Allienne</a>, <a href="https://twitter.com/AMeausoone">Antoine Méausoone</a>, <a href="https://twitter.com/TanguyBAUDRIN">Tanguy Baudrin</a>, and <a href="https://twitter.com/chezTone">Tony Proum</a> for reviewing the article.
-Thanks to <a href="https://twitter.com/sn0rks">Aurélien Allienne</a>, <a href="http://twitter.com/MrGuiMan">Guillaume Mantopoulos</a> for the review of the translation from french to english of this article .</p>
+<p>Thanks to <a href="https://twitter.com/sn0rks" rel="nofollow noreferrer" target="_blank">Aurélien Allienne</a>, <a href="https://twitter.com/AMeausoone" rel="nofollow noreferrer" target="_blank">Antoine Méausoone</a>, <a href="https://twitter.com/TanguyBAUDRIN" rel="nofollow noreferrer" target="_blank">Tanguy Baudrin</a>, and <a href="https://twitter.com/chezTone" rel="nofollow noreferrer" target="_blank">Tony Proum</a> for reviewing the article.
+Thanks to <a href="https://twitter.com/sn0rks" rel="nofollow noreferrer" target="_blank">Aurélien Allienne</a>, <a href="http://twitter.com/MrGuiMan" rel="nofollow noreferrer" target="_blank">Guillaume Mantopoulos</a> for the review of the translation from french to english of this article .</p>
 </blockquote>
 ]]></content></item><item><title>Antora | Remplacer votre wiki par un site de documentation</title><link>https://www.romainlespinasse.dev/posts/antora/</link><pubDate>Wed, 18 Apr 2018 10:42:00 +0200</pubDate><guid>https://www.romainlespinasse.dev/posts/antora/</guid><description>Hi, the english version of this article can be read on this site
 Peu importe votre projet informatique, il y aura toujours un besoin de stocker de la documentation. Le choix d&amp;rsquo;utiliser un wiki est assez courant en entreprise.
@@ -446,7 +446,7 @@ Et si vous regardez le contenu de ce wiki, vous y trouverez surement :</descript
 </blockquote>
 
 <p>Peu importe votre projet informatique, il y aura toujours un besoin de stocker de la documentation.
-Le choix d&rsquo;utiliser un <a href="https://fr.wikipedia.org/wiki/Wiki">wiki</a> est assez courant en entreprise.</p>
+Le choix d&rsquo;utiliser un <a href="https://fr.wikipedia.org/wiki/Wiki" rel="nofollow noreferrer" target="_blank">wiki</a> est assez courant en entreprise.</p>
 
 <p>Parlons de vous, développeur sur un de ces programmes, la documentation des différents projets est-elle gérée par un wiki facilement accessible et éditable?</p>
 
@@ -471,35 +471,35 @@ Vous souhaitez remplacer votre wiki actuel par un projet dédié à la documenta
 Mais cela ne corrige qu&rsquo;une partie du problème, vous avez seulement remplacé des pages wiki par des fichiers écrits dans un autre format comme :</p>
 
 <ul>
-<li>le format <a href="https://daringfireball.net/projects/markdown/syntax">Markdown</a>,</li>
-<li>le format <a href="http://www.methods.co.nz/asciidoc/">Asciidoc</a>.</li>
+<li>le format <a href="https://daringfireball.net/projects/markdown/syntax" rel="nofollow noreferrer" target="_blank">Markdown</a>,</li>
+<li>le format <a href="http://www.methods.co.nz/asciidoc/" rel="nofollow noreferrer" target="_blank">Asciidoc</a>.</li>
 </ul>
 
 <p>Du fait de sa syntaxe simple et accessible, le format <code>Markdown</code> est un des plus répandu, surtout sur des sites comme github ou gitlab. Mais le format est trop simple pour une documentation plus approfondie.</p>
 
-<p>Le format <code>Asciidoc</code> est <a href="https://github.com/asciidoctor/asciidoctor.org/blob/master/docs/_includes/asciidoc-vs-markdown.adoc">plus intéressant</a>, il permet d&rsquo;être plus expressif dans votre documentation.
-L&rsquo;outil associé <a href="https://asciidoctor.org/">Asciidoctor</a> apporte des <a href="https://asciidoctor.org/docs/asciidoc-writers-guide/">fonctionnalités utiles</a> ainsi que des intégrations comme la génération de diagrammes avec <a href="http://plantuml.com/">plantuml</a>.</p>
+<p>Le format <code>Asciidoc</code> est <a href="https://github.com/asciidoctor/asciidoctor.org/blob/master/docs/_includes/asciidoc-vs-markdown.adoc" rel="nofollow noreferrer" target="_blank">plus intéressant</a>, il permet d&rsquo;être plus expressif dans votre documentation.
+L&rsquo;outil associé <a href="https://asciidoctor.org/" rel="nofollow noreferrer" target="_blank">Asciidoctor</a> apporte des <a href="https://asciidoctor.org/docs/asciidoc-writers-guide/" rel="nofollow noreferrer" target="_blank">fonctionnalités utiles</a> ainsi que des intégrations comme la génération de diagrammes avec <a href="http://plantuml.com/" rel="nofollow noreferrer" target="_blank">plantuml</a>.</p>
 
 <p>Vous choisissez donc d&rsquo;écrire la documentation en <strong>Asciidoctor</strong> dans chacun des projets.
 Cela vous permet de livrer la documentation à jour en même temps que le code associé.</p>
 
 <p>Même si votre programme se compose d&rsquo;un ensemble de projets avec chacun sa documentation, vous souhaitez garder un site unique pour y accèder.</p>
 
-<p>Les personnes derrière Asciidoctor ont récemment ouvert, à la communauté open-source, un générateur de site de documentations aggrégées: <a href="https://antora.org/">Antora</a> en version stable (<code>1.0.0</code>).</p>
+<p>Les personnes derrière Asciidoctor ont récemment ouvert, à la communauté open-source, un générateur de site de documentations aggrégées: <a href="https://antora.org/" rel="nofollow noreferrer" target="_blank">Antora</a> en version stable (<code>1.0.0</code>).</p>
 
 <p><img src="/img/posts/antora/site.png" alt="Antora" /></p>
 
 <h2 id="vous-créez-votre-nouveau-site-de-documentation-avec-antora-asciidoctor">Vous créez votre nouveau site de documentation avec Antora / Asciidoctor</h2>
 
-<p>Un site généré par Antora est <a href="https://docs.antora.org">composé de trois éléments</a> :</p>
+<p>Un site généré par Antora est <a href="https://docs.antora.org" rel="nofollow noreferrer" target="_blank">composé de trois éléments</a> :</p>
 
 <ul>
 <li>Vos projets qui contiennent leurs documentations,</li>
-<li>Le <a href="https://docs.antora.org/antora/1.0/playbook/"><strong>playbook</strong></a> qui configure la génération du site de documentation,</li>
-<li>Une <a href="https://docs.antora.org/antora/1.0/playbook/configure-ui/"><strong>UI</strong></a> qui définit le visuel de votre site (celle par défaut conviendra).</li>
+<li>Le <a href="https://docs.antora.org/antora/1.0/playbook/" rel="nofollow noreferrer" target="_blank"><strong>playbook</strong></a> qui configure la génération du site de documentation,</li>
+<li>Une <a href="https://docs.antora.org/antora/1.0/playbook/configure-ui/" rel="nofollow noreferrer" target="_blank"><strong>UI</strong></a> qui définit le visuel de votre site (celle par défaut conviendra).</li>
 </ul>
 
-<p>Pour être utilisé par Antora, un projet se doit de respecter une <a href="https://docs.antora.org/antora/1.0/component-structure/">structure de fichiers</a></p>
+<p>Pour être utilisé par Antora, un projet se doit de respecter une <a href="https://docs.antora.org/antora/1.0/component-structure/" rel="nofollow noreferrer" target="_blank">structure de fichiers</a></p>
 <div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">./docs
 ├── antora.yml
 └── modules
@@ -514,9 +514,9 @@ Cela vous permet de livrer la documentation à jour en même temps que le code a
 <p>Vous vous appliquez donc à le mettre en place sur :</p>
 
 <ul>
-<li>Vos APIs (<a href="https://github.com/rlespinasse/api-a">api A</a>, <a href="https://github.com/rlespinasse/api-b">api B</a>, <a href="https://github.com/rlespinasse/api-c">api C</a>),</li>
-<li>Vos outils (<a href="https://github.com/rlespinasse/buildtools">build tools</a>),</li>
-<li>Votre guide de development (<a href="https://github.com/rlespinasse/guidelines">guidelines</a>).</li>
+<li>Vos APIs (<a href="https://github.com/rlespinasse/api-a" rel="nofollow noreferrer" target="_blank">api A</a>, <a href="https://github.com/rlespinasse/api-b" rel="nofollow noreferrer" target="_blank">api B</a>, <a href="https://github.com/rlespinasse/api-c" rel="nofollow noreferrer" target="_blank">api C</a>),</li>
+<li>Vos outils (<a href="https://github.com/rlespinasse/buildtools" rel="nofollow noreferrer" target="_blank">build tools</a>),</li>
+<li>Votre guide de development (<a href="https://github.com/rlespinasse/guidelines" rel="nofollow noreferrer" target="_blank">guidelines</a>).</li>
 </ul>
 
 <p>La documentation au format <code>Asciidoctor</code> est disponible dans le dossier <code>docs</code>.
@@ -524,7 +524,7 @@ Cela vous permet de livrer la documentation à jour en même temps que le code a
 
 <h3 id="vous-vous-préparez-à-générer-votre-site-de-documentation">Vous vous préparez à générer votre site de documentation</h3>
 
-<p>Vous créez donc un <a href="https://github.com/rlespinasse/docssite">projet spécifique</a> pour stocker le <strong>playbook</strong>.</p>
+<p>Vous créez donc un <a href="https://github.com/rlespinasse/docssite" rel="nofollow noreferrer" target="_blank">projet spécifique</a> pour stocker le <strong>playbook</strong>.</p>
 <div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">site<span class="p">:</span><span class="w">
 </span><span class="w">  </span>title<span class="p">:</span><span class="w"> </span><span class="s2">&#34;Romain Lespinasse // Docs&#34;</span><span class="w">
 </span><span class="w">  </span>start_page<span class="p">:</span><span class="w"> </span>guidelines<span class="p">::</span>index<span class="w">
@@ -557,21 +557,21 @@ Cela vous permet de livrer la documentation à jour en même temps que le code a
 </span><span class="w">  </span>supplemental_files<span class="p">:</span><span class="w"> </span>./supplemental-ui<span class="w">
 </span><span class="w"></span>output<span class="p">:</span><span class="w">
 </span><span class="w">  </span>dir<span class="p">:</span><span class="w"> </span>./docs</code></pre></div>
-<p>Le contenu du <a href="https://docs.antora.org/antora/1.0/playbook/playbook/">playbook</a> <code>site.yml</code> définit :</p>
+<p>Le contenu du <a href="https://docs.antora.org/antora/1.0/playbook/playbook/" rel="nofollow noreferrer" target="_blank">playbook</a> <code>site.yml</code> définit :</p>
 
 <ul>
-<li>les <a href="https://docs.antora.org/antora/1.0/playbook/configure-site/">informations relatives</a> au site en lui-même via <code>site:</code>,</li>
-<li>la définition du <a href="https://docs.antora.org/antora/1.0/playbook/configure-content-sources/">contenu</a> via <code>content:</code>,</li>
-<li>le <a href="https://docs.antora.org/antora/1.0/playbook/configure-ui/">theme du site</a> via <code>ui:</code>,</li>
-<li>Le <a href="https://docs.antora.org/antora/1.0/playbook/configure-output/">dossier de génération</a> via <code>output:</code>.</li>
+<li>les <a href="https://docs.antora.org/antora/1.0/playbook/configure-site/" rel="nofollow noreferrer" target="_blank">informations relatives</a> au site en lui-même via <code>site:</code>,</li>
+<li>la définition du <a href="https://docs.antora.org/antora/1.0/playbook/configure-content-sources/" rel="nofollow noreferrer" target="_blank">contenu</a> via <code>content:</code>,</li>
+<li>le <a href="https://docs.antora.org/antora/1.0/playbook/configure-ui/" rel="nofollow noreferrer" target="_blank">theme du site</a> via <code>ui:</code>,</li>
+<li>Le <a href="https://docs.antora.org/antora/1.0/playbook/configure-output/" rel="nofollow noreferrer" target="_blank">dossier de génération</a> via <code>output:</code>.</li>
 </ul>
 
-<p>La documentation officielle n&rsquo;en fait pas référence, car il s&rsquo;agit d&rsquo;un <a href="https://gitlab.com/antora/antora/issues/147">dévelopement encore au stade expérimental</a> mais vous configurez la barre de navigation pour rajouter les liens utiles via un fichier <code>header-content.hbs</code> dans <code>supplemental-ui/partials/</code>.
-&gt; D&rsquo;autres fichiers templates sont disponibles pour remplacement dans <a href="https://gitlab.com/antora/antora-ui-default/tree/master/src/partials">Antora Default UI</a>.</p>
+<p>La documentation officielle n&rsquo;en fait pas référence, car il s&rsquo;agit d&rsquo;un <a href="https://gitlab.com/antora/antora/issues/147" rel="nofollow noreferrer" target="_blank">dévelopement encore au stade expérimental</a> mais vous configurez la barre de navigation pour rajouter les liens utiles via un fichier <code>header-content.hbs</code> dans <code>supplemental-ui/partials/</code>.
+&gt; D&rsquo;autres fichiers templates sont disponibles pour remplacement dans <a href="https://gitlab.com/antora/antora-ui-default/tree/master/src/partials" rel="nofollow noreferrer" target="_blank">Antora Default UI</a>.</p>
 
 <h2 id="vous-générez-et-déployez-votre-nouveau-site-de-documentation">Vous générez et déployez votre nouveau site de documentation</h2>
 
-<p>Vous pouvez installer antora via ce <a href="https://docs.antora.org/antora/1.0/install/install-antora/">guide</a> ou utiliser l&rsquo;image docker via la commande <code>docker run -v `pwd`:/antora --rm antora/antora --stacktrace site.yml</code> (où <strong>site.yml</strong> est le playbook)</p>
+<p>Vous pouvez installer antora via ce <a href="https://docs.antora.org/antora/1.0/install/install-antora/" rel="nofollow noreferrer" target="_blank">guide</a> ou utiliser l&rsquo;image docker via la commande <code>docker run -v `pwd`:/antora --rm antora/antora --stacktrace site.yml</code> (où <strong>site.yml</strong> est le playbook)</p>
 
 <p>Le playbook défini le dossier <code>docs</code> pour mettre à disposition votre nouveau site de documentation.</p>
 
@@ -581,19 +581,19 @@ Cela vous permet de livrer la documentation à jour en même temps que le code a
 
 <p><img src="/img/posts/antora/github.png" alt="Github document configuration" /></p>
 
-<p>La plateforme s&rsquo;occupera automatiquement d&rsquo;exposer le contenu du dossier <code>/docs</code> à l&rsquo;adresse <a href="https://rlespinasse.github.io/docssite">https://rlespinasse.github.io/docssite</a>.</p>
+<p>La plateforme s&rsquo;occupera automatiquement d&rsquo;exposer le contenu du dossier <code>/docs</code> à l&rsquo;adresse <a href="https://rlespinasse.github.io/docssite" rel="nofollow noreferrer" target="_blank">https://rlespinasse.github.io/docssite</a>.</p>
 
 <h2 id="vous-faites-profitez-aux-autres-du-nouveau-site-de-documentation">Vous faites profitez aux autres du nouveau site de documentation</h2>
 
 <p>Dorénavant, les personnes, travaillant sur le programme, pourront ajouter, créer, maintenir de la documentation relative à chacun des projets très facilement. Votre nouveau site de documentation permettant d&rsquo;accèder à toutes ces pages.</p>
 
-<p>Le site <a href="https://docs.antora.org">docs.antora.org</a> utilise lui-même le projet <code>Antora</code>.</p>
+<p>Le site <a href="https://docs.antora.org" rel="nofollow noreferrer" target="_blank">docs.antora.org</a> utilise lui-même le projet <code>Antora</code>.</p>
 
 <blockquote>
-<p>Merci à <a href="https://twitter.com/sn0rks">Aurélien Allienne</a>, <a href="https://twitter.com/AMeausoone">Antoine Méausoone</a>, <a href="https://twitter.com/hsablonniere">Hubert Sablonnière</a>, <a href="https://twitter.com/TanguyBAUDRIN">Tanguy Baudrin</a>, et <a href="https://twitter.com/chezTone">Tony Proum</a> pour la relecture de l&rsquo;article.</p>
+<p>Merci à <a href="https://twitter.com/sn0rks" rel="nofollow noreferrer" target="_blank">Aurélien Allienne</a>, <a href="https://twitter.com/AMeausoone" rel="nofollow noreferrer" target="_blank">Antoine Méausoone</a>, <a href="https://twitter.com/hsablonniere" rel="nofollow noreferrer" target="_blank">Hubert Sablonnière</a>, <a href="https://twitter.com/TanguyBAUDRIN" rel="nofollow noreferrer" target="_blank">Tanguy Baudrin</a>, et <a href="https://twitter.com/chezTone" rel="nofollow noreferrer" target="_blank">Tony Proum</a> pour la relecture de l&rsquo;article.</p>
 </blockquote>
 
-<p>Cet article a été publié en premier sur <a href="https://sfeir.com">lemag.sfeir.com</a>.</p>
+<p>Cet article a été publié en premier sur <a href="https://sfeir.com" rel="nofollow noreferrer" target="_blank">lemag.sfeir.com</a>.</p>
 ]]></content></item><item><title>Homebrew | Utilisez un package manager sous macOS</title><link>https://www.romainlespinasse.dev/posts/homebrew/</link><pubDate>Tue, 28 Feb 2017 10:42:00 +0100</pubDate><guid>https://www.romainlespinasse.dev/posts/homebrew/</guid><description>Votre société ou votre client vient de vous confier un macbook pour travailler, il ne vous reste plus qu&amp;rsquo;à installer tout un ensemble de programmes pour commencer.
 Sous linux, vous auriez un gestionnaire de formulas qui ferait bien l&amp;rsquo;affaire pour aller plus vite. Mais sous macOS, pas de apt-get, pas de yum, vous voilà parti pour installer tout cela à la main.
 Pas de crainte, des gestionnaires de formulas existent aussi pour macOS comme Homebrew (ou MacPorts)</description><content type="html"><![CDATA[<p>Votre société ou votre client vient de vous confier un macbook pour travailler,
@@ -604,7 +604,7 @@ qui ferait bien l&rsquo;affaire pour aller plus vite.
 Mais sous macOS, pas de apt-get, pas de yum,
 vous voilà parti pour installer tout cela à la main.</p>
 
-<p>Pas de crainte, des gestionnaires de formulas existent aussi pour macOS comme <a href="http://brew.sh/"><strong>Homebrew</strong></a> (ou <a href="https://www.macports.org">MacPorts</a>)</p>
+<p>Pas de crainte, des gestionnaires de formulas existent aussi pour macOS comme <a href="http://brew.sh/" rel="nofollow noreferrer" target="_blank"><strong>Homebrew</strong></a> (ou <a href="https://www.macports.org" rel="nofollow noreferrer" target="_blank">MacPorts</a>)</p>
 
 <p>Installer homebrew en une ligne de commande</p>
 <div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">/usr/bin/ruby -e <span class="s2">&#34;</span><span class="k">$(</span>curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install<span class="k">)</span><span class="s2">&#34;</span></code></pre></div>
@@ -696,7 +696,7 @@ contenant des formulas dédiées ou des nouvelles commandes.</p>
 <blockquote>
 <p>On installe un <strong>tap</strong> via la commande <code>brew tap utilisateur/nom_tap</code>.</p>
 
-<p>Avec le tap <strong>utilisateur/nom_tap</strong>, brew installera le <strong>repository git</strong> associé à l&rsquo;url <a href="https://github.com/utilisateur/homebrew-nom_tap">https://github.com/utilisateur/homebrew-nom_tap</a>.</p>
+<p>Avec le tap <strong>utilisateur/nom_tap</strong>, brew installera le <strong>repository git</strong> associé à l&rsquo;url <a href="https://github.com/utilisateur/homebrew-nom_tap" rel="nofollow noreferrer" target="_blank">https://github.com/utilisateur/homebrew-nom_tap</a>.</p>
 
 <p>Pour les autres possibilités, utilisez <code>brew tap -h</code>.</p>
 </blockquote>
@@ -706,12 +706,12 @@ contenant des formulas dédiées ou des nouvelles commandes.</p>
 <p>Parmis les <strong>taps</strong> officiels, on peut trouver :</p>
 
 <ul>
-<li><a href="https://github.com/Homebrew/homebrew-core"><strong>homebrew/core</strong></a> - <strong>Core formulae for the Homebrew formula manager</strong> <strong>(the default tap)</strong></li>
-<li><a href="https://github.com/Homebrew/homebrew-science"><strong>homebrew/science</strong></a> - <strong>Scientific formulae for the Homebrew formula manager</strong></li>
-<li><a href="https://github.com/Homebrew/homebrew-games"><strong>homebrew/games</strong></a> - <strong>Games formulae for the Homebrew formula manager</strong></li>
-<li><a href="https://github.com/Homebrew/homebrew-completions"><strong>homebrew/completions</strong></a> - <strong>Shell completion formulae for the Homebrew formula manager</strong></li>
-<li><a href="https://github.com/Homebrew/homebrew-command-not-found"><strong>homebrew/command-not-found</strong></a> - <strong>Ubuntu’s command-not-found equivalent for Homebrew on OSX</strong></li>
-<li><a href="https://github.com/Homebrew/homebrew-services"><strong>homebrew/services</strong></a> - <strong>Starts Homebrew formulae&rsquo;s plists with launchctl</strong></li>
+<li><a href="https://github.com/Homebrew/homebrew-core" rel="nofollow noreferrer" target="_blank"><strong>homebrew/core</strong></a> - <strong>Core formulae for the Homebrew formula manager</strong> <strong>(the default tap)</strong></li>
+<li><a href="https://github.com/Homebrew/homebrew-science" rel="nofollow noreferrer" target="_blank"><strong>homebrew/science</strong></a> - <strong>Scientific formulae for the Homebrew formula manager</strong></li>
+<li><a href="https://github.com/Homebrew/homebrew-games" rel="nofollow noreferrer" target="_blank"><strong>homebrew/games</strong></a> - <strong>Games formulae for the Homebrew formula manager</strong></li>
+<li><a href="https://github.com/Homebrew/homebrew-completions" rel="nofollow noreferrer" target="_blank"><strong>homebrew/completions</strong></a> - <strong>Shell completion formulae for the Homebrew formula manager</strong></li>
+<li><a href="https://github.com/Homebrew/homebrew-command-not-found" rel="nofollow noreferrer" target="_blank"><strong>homebrew/command-not-found</strong></a> - <strong>Ubuntu’s command-not-found equivalent for Homebrew on OSX</strong></li>
+<li><a href="https://github.com/Homebrew/homebrew-services" rel="nofollow noreferrer" target="_blank"><strong>homebrew/services</strong></a> - <strong>Starts Homebrew formulae&rsquo;s plists with launchctl</strong></li>
 </ul>
 
 <p>Tous ces <strong>taps</strong> sont gérés par la communauté Homebrew,
@@ -736,7 +736,7 @@ Java HotSpot<span class="o">(</span>TM<span class="o">)</span> <span class="m">6
 Les fonts s&rsquo;installent elles via <code>brew tap caskroom/fonts</code>.</p>
 
 <p>Certains formulas sont gérées comme des <strong>services</strong> via macOS <strong>launchd</strong>.
-Pour cela, brew propose, via <a href="https://github.com/Homebrew/homebrew-services"><strong>homebrew/services</strong></a>,
+Pour cela, brew propose, via <a href="https://github.com/Homebrew/homebrew-services" rel="nofollow noreferrer" target="_blank"><strong>homebrew/services</strong></a>,
 la commande <strong>brew services</strong> pour faciliter leurs utilisations.</p>
 
 <p>Pour votre projet, vous avez aussi besoin d&rsquo;une base de données <strong>MySQL</strong>.</p>
@@ -906,7 +906,7 @@ Pourquoi ne pas créer une <strong>formula</strong> aussi pour ce projet?</p>
 Homebrew vous propose déjà des <strong>taps</strong> pour avoir plus de <strong>formulas</strong> disponibles.</p>
 
 <p>Vous pouvez créer un <strong>tap</strong> privé qui est un simple repository git.
-Par défaut, un <strong>tap</strong> ajouté via <code>brew tap utilisateur/nom_tap</code> corresponds à l&rsquo;url <a href="https://github.com/utilisateur/homebrew-nom_tap.git">https://github.com/utilisateur/homebrew-nom_tap.git</a></p>
+Par défaut, un <strong>tap</strong> ajouté via <code>brew tap utilisateur/nom_tap</code> corresponds à l&rsquo;url <a href="https://github.com/utilisateur/homebrew-nom_tap.git" rel="nofollow noreferrer" target="_blank">https://github.com/utilisateur/homebrew-nom_tap.git</a></p>
 
 <p>Si vous voulez le stocker ailleurs, l&rsquo;ajout se fait par <code>brew tap utilisateur/nom_tap git@git.client.tld:utilisateur/homebrew-nom_tap.git</code>.</p>
 
@@ -1086,14 +1086,14 @@ git commit</code></pre></div>
 <p>Votre collègue apprécie la nouvelle procédure</p>
 <div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">brew tap utilisateur/nom_tap git@git.client.tld:utilisateur/homebrew-nom_tap.git
 brew install project-tool</code></pre></div>
-<p>NOTE: le système de <strong>formula</strong> permet également de gérer l&rsquo;installation depuis les sources (<a href="https://github.com/Homebrew/brew/blob/master/docs/Formula-Cookbook.md#head"><strong>&ndash;HEAD</strong></a>)
-ou les versions bêta (<a href="https://github.com/Homebrew/brew/blob/master/docs/Formula-Cookbook.md#devel"><strong>&ndash;devel</strong></a>).
-La documentation des formulas vous permettera d&rsquo;approfondir vos formulas (<a href="http://docs.brew.sh/Formula-Cookbook.html">http://docs.brew.sh/Formula-Cookbook.html</a>).</p>
+<p>NOTE: le système de <strong>formula</strong> permet également de gérer l&rsquo;installation depuis les sources (<a href="https://github.com/Homebrew/brew/blob/master/docs/Formula-Cookbook.md#head" rel="nofollow noreferrer" target="_blank"><strong>&ndash;HEAD</strong></a>)
+ou les versions bêta (<a href="https://github.com/Homebrew/brew/blob/master/docs/Formula-Cookbook.md#devel" rel="nofollow noreferrer" target="_blank"><strong>&ndash;devel</strong></a>).
+La documentation des formulas vous permettera d&rsquo;approfondir vos formulas (<a href="http://docs.brew.sh/Formula-Cookbook.html" rel="nofollow noreferrer" target="_blank">http://docs.brew.sh/Formula-Cookbook.html</a>).</p>
 
 <p>Maintenant que vous savez créer des <strong>formulas</strong> pour votre client,
 vous pouvez aussi créer des formulas ou les maintenir sur les <strong>taps</strong> officiels.</p>
 
-<p>Pour contribuer, la formula dans les taps officiels (comme <strong>homebrew-core</strong>) doit respecter <a href="https://github.com/Homebrew/brew/blob/master/docs/Acceptable-Formulae.md">certaines conditions pour être acceptable</a>.</p>
+<p>Pour contribuer, la formula dans les taps officiels (comme <strong>homebrew-core</strong>) doit respecter <a href="https://github.com/Homebrew/brew/blob/master/docs/Acceptable-Formulae.md" rel="nofollow noreferrer" target="_blank">certaines conditions pour être acceptable</a>.</p>
 
 <p>Le projet installé par la formula doit être</p>
 
@@ -1104,9 +1104,9 @@ vous pouvez aussi créer des formulas ou les maintenir sur les <strong>taps</str
 </ul>
 
 <p>Une fois la formula créée ou modifiée, vous pouvez créer une pull-request vers le project <strong>homebrew-core</strong>.
-Votre pull-request sera automatiquement analysée et validée par <a href="https://bot.brew.sh/">bot.brew.sh</a>.</p>
+Votre pull-request sera automatiquement analysée et validée par <a href="https://bot.brew.sh/" rel="nofollow noreferrer" target="_blank">bot.brew.sh</a>.</p>
 
-<p>Dans le but d&rsquo;aider les mainteneurs du projet, <a href="https://bot.brew.sh/">bot.brew.sh</a> traite toutes pull-requests
+<p>Dans le but d&rsquo;aider les mainteneurs du projet, <a href="https://bot.brew.sh/" rel="nofollow noreferrer" target="_blank">bot.brew.sh</a> traite toutes pull-requests
 en testant la formula sur les trois dernières versions supportées de macOS (<strong>yosemite, el capitan, et sierra</strong>).</p>
 
 <p>Concernant votre projet <strong>tool</strong>, il ne vous reste plus qu&rsquo;à le rendre open-source
@@ -1114,5 +1114,5 @@ et proposer votre <strong>formula</strong> sur <strong>homebrew-core</strong> qu
 
 <p>En attendant ce jour, n&rsquo;hesitez pas à contribuer sur les formulas existantes et rejoindre les 6200 contibuteurs de <strong>homebrew-core</strong>.</p>
 
-<p>Cet article a été publié en premier sur <a href="https://sfeir.com">lemag.sfeir.com</a>.</p>
+<p>Cet article a été publié en premier sur <a href="https://sfeir.com" rel="nofollow noreferrer" target="_blank">lemag.sfeir.com</a>.</p>
 ]]></content></item></channel></rss>
