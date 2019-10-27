@@ -20,9 +20,9 @@ staticDir = ["static"]
   name = "Romain Lespinasse"
 
 [blackfriday]
-  # hrefTargetBlank = true
-  # noreferrerLinks = true
-  # nofollowLinks = true
+  hrefTargetBlank = true
+  noreferrerLinks = true
+  nofollowLinks = true
 
 [taxonomies]
   tag = "tags"
