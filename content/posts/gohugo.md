@@ -2,6 +2,7 @@
 title: "Hugo | Generate your own site"
 date: 2019-10-27T10:42:00+02:00
 draft: false
+toc: true
 tags:
   - feedback
   - hugo

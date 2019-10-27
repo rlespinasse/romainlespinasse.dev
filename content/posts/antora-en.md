@@ -2,6 +2,7 @@
 title: "Antora | Replace your wiki with a documentation site"
 date: 2018-09-11T10:42:00+02:00
 draft: false
+toc: true
 images: 
   - /img/posts/antora/featured.jpg
 tags: 
