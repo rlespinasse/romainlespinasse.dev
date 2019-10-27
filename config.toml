@@ -41,7 +41,7 @@ staticDir = ["static"]
 
   homeSubtitle = "I'm not young enough to known everything. -- J. M. Barrie."
   footerCopyright = ' &#183; <a href="https://tldrlegal.com/license/mit-license" target="_blank" rel="noopener">MIT License</a>'
-  # bgImg = ""  # Homepage background-image URL
+  bgImg = "/img/home-hacktoberfest.jpg"  # Homepage background-image URL
 
   # Prefix of link to the git commit detail page. GitInfo must be enabled.
   # gitUrl = "https://github.com/username/repository/commit/"
