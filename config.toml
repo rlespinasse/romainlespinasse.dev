@@ -81,3 +81,8 @@ staticDir = ["static"]
     name = "Personal projects"
     url = "personal-projects/"
     weight = 20
+
+  [[menu.main]]
+    name = "Is It The Winter Break Yet?"
+    url = "http://winter-break.romainlespinasse.dev"
+    weight = 30
