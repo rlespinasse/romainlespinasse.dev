@@ -73,6 +73,11 @@ staticDir = ["static"]
 [menu]
 
   [[menu.main]]
-    name = "Posts"
+    name = "Technical posts"
     url = "posts/"
     weight = 10
+
+  [[menu.main]]
+    name = "Personal projects"
+    url = "personal-projects/"
+    weight = 20
