@@ -5,6 +5,8 @@ date = "2019-11-07"
 
 This blog is itself [a project based on hugo](https://github.com/rlespinasse/rlespinasse.github.io) with some github actions to automate it.
 
+In term of automation, I play with **Github Actions** and made a small one to `slug` some environment variables : [Github Slug Action](https://github.com/marketplace/actions/github-slug).
+
 In `golang`:
 
 * [hoff](https://github.com/rlespinasse/hoff) serve as an engine to run workflows composed of high order functions,
