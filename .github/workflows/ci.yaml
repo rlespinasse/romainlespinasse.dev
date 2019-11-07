@@ -1,12 +1,9 @@
-name: deploy
+name: ci
 
-on:
-  push:
-    branches:
-    - sources
+on: push
 
 jobs:
-  build-deploy:
+  build:
     runs-on: ubuntu-18.04
     steps:
     - uses: actions/checkout@master
@@ -27,6 +24,7 @@ jobs:
 
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v2.5.0
+      if: github.ref == 'refs/heads/sources'
       env:
         ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
         PUBLISH_BRANCH: master
