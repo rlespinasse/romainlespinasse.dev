@@ -5,7 +5,10 @@ date = "2019-11-07"
 
 This blog is itself [a project based on hugo](https://github.com/rlespinasse/rlespinasse.github.io) with some github actions to automate it.
 
-In term of automation, I play with **Github Actions** and made a small one to `slug` some environment variables : [Github Slug Action](https://github.com/marketplace/actions/github-slug).
+In term of automation, I play with **Github Actions**
+
+- to `slug` some environment variables : [Github Slug Action](https://github.com/marketplace/actions/github-slug).
+- to add track capabilities between issues : [Issues Tracker Action](https://github.com/marketplace/actions/issues-tracker).
 
 In `golang`:
 
