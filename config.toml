@@ -64,7 +64,7 @@ staticDir = ["static"]
 
   [[params.social]]
     name = "linkedin"
-    url = "https://www.linkedin.com/in/romain-l-794143165"
+    url = "https://www.linkedin.com/in/romain-lespinasse-794143165"
 
   [[params.social]]
     name = "github"
