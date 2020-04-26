@@ -22,6 +22,6 @@ Want more
 
 - [qanda](https://github.com/rlespinasse/qanda) : a Questions and Answers system based on PlantUML syntax
 - [drawio-export](https://github.com/rlespinasse/drawio-export) : Export Draw.io diagrams using command line / docker
-- The usage guide of `raraas` speak for itself - [http://raraas.github.io/usage-guide](http://raraas.github.io/usage-guide)
+- The usage guide of `wraas` speak for itself - [https://wraas.github.io/usage-guide](https://wraas.github.io/usage-guide)
 
 And all my projects are available on [https://github.com/rlespinasse](https://github.com/rlespinasse).
