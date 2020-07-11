@@ -70,6 +70,10 @@ staticDir = ["static"]
     name = "github"
     url = "https://github.com/rlespinasse"
 
+  [[params.social]]
+    name = "instagram"
+    url = "https://www.instagram.com/rlespinasse/"
+
 [menu]
 
   [[menu.main]]
