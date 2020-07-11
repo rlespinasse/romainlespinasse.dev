@@ -1,13 +1,11 @@
 ---
-title: "Townscaper | City port"
+title: "Creation | City port"
 date: 2020-07-02T10:42:00+02:00
 draft: false
 toc: false
-images: 
-  - /img/townscaper/city_port_1.jpg
 ---
 
-City with a big port
+City with a big port.
 
 {{< load-photoswipe >}}
 

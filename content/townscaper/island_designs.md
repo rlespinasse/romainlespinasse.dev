@@ -1,13 +1,11 @@
 ---
-title: "Townscaper | Island designs"
+title: "Design | exploring island designs"
 date: 2020-07-03T10:42:00+02:00
 draft: false
 toc: false
-images: 
-  - /img/townscaper/island_designs_1.jpg
 ---
 
-Explore island designs
+Explore island designs.
 
 {{< load-photoswipe >}}
 

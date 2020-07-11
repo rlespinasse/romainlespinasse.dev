@@ -1,13 +1,11 @@
 ---
-title: "Townscaper | Same-Same islands"
+title: "Design | Same-Same islands"
 date: 2020-07-04T10:42:00+02:00
 draft: false
 toc: false
-images: 
-  - /img/townscaper/same_same_islands_1.jpg
 ---
 
-Same concept, Same buildings, a lot of islands
+Same concept, Same buildings, a lot of islands.
 
 {{< load-photoswipe >}}
 

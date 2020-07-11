@@ -1,13 +1,13 @@
 ---
-title: "Townscaper | Creativity city"
+title: "Design | Creativity city"
 date: 2020-07-02T09:42:00+02:00
 draft: false
 toc: false
-images: 
-  - /img/townscaper/creativity_city/creativity_city_1.jpg
 ---
 
-A empty city to deploy your creativity
+A empty city to deploy your creativity.
+
+This map serve as base for the City port.
 
 {{< load-photoswipe >}}
 

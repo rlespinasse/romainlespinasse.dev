@@ -1,13 +1,11 @@
 ---
-title: "Townscaper | Colorful neighborhood"
+title: "Design | Colorful neighborhood"
 date: 2020-07-04T08:42:00+02:00
 draft: false
 toc: false
-images: 
-  - /img/townscaper/colorful_neighborhood_1.jpg
 ---
 
-Multiple neighborhood, just colorful in theirs own ways
+Multiple neighborhood, just colorful in theirs own ways.
 
 {{< load-photoswipe >}}
 

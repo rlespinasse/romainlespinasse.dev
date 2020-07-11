@@ -1,13 +1,11 @@
 ---
-title: "Townscaper | Human roof building"
+title: "Creation | Human roof building"
 date: 2020-06-30T10:42:00+02:00
 draft: false
 toc: false
-images: 
-  - /img/townscaper/human_roof_building/human_roof_building_1.jpg
 ---
 
-A building with a root in form of a little human
+A building with a root in form of a little human.
 
 {{< load-photoswipe >}}
 

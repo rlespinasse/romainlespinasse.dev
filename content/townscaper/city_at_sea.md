@@ -1,13 +1,11 @@
 ---
-title: "Townscaper | City at sea"
+title: "Creation | City at sea"
 date: 2020-07-05T10:42:00+02:00
 draft: false
 toc: false
-images: 
-  - /img/townscaper/city_at_sea_1.jpg
 ---
 
-A city at sea
+A city at sea.
 
 {{< load-photoswipe >}}
 
