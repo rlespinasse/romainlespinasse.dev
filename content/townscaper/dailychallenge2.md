@@ -5,7 +5,7 @@ draft: false
 toc: false
 ---
 
-A Garden bring colors in your life.
+A `Garden` bring colors in your life.
 
 {{< load-photoswipe >}}
 

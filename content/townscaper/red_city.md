@@ -5,7 +5,7 @@ draft: false
 toc: false
 ---
 
-Red city, the island with a `little` secret.
+`Red city`, the island with a `little` secret.
 
 {{< load-photoswipe >}}
 

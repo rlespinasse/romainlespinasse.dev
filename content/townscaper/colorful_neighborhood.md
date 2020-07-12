@@ -5,7 +5,7 @@ draft: false
 toc: false
 ---
 
-Multiple neighborhood, just colorful in theirs own ways.
+Multiple `neighborhood`, just `colorful` in theirs own ways.
 
 {{< load-photoswipe >}}
 

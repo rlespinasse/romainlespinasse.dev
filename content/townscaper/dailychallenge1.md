@@ -5,7 +5,7 @@ draft: false
 toc: false
 ---
 
-Two islands, one Bridge, A lot of Stairs.
+Two islands, one `Bridge`, A lot of Stairs.
 
 {{< load-photoswipe >}}
 

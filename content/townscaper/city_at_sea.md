@@ -5,7 +5,7 @@ draft: false
 toc: false
 ---
 
-A city at sea.
+A `city at sea`.
 
 {{< load-photoswipe >}}
 
