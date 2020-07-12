@@ -6,7 +6,7 @@ toc: false
 ---
 
 Sometimes, being a good neighbour is a difficult task.
-If you're too close, your neighbours and you can disappear in a instant.
+If you're too close, your neighbours and you can disappear in an instant.
 
 Welcome to the `Tetris neighborhood`.
 
