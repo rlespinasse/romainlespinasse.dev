@@ -13,7 +13,7 @@ Welcome to the `Tetris neighborhood`.
 {{< load-photoswipe >}}
 
 {{< gallery >}}
-  {{< figure src="/img/townscaper/dailychallenges/neighbours/aerial.jpg" caption="Meet the neighboors">}}
+  {{< figure src="/img/townscaper/dailychallenges/neighbours/aerial.jpg" caption="Meet the neighboors ... or not">}}
   {{< figure src="/img/townscaper/dailychallenges/neighbours/space.jpg" caption="From space">}}
 {{< /gallery >}}
 
