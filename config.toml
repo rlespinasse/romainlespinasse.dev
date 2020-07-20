@@ -16,6 +16,9 @@ googleAnalytics = "UA-150515783-1"
 
 staticDir = ["static"]
 
+[markup.goldmark.renderer]
+  unsafe = true
+
 [author]
   name = "Romain Lespinasse"
 

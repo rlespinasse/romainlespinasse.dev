@@ -30,3 +30,7 @@ Want more
 - The usage guide of `wraas` speak for itself - [https://wraas.github.io/usage-guide](https://wraas.github.io/usage-guide).
 
 And all my current and past projects are available on [https://github.com/rlespinasse](https://github.com/rlespinasse).
+
+> You can also `sponsor me` on GitHub if you want.
+>
+> <iframe src="https://github.com/sponsors/rlespinasse/button" title="Sponsor rlespinasse" height="35" width="107" style="border: 0;"></iframe>
