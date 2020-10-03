@@ -93,3 +93,8 @@ staticDir = ["static"]
     name = "Townscaper creations"
     url = "townscaper/"
     weight = 30
+
+  [[menu.main]]
+    name = "Certifications"
+    url = "certifications/"
+    weight = 40
