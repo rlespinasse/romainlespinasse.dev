@@ -1,5 +1,5 @@
 ---
-title: "Antora | Replace your wiki with a documentation site"
+title: "Antora 1.0 | Replace your wiki with a documentation site"
 date: 2018-09-11T10:42:00+02:00
 draft: false
 toc: true
@@ -156,3 +156,5 @@ The site [docs.antora.org](https://docs.antora.org) uses the `Antora` project it
 
 > Thanks to [Aurélien Allienne](https://twitter.com/sn0rks), [Antoine Méausoone](https://twitter.com/AMeausoone), [Tanguy Baudrin](https://twitter.com/TanguyBAUDRIN), and [Tony Proum](https://twitter.com/chezTone) for reviewing the article.
 > Thanks to [Aurélien Allienne](https://twitter.com/sn0rks), [Guillaume Mantopoulos](http://twitter.com/MrGuiMan) for the review of the translation from french to english of this article .
+
+This post have been published first on [Codeshake by SFEIR](https://medium.com/codeshake/replace-your-wiki-with-a-documentation-site-4f0da329fe92).

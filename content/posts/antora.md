@@ -1,5 +1,5 @@
 ---
-title: "Antora | Remplacer votre wiki par un site de documentation"
+title: "Antora 1.0 | Remplacer votre wiki par un site de documentation"
 date: 2018-04-18T10:42:00+02:00
 draft: false
 toc: true
