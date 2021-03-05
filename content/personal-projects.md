@@ -13,8 +13,14 @@ In term of automation, I play with **Github Actions**
 
 And also
 
-- [drawio-export](https://github.com/rlespinasse/drawio-export) : Export Draw.io diagrams using command line / docker,
-- [drawio-cli](https://github.com/rlespinasse/drawio-cli) : CLI for Draw.io.
+- [drawio-export](https://github.com/rlespinasse/drawio-export) : Export Draw.io diagrams using docker,
+- [drawio-exporter](https://github.com/rlespinasse/drawio-exporter) : Export Draw.io diagrams using command line
+- [docker-drawio-desktop-headless](https://github.com/rlespinasse/docker-drawio-desktop-headless) : Docker image to serve Draw.io Desktop in a headless version.
+
+In the `rust` world,
+
+- **W**hat **I** **N**eed **T**o **S**ee ([wints](https://github.com/rlespinasse/wints)), a fuzzy term-based URLs opener,
+- [drawio-exporter](https://github.com/rlespinasse/drawio-exporter) to export Draw.io diagrams using command line.
 
 In the `golang` world,
 
