@@ -1,6 +1,6 @@
 +++
 title = "Personal projects"
-date = "2020-04-24"
+date = "2021-04-07"
 +++
 
 This blog is itself [a project based on hugo](https://github.com/rlespinasse/rlespinasse.github.io) with some github actions to automate it.
