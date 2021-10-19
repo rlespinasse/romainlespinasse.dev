@@ -1,15 +1,17 @@
 +++
 title = "Personal projects"
-date = "2021-04-07"
+date = "2021-10-19"
 +++
 
 This blog is itself [a project based on hugo](https://github.com/rlespinasse/rlespinasse.github.io) with some github actions to automate it.
 
 In term of automation, I play with **Github Actions**
 
-- to `slug` some environment variables : [Github Slug Action](https://github.com/marketplace/actions/github-slug),
-- to expose some git commit data : [Git Commit Data Action](https://github.com/rlespinasse/git-commit-data-action),
-- to add track capabilities between issues : [Issues Tracker Action](https://github.com/marketplace/actions/issues-tracker).
+- to ease the release of a repository : [release-that](https://github.com/marketplace/actions/release-that),
+- to `slug` some environment variables : [github-slug-action](https://github.com/marketplace/actions/github-slug),
+- to `slug` any variables : [slugify-value](https://github.com/marketplace/actions/slugify-value),
+- to expose some git commit data : [git-commit-data-action](https://github.com/marketplace/actions/git-commit-data),
+- to add track capabilities between issues : [issues-tracker-action](https://github.com/marketplace/actions/issues-tracker).
 
 And also
 
@@ -40,5 +42,3 @@ Want more
 
 - [qanda](https://github.com/rlespinasse/qanda) : a Questions and Answers system based on PlantUML syntax,
 - The usage guide of `wraas` speak for itself - [https://wraas.github.io/usage-guide](https://wraas.github.io/usage-guide).
-
-
