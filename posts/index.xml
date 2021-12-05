@@ -117,7 +117,7 @@ This post have been published first on <a href="https://dev.to/rlespinasse/keep-
 </ul>
 <h2 id="yaml-file-or-link-to-code">Yaml File or Link to Code</h2>
 <p>Example to keep your draw.io files exported as PNG files with associated Asciidoctor pages.</p>
-<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Keep draw.io export synchronized</span><span class="w">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Keep draw.io export synchronized</span><span class="w">
 </span><span class="w"></span><span class="nt">on</span><span class="p">:</span><span class="w">
 </span><span class="w">  </span><span class="nt">push</span><span class="p">:</span><span class="w">
 </span><span class="w">    </span><span class="nt">branches</span><span class="p">:</span><span class="w">
@@ -160,7 +160,7 @@ This post have been published first on <a href="https://dev.to/rlespinasse/acces
 </blockquote>
 <h2 id="my-workflow">My Workflow</h2>
 <p>Need to access git commit information in your workflow like this</p>
-<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Get author and committer info from HEAD commit</span><span class="w">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml">- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Get author and committer info from HEAD commit</span><span class="w">
 </span><span class="w">  </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">rlespinasse/git-commit-data-action@v1.x</span><span class="w">
 </span><span class="w">
 </span><span class="w"></span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Commit changed files</span><span class="w">
@@ -176,7 +176,7 @@ This post have been published first on <a href="https://dev.to/rlespinasse/acces
 </ul>
 <h2 id="yaml-file-or-link-to-code">Yaml File or Link to Code</h2>
 <p>This action source code is available on <a href="https://github.com/rlespinasse/git-commit-data-action">https://github.com/rlespinasse/git-commit-data-action</a></p>
-<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Expose git commit data</span><span class="w">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml">- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Expose git commit data</span><span class="w">
 </span><span class="w">  </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">rlespinasse/git-commit-data-action@v1.x</span><span class="w">
 </span><span class="w">
 </span><span class="w"></span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Print git commit data</span><span class="w">
@@ -210,7 +210,7 @@ This post have been published first on <a href="https://dev.to/rlespinasse/use-s
 </ul>
 <h2 id="yaml-file-or-link-to-code">Yaml File or Link to Code</h2>
 <p>This action source code is available on <a href="https://github.com/rlespinasse/github-slug-action">https://github.com/rlespinasse/github-slug-action</a></p>
-<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Inject slug/short variables</span><span class="w">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml">- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Inject slug/short variables</span><span class="w">
 </span><span class="w">  </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">rlespinasse/github-slug-action@v2.x</span><span class="w">
 </span><span class="w">
 </span><span class="w"></span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Print slug/short variables</span><span class="w">
@@ -252,16 +252,16 @@ to build a static site with Hugo support by Continuous Delivery using Github Act
 </ul>
 <h2 id="step-1--build-the-site">Step 1 | Build the site</h2>
 <p>After <a href="https://gohugo.io/getting-started/installing/">installing Hugo</a>, I bootstrap a site for <code>romainlespinasse.dev</code> and initialize a git repository :</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">hugo new site rlespinasse.github.io
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">hugo new site rlespinasse.github.io
 <span class="nb">cd</span> rlespinasse.github.io
 git init
 </code></pre></div><p>To have a good looking site, I choose one of the theme from <a href="https://themes.gohugo.io/">https://themes.gohugo.io/</a>.
 The chosen theme is a simple one, adapt for a personal site : <a href="https://github.com/Track3/hermit.git">Hermit</a>.</p>
 <p>As documented, I add it as <code>git submodule</code> :</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">git submodule add https://github.com/Track3/hermit.git themes/hermit
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">git submodule add https://github.com/Track3/hermit.git themes/hermit
 </code></pre></div><p>Now, I need to configure the site with my own settings.
 The setup part is managed by the <code>config.toml</code> file :</p>
-<div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="c"># access url (use to setup links inside the site)</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="c"># access url (use to setup links inside the site)</span>
 <span class="nx">baseURL</span> <span class="p">=</span> <span class="s2">&#34;https://www.romainlespinasse.dev&#34;</span>
 <span class="c"># Title (for the &#39;&lt;title&gt;&#39; html tag)</span>
 <span class="nx">title</span> <span class="p">=</span> <span class="s2">&#34;Romain Lespinasse&#34;</span>
@@ -283,13 +283,13 @@ The setup part is managed by the <code>config.toml</code> file :</p>
 </ul>
 <p>After configuration, I start to write the first post of my site.
 Hugo can serve locally the site with live reloading capabilities :</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ hugo serve -D
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">$ hugo serve -D
 ...
 Web Server is available at http://localhost:1313/ <span class="o">(</span><span class="nb">bind</span> address 127.0.0.1<span class="o">)</span>
 Press Ctrl+C to stop
 </code></pre></div><p>Hugo can also create post template <code>hugo new posts/gohugo.md</code></p>
 <p>A sample from this current blog post :</p>
-<div class="highlight"><pre class="chroma"><code class="language-md" data-lang="md">---
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-md" data-lang="md">---
 title: &#34;Hugo | Generate your own site&#34;
 date: 2019-10-27T10:42:00+02:00
 draft: false
@@ -303,7 +303,7 @@ tags:
 I brought a domain name <span class="sb">`romainlespinasse.dev`</span>, so naturally I search to build a website, a small one.
 </code></pre></div><p>To build the static site, I just run <code>hugo</code> and setup generated folders as ignored by git :</p>
 <p>Content of <code>.gitignore</code></p>
-<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">resources/_gen
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text">resources/_gen
 public/
 </code></pre></div><h2 id="step-2--add-continuous-delivery">Step 2 | Add Continuous Delivery</h2>
 <p>Since I&rsquo;m using GitHub for hosting my git repository, I setup</p>
@@ -321,7 +321,7 @@ public/
 <li>checkout the git repository with its submodules,</li>
 <li>build the <code>hugo</code> site.</li>
 </ul>
-<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">build</span><span class="w">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">build</span><span class="w">
 </span><span class="w">
 </span><span class="w"></span><span class="nt">on</span><span class="p">:</span><span class="w">
 </span><span class="w">  </span><span class="nt">push</span><span class="p">:</span><span class="w">
@@ -351,7 +351,7 @@ public/
 <li>build the <code>hugo</code> site,</li>
 <li>deploy the content of <code>public</code> folder to <code>master</code> branch in order to serve as GitHub pages.</li>
 </ul>
-<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">deploy</span><span class="w">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">deploy</span><span class="w">
 </span><span class="w">
 </span><span class="w"></span><span class="nt">on</span><span class="p">:</span><span class="w">
 </span><span class="w">  </span><span class="nt">push</span><span class="p">:</span><span class="w">
@@ -387,10 +387,10 @@ public/
 <p>With a site built and push to <code>master</code> branch, I setup the repository <a href="https://help.github.com/en/github/working-with-github-pages">to use GitHub user pages</a> to serve it.</p>
 <p>In order to tell my domain <code>romainlespinasse.dev</code> to serve my GitHub pages, I just follow the GitHub guideline <a href="https://help.github.com/en/github/working-with-github-pages/managing-a-custom-domain-for-your-github-pages-site#configuring-an-apex-domain">to configure an APEX domain</a>.
 In addition of GitHub pages settings and Domain <code>DNS</code> settings, I need to add a <code>CNAME</code> file to the master branch :</p>
-<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">www.romainlespinasse.dev
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text">www.romainlespinasse.dev
 </code></pre></div><p>Since the static site is not built by <code>jekyll</code> (the default static site generator), I need to add a <code>.nojekyll</code> file to the <code>master</code> branch.</p>
 <p>In <code>.github/workflows/deploy.yaml</code> file, I update the <code>Build</code> step with :</p>
-<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="w">    </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Build</span><span class="w">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="w">    </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Build</span><span class="w">
 </span><span class="w">      </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="p">|</span><span class="sd">
 </span><span class="sd">        hugo --gc --minify
 </span><span class="sd">        cp CNAME public/
@@ -403,7 +403,7 @@ use makefile prerequisites mechanism run-all-tasks: run-task1 run-task2 run-task
 <blockquote>
 <p><code>make run-task1 run-task2 run-task3</code></p>
 </blockquote>
-<div class="highlight"><pre class="chroma"><code class="language-Makefile" data-lang="Makefile"><span class="nf">run-task1</span><span class="o">:</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Makefile" data-lang="Makefile"><span class="nf">run-task1</span><span class="o">:</span>
 	@echo <span class="s2">&#34;run task 1&#34;</span>
 
 <span class="nf">run-task2</span><span class="o">:</span>
@@ -415,11 +415,11 @@ use makefile prerequisites mechanism run-all-tasks: run-task1 run-task2 run-task
 <ul>
 <li>use <a href="https://www.gnu.org/software/make/manual/html_node/Prerequisite-Types.html#Prerequisite-Types"><code>makefile</code> prerequisites mechanism</a></li>
 </ul>
-<div class="highlight"><pre class="chroma"><code class="language-Makefile" data-lang="Makefile"><span class="nf">run-all-tasks</span><span class="o">:</span> <span class="n">run</span>-<span class="n">task</span>1 <span class="n">run</span>-<span class="n">task</span>2 <span class="n">run</span>-<span class="n">task</span>3
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Makefile" data-lang="Makefile"><span class="nf">run-all-tasks</span><span class="o">:</span> <span class="n">run</span>-<span class="n">task</span>1 <span class="n">run</span>-<span class="n">task</span>2 <span class="n">run</span>-<span class="n">task</span>3
 </code></pre></div><ul>
 <li>use sub-command line with <a href="https://www.gnu.org/software/make/manual/html_node/MAKE-Variable.html"><code>$(MAKE)</code></a></li>
 </ul>
-<div class="highlight"><pre class="chroma"><code class="language-Makefile" data-lang="Makefile"><span class="nf">run-all-tasks</span><span class="o">:</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Makefile" data-lang="Makefile"><span class="nf">run-all-tasks</span><span class="o">:</span>
 	@<span class="k">$(</span>MAKE<span class="k">)</span> run-task1
 	@<span class="k">$(</span>MAKE<span class="k">)</span> run-task2
 	@<span class="k">$(</span>MAKE<span class="k">)</span> run-task3
@@ -428,14 +428,14 @@ use makefile prerequisites mechanism run-all-tasks: run-task1 run-task2 run-task
 <p>This will enable you to don&rsquo;t known all task names.
 Useful when using <code>include</code> mechanism in your makefile.</p>
 </blockquote>
-<div class="highlight"><pre class="chroma"><code class="language-Makefile" data-lang="Makefile"><span class="err">include</span> <span class="err">makefile-with-run-tasks.mk</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Makefile" data-lang="Makefile"><span class="err">include</span> <span class="err">makefile-with-run-tasks.mk</span>
 
 <span class="nf">run-all-tasks</span><span class="o">:</span>
 	@grep -E <span class="s1">&#39;^[\.a-zA-Z0-9_%-]+:.*$$&#39;</span> <span class="k">$(</span>MAKEFILE_LIST<span class="k">)</span> <span class="se">\
 </span><span class="se"></span>		<span class="p">|</span> cut -d <span class="s2">&#34;:&#34;</span> -f2 <span class="p">|</span> grep <span class="s2">&#34;^run-task&#34;</span> <span class="p">|</span> sort -u <span class="se">\
 </span><span class="se"></span>		<span class="p">|</span> xargs <span class="k">$(</span>MAKE<span class="k">)</span>
 </code></pre></div><p>So when you run it, the <code>run-all-tasks</code> task will run all <code>run-task</code> tasks.</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ make run-all-tasks
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">$ make run-all-tasks
 run task <span class="m">1</span>
 run task <span class="m">2</span>
 run task <span class="m">3</span>
@@ -459,19 +459,19 @@ You can guard it.
 task-who-need-SPECIFIC_ENVVAR: guard-SPECIFIC_ENVVAR @echo ${SPECIFIC_ENVVAR} You only need to add the following task
 guard-%: @ if [ &amp;#34;${${*}}&amp;#34; = &amp;#34;&amp;#34; ]; then \ echo &amp;#34;Environment variable $*not set&amp;#34;; \ exit 1; \ fi So when you run it, the guard will prevent to run the task</description><content type="html"><![CDATA[<p>When you use a variable in a Makefile task and you want to make it mandatory and check it before run the effective task,</p>
 <p>You can <code>guard</code> it.</p>
-<div class="highlight"><pre class="chroma"><code class="language-Makefile" data-lang="Makefile"><span class="nf">task-who-need-SPECIFIC_ENVVAR</span><span class="o">:</span> <span class="n">guard</span>-<span class="n">SPECIFIC_ENVVAR</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Makefile" data-lang="Makefile"><span class="nf">task-who-need-SPECIFIC_ENVVAR</span><span class="o">:</span> <span class="n">guard</span>-<span class="n">SPECIFIC_ENVVAR</span>
 	@echo <span class="si">${</span><span class="nv">SPECIFIC_ENVVAR</span><span class="si">}</span>
 </code></pre></div><p>You only need to add the following task</p>
-<div class="highlight"><pre class="chroma"><code class="language-Makefile" data-lang="Makefile"><span class="nf">guard-%</span><span class="o">:</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Makefile" data-lang="Makefile"><span class="nf">guard-%</span><span class="o">:</span>
 	@ <span class="k">if</span> <span class="o">[</span> <span class="s2">&#34;</span><span class="si">${${</span><span class="p">*</span><span class="si">}}</span><span class="s2">&#34;</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span> <span class="se">\
 </span><span class="se"></span>		<span class="nb">echo</span> <span class="s2">&#34;Environment variable </span><span class="nv">$*</span><span class="s2"> not set&#34;</span><span class="p">;</span> <span class="se">\
 </span><span class="se"></span>		<span class="nb">exit</span> 1<span class="p">;</span> <span class="se">\
 </span><span class="se"></span>	<span class="k">fi</span>
 </code></pre></div><p>So when you run it, the <code>guard</code> will prevent to run the task</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ make task-who-need-SPECIFIC_ENVVAR
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">$ make task-who-need-SPECIFIC_ENVVAR
 Environment variable SPECIFIC_ENVVAR not <span class="nb">set</span>
 make: *** <span class="o">[</span>guard-SPECIFIC_ENVVAR<span class="o">]</span> Error <span class="m">1</span>
-</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ <span class="nb">export</span> <span class="nv">SPECIFIC_ENVVAR</span><span class="o">=</span>value
+</code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">$ <span class="nb">export</span> <span class="nv">SPECIFIC_ENVVAR</span><span class="o">=</span>value
 $ make task-who-need-SPECIFIC_ENVVAR
 value
 </code></pre></div><p>See <a href="https://stackoverflow.com/a/7367903/1848685">https://stackoverflow.com/a/7367903/1848685</a></p>
@@ -518,7 +518,7 @@ This allows you to deliver the documentation at the same time as the associated 
 <li>A <a href="https://docs.antora.org/antora/1.0/playbook/configure-ui/"><strong>UI</strong></a> that defines the visuals of your site (the default one will be appropriate).</li>
 </ul>
 <p>To be used by Antora, a project must respect a <a href="https://docs.antora.org/antora/1.0/component-structure/">file structure</a></p>
-<div class="highlight"><pre class="chroma"><code class="language-Text" data-lang="Text">./docs
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Text" data-lang="Text">./docs
 ├── antora.yml
 └── modules
     └── ROOT
@@ -540,7 +540,7 @@ This allows you to deliver the documentation at the same time as the associated 
 </blockquote>
 <h3 id="you-are-preparing-to-generate-your-documentation-site">You are preparing to generate your documentation site</h3>
 <p>So you create a <a href="https://github.com/rlespinasse/docssite">specific project</a> to store the <strong>playbook</strong>.</p>
-<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">site</span><span class="p">:</span><span class="w">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">site</span><span class="p">:</span><span class="w">
 </span><span class="w">  </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;Romain Lespinasse // Docs&#34;</span><span class="w">
 </span><span class="w">  </span><span class="nt">start_page</span><span class="p">:</span><span class="w"> </span><span class="l">guidelines::index</span><span class="w">
 </span><span class="w">  </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l">https://rlespinasse.github.io/docssite</span><span class="w">
@@ -641,7 +641,7 @@ Cela vous permet de livrer la documentation à jour en même temps que le code a
 <li>Une <a href="https://docs.antora.org/antora/1.0/playbook/configure-ui/"><strong>UI</strong></a> qui définit le visuel de votre site (celle par défaut conviendra).</li>
 </ul>
 <p>Pour être utilisé par Antora, un projet se doit de respecter une <a href="https://docs.antora.org/antora/1.0/component-structure/">structure de fichiers</a></p>
-<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">./docs
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text">./docs
 ├── antora.yml
 └── modules
     └── ROOT
@@ -663,7 +663,7 @@ Cela vous permet de livrer la documentation à jour en même temps que le code a
 </blockquote>
 <h3 id="vous-vous-préparez-à-générer-votre-site-de-documentation">Vous vous préparez à générer votre site de documentation</h3>
 <p>Vous créez donc un <a href="https://github.com/rlespinasse/docssite">projet spécifique</a> pour stocker le <strong>playbook</strong>.</p>
-<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">site</span><span class="p">:</span><span class="w">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">site</span><span class="p">:</span><span class="w">
 </span><span class="w">  </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;Romain Lespinasse // Docs&#34;</span><span class="w">
 </span><span class="w">  </span><span class="nt">start_page</span><span class="p">:</span><span class="w"> </span><span class="l">guidelines::index</span><span class="w">
 </span><span class="w">  </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l">https://rlespinasse.github.io/docssite</span><span class="w">
@@ -730,7 +730,7 @@ Mais sous macOS, pas de apt-get, pas de yum,
 vous voilà parti pour installer tout cela à la main.</p>
 <p>Pas de crainte, des gestionnaires de formulas existent aussi pour macOS comme <a href="http://brew.sh/"><strong>Homebrew</strong></a> (ou <a href="https://www.macports.org">MacPorts</a>)</p>
 <p>Installer homebrew en une ligne de commande</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">/usr/bin/ruby -e <span class="s2">&#34;</span><span class="k">$(</span>curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install<span class="k">)</span><span class="s2">&#34;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">/usr/bin/ruby -e <span class="s2">&#34;</span><span class="k">$(</span>curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install<span class="k">)</span><span class="s2">&#34;</span>
 </code></pre></div><blockquote>
 <p><strong>Homebrew</strong> est un gestionnaire basé sur des <strong>formulas</strong> d&rsquo;installation de formula (en <strong>Ruby</strong>)
 et utilise des <strong>repositories git</strong> comme conteneurs de ces <strong>formulas</strong>.</p>
@@ -738,7 +738,7 @@ et utilise des <strong>repositories git</strong> comme conteneurs de ces <strong
 <p>Après une simple installation, vous avez à votre disposition une nouvelle commande,
 petit tour du proprietaire :</p>
 <p>La commande <strong>&ldquo;brew&rdquo;</strong> vous montre les commandes les plus courantes.</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ brew
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">$ brew
 Example usage:
   brew search <span class="o">[</span>TEXT<span class="p">|</span>/REGEX/<span class="o">]</span>
   brew <span class="o">(</span>info<span class="p">|</span>home<span class="p">|</span>options<span class="o">)</span> <span class="o">[</span>FORMULA...<span class="o">]</span>
@@ -770,7 +770,7 @@ et que l&rsquo;ensemble est géré par Ansible, vous avez votre liste de formula
 <li>Gradle</li>
 </ul>
 <p>Vous installez vos formulas hors java</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ brew install ansible go gradle
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">$ brew install ansible go gradle
 
 $ ansible --version
 ansible 2.2.0.0
@@ -782,7 +782,7 @@ $ gradle -v
 Gradle 3.3
 </code></pre></div><p>Vous installer java à part, car vous souhaitez installer java 8.</p>
 <p>Vous rechercher donc les <strong>formulas</strong> nommées <strong>java</strong></p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ brew search java
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">$ brew search java
 app-engine-java
 google-java-format
 javarepl
@@ -824,7 +824,7 @@ contenant des formulas dédiées ou des nouvelles commandes.</p>
 mais certains <strong>taps</strong> officiels ne sont pas de Homebrew mais sont bien intégrés comme <strong>Caskroom/cask</strong>.</p>
 <p>Les <strong>formulas</strong> de <strong>Caskroom/cask</strong> sont dédiés aux installations d&rsquo;applications macOS</p>
 <p>Maintenant, vous installez <strong>java 8</strong></p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ brew install Caskroom/cask/java
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">$ brew install Caskroom/cask/java
 <span class="o">==</span>&gt; brew cask install Caskroom/cask/java
 ...
 
@@ -834,7 +834,7 @@ Java<span class="o">(</span>TM<span class="o">)</span> SE Runtime Environment <s
 Java HotSpot<span class="o">(</span>TM<span class="o">)</span> 64-Bit Server VM <span class="o">(</span>build 25.112-b16, mixed mode<span class="o">)</span>
 </code></pre></div><p>Lors du lancement de la commande, brew a transféré votre demande à <code>brew cask install</code> pour son installation.</p>
 <p>Avec <strong>Cask</strong>, vous pouvez, en plus de vos formulas, installer votre navigateur, votre éditeur de code,&hellip;</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">brew cask install google-chrome intellij-idea docker slack
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">brew cask install google-chrome intellij-idea docker slack
 </code></pre></div><p>TIP: <code>brew tap caskroom/drivers</code> vous permet d&rsquo;installer les drivers pour macOS.
 Les fonts s&rsquo;installent elles via <code>brew tap caskroom/fonts</code>.</p>
 <p>Certains formulas sont gérées comme des <strong>services</strong> via macOS <strong>launchd</strong>.
@@ -842,7 +842,7 @@ Pour cela, brew propose, via <a href="https://github.com/Homebrew/homebrew-servi
 la commande <strong>brew services</strong> pour faciliter leurs utilisations.</p>
 <p>Pour votre projet, vous avez aussi besoin d&rsquo;une base de données <strong>MySQL</strong>.</p>
 <p>Vous installez <strong>MySQL</strong> qui possède un service sous macOS</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ brew install mysql
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">$ brew install mysql
 
 $ brew services list
 Name           Status  User Plist
@@ -861,7 +861,7 @@ Avec ces 2 commandes, vous pouvez aussi utiliser deux autres commandes <strong>o
 <ul>
 <li><strong>update</strong> met à jour les <strong>repositories git</strong> des <strong>taps</strong>,</li>
 </ul>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ brew update
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">$ brew update
 Updated <span class="m">2</span> taps <span class="o">(</span>caskroom/cask, homebrew/core<span class="o">)</span>.
 <span class="o">==</span>&gt; New <span class="nv">Formulae</span>
 <span class="o">==</span>&gt; Updated Formulae
@@ -869,7 +869,7 @@ go ✔
 </code></pre></div><ul>
 <li><strong>upgrade</strong> met à jour les formulas,</li>
 </ul>
-<pre><code>$ brew upgrade
+<pre tabindex="0"><code>$ brew upgrade
 ==&gt; Upgrading 1 outdated formula, with result:
 go 1.7.4_1
 ==&gt; Upgrading go
@@ -879,12 +879,12 @@ go 1.7.4_1
 </code></pre><ul>
 <li><strong>outdated</strong> liste les formulas qui doivent être mis à jour,</li>
 </ul>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ brew outdated
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">$ brew outdated
 go <span class="o">(</span>1.6<span class="o">)</span> &lt; 1.7.4_1
 </code></pre></div><ul>
 <li><strong>cleanup</strong> supprime les anciennes versions des formulas (car Homebrew les garde indéfiniment).</li>
 </ul>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ brew cleanup
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">$ brew cleanup
 Removing: /usr/local/Cellar/go/1.6... <span class="o">(</span>6,438 files, 250.7M<span class="o">)</span>
 <span class="o">==</span>&gt; This operation has freed approximately 250.7M of disk space.
 </code></pre></div><blockquote>
@@ -897,7 +897,7 @@ Ceci dans le but de vous permettre de facilement switcher entre ces versions.</p
 <p><strong>brew install &lt;formula&gt;</strong> ne permet d&rsquo;installer que la version courante du formula, jamais une ancienne version.</p>
 </blockquote>
 <p>Par exemple comment passer à une version go 1.6 puis revenir sur une version go 1.7</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ brew switch go 1.6
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">$ brew switch go 1.6
 Cleaning /usr/local/Cellar/go/1.6
 Cleaning /usr/local/Cellar/go/1.7.4_1
 <span class="m">3</span> links created <span class="k">for</span> /usr/local/Cellar/go/1.6
@@ -911,13 +911,13 @@ Cleaning /usr/local/Cellar/go/1.7.4_1
 et vous demande de lui passer votre liste de formulas et d&rsquo;applications
 pour faire lui aussi l&rsquo;installation rapidement.</p>
 <p>Vous appliquez la méthode KISS</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">brew list &gt; brew-formulas.txt
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">brew list &gt; brew-formulas.txt
 brew cask list &gt; brew-applications.txt
 </code></pre></div><p>Et votre voisin devrait se débrouiller avec les deux fichers bruts que vous venez de lui envoyer par email.
 C&rsquo;est KISS mais seulement pour vous.</p>
 <p>Mais là encore, Homebrew a pensé à faciliter ce genre d&rsquo;actions via <strong>brew bundle</strong>.</p>
 <p>Vous créez un Brewfile de votre poste via <code>brew bundle dump</code></p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ brew bundle dump
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">$ brew bundle dump
 $ cat Brewfile
 tap <span class="s1">&#39;caskroom/cask&#39;</span>
 tap <span class="s1">&#39;homebrew/bundle&#39;</span>
@@ -936,7 +936,7 @@ cask <span class="s1">&#39;slack&#39;</span>
 Il garde même en mémoire les status des services (ici, <strong>mysql</strong> est lancé).</p>
 <p>Vous transmettez le fichier <strong>Brewfile</strong> à votre voisin et il n&rsquo;a plus qu&rsquo;à l&rsquo;utiliser.</p>
 <p>Votre voisin de bureau installe ce Brewfile sur son poste</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ brew bundle
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">$ brew bundle
 Tapping caskroom/cask
 Tapping homebrew/bundle
 Using homebrew/core
@@ -959,7 +959,7 @@ vous vous dites autant partager la liste des formulas nécessaire pour un projet
 Comme cela un nouveau développeur n&rsquo;a qu&rsquo;à lancer <code>brew bundle</code> pour être sûr d&rsquo;avoir le nécessaire pour travailler sur le projet.</p>
 <p>Cela tombe bien, vous avez un nouveau projet en Java sous Gradle à faire et qui servira comme outil aux autres développeurs.</p>
 <p>Vous créez un <strong>Brewfile</strong> dans votre nouveau projet avec Java et Gradle</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ <span class="nb">cd</span> project-tool
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">$ <span class="nb">cd</span> project-tool
 $ vim Brewfile
 $ cat Brewfile
 tap <span class="s1">&#39;caskroom/cask&#39;</span>
@@ -968,7 +968,7 @@ cask <span class="s1">&#39;java&#39;</span>
 </code></pre></div><p>Après que ce nouveau projet soit prêt, il est temps que les autres développeurs l&rsquo;utilisent.
 Pour faciliter sa distribution, vous l&rsquo;avez publié dans votre repository manager de votre client (ex. <strong>Nexus</strong>).</p>
 <p>Un de vos collègues teste l&rsquo;installation du nouvel outil</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ <span class="nv">tool_url</span><span class="o">=</span><span class="s1">&#39;https://nexus.client.tld/content/repositories/releases/tld/client/project/tool/1.0.0/tool-1.0.0-distribution.zip&#39;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">$ <span class="nv">tool_url</span><span class="o">=</span><span class="s1">&#39;https://nexus.client.tld/content/repositories/releases/tld/client/project/tool/1.0.0/tool-1.0.0-distribution.zip&#39;</span>
 $ wget <span class="nv">$tool_url</span>
 $ unzip tool-1.0.0-distribution.zip
 $ tree
@@ -991,13 +991,13 @@ Par défaut, un <strong>tap</strong> ajouté via <code>brew tap utilisateur/nom_
 <p>Si vous voulez le stocker ailleurs, l&rsquo;ajout se fait par <code>brew tap utilisateur/nom_tap git@git.client.tld:utilisateur/homebrew-nom_tap.git</code>.</p>
 <p>NOTE: Dans un <strong>Brewfile</strong>, ajouter la ligne <code>tap 'utilisateur/nom_tap', 'git@git.client.tld:utilisateur/homebrew-nom_tap.git'</code> pour déclarer ce tap.</p>
 <p>Une fois que vous avez créé et ajouté ce <strong>tap</strong> privé, vous pouvez passer à la création de la <strong>formula</strong> via la commande <code>create</code>.</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ brew create <span class="nv">$tool_url</span> --set-name project-tool --set-version 1.0.0 --tap utilisateur/nom_tap
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">$ brew create <span class="nv">$tool_url</span> --set-name project-tool --set-version 1.0.0 --tap utilisateur/nom_tap
 <span class="o">==</span>&gt; Downloading https://nexus.client.tld/content/repositories/releases/tld/client/project/tool/1.0.0/tool-1.0.0-distribution.zip
 <span class="c1">######################################################################## 100,0%</span>
 Please <span class="sb">`</span>brew audit --new-formula project-tool<span class="sb">`</span> before submitting, thanks.
 Editing /usr/local/Homebrew/Library/Taps/utilisateur/nom_tap/project-tool.rb
 </code></pre></div><p>Suite à la création de votre <strong>formula</strong>, homebrew ouvre automatiquement le fichier associé.</p>
-<div class="highlight"><pre class="chroma"><code class="language-ruby" data-lang="ruby"><span class="c1"># Documentation: http://docs.brew.sh/Formula-Cookbook.html # &lt;1&gt;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-ruby" data-lang="ruby"><span class="c1"># Documentation: http://docs.brew.sh/Formula-Cookbook.html # &lt;1&gt;</span>
 <span class="c1">#                http://www.rubydoc.info/github/Homebrew/brew/master/Formula</span>
 <span class="c1"># PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!</span>
 
@@ -1043,7 +1043,7 @@ Editing /usr/local/Homebrew/Library/Taps/utilisateur/nom_tap/project-tool.rb
 </ol>
 </blockquote>
 <p>Vous pouvez <strong>auditer</strong> la formula pour savoir par où commencer</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ brew audit --new-formula project-tool
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">$ brew audit --new-formula project-tool
 utilisateur/nom_tap/project-tool:
   * Formula should have a desc <span class="o">(</span>Description<span class="o">)</span>.
   * The homepage should start with http or https <span class="o">(</span>URL is <span class="o">)</span>.
@@ -1059,7 +1059,7 @@ Error: <span class="m">10</span> problems in <span class="m">1</span> formula
 </code></pre></div><p>Vous devez donc définir la <strong>description</strong> et la <strong>homepage</strong> de la formula (ex. l&rsquo;url du repository git).
 Et comme il ne s&rsquo;agit pas d&rsquo;un <strong>build cmake</strong>, vous pouvez enlever les commentaires ainsi que le code lié à <strong>cmake</strong>.</p>
 <p>Vous faites les premiers changements afin que l&rsquo;audit passe</p>
-<div class="highlight"><pre class="chroma"><code class="language-ruby" data-lang="ruby"><span class="k">class</span> <span class="nc">ProjectTool</span> <span class="o">&lt;</span> <span class="no">Formula</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-ruby" data-lang="ruby"><span class="k">class</span> <span class="nc">ProjectTool</span> <span class="o">&lt;</span> <span class="no">Formula</span>
   <span class="n">desc</span> <span class="s2">&#34;Installer l&#39;outil &#39;tool&#39; pour le projet&#34;</span>
   <span class="n">homepage</span> <span class="s2">&#34;https://git.client.tld/project/tool&#34;</span>
   <span class="n">url</span> <span class="s2">&#34;https://nexus.client.tld/content/repositories/releases/tld/client/project/tool/1.0.0/tool-1.0.0-distribution.zip&#34;</span>
@@ -1076,7 +1076,7 @@ Et comme il ne s&rsquo;agit pas d&rsquo;un <strong>build cmake</strong>, vous po
   <span class="k">end</span>
 <span class="k">end</span>
 </code></pre></div><p>Puis vous auditez et tentez d&rsquo;installer la formula</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ brew audit --new-formula project-tool
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">$ brew audit --new-formula project-tool
 $ brew install project-tool
 <span class="o">==</span>&gt; Installing project-tool from utilisateur/nom_tap
 <span class="o">==</span>&gt; Downloading https://nexus.client.tld/content/repositories/releases/tld/client/project/tool/1.0.0/tool-1.0.0-distribution.zip
@@ -1105,7 +1105,7 @@ Ce test peut simplement être que l&rsquo;éxecution de <code>tool --version</co
 <p>De plus, une formula peut définir des pré-requis comme par exemple que Java 8 (ou plus) soit installé.
 Via <code>depends_on :java =&gt; &quot;1.8+&quot;</code> vous définissez un tel prérequis.</p>
 <p>Vous ajoutez les différentes étapes dans la formula</p>
-<div class="highlight"><pre class="chroma"><code class="language-ruby" data-lang="ruby"><span class="k">class</span> <span class="nc">ProjectTool</span> <span class="o">&lt;</span> <span class="no">Formula</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-ruby" data-lang="ruby"><span class="k">class</span> <span class="nc">ProjectTool</span> <span class="o">&lt;</span> <span class="no">Formula</span>
   <span class="n">desc</span> <span class="s2">&#34;Installer l&#39;outil &#39;tool&#39; pour le projet&#34;</span>
   <span class="n">homepage</span> <span class="s2">&#34;https://git.client.tld/project/tool&#34;</span>
   <span class="n">url</span> <span class="s2">&#34;https://nexus.client.tld/content/repositories/releases/tld/client/project/tool/1.0.0/tool-1.0.0-distribution.zip&#34;</span>
@@ -1129,7 +1129,7 @@ Via <code>depends_on :java =&gt; &quot;1.8+&quot;</code> vous définissez un tel
 <li>l&rsquo;installer avec <code>brew install</code>,</li>
 <li>la tester avec <code>brew test</code>.</li>
 </ul>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ brew audit --new-formula project-tool
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">$ brew audit --new-formula project-tool
 $ brew install project-tool
 <span class="o">==</span>&gt; Installing project-tool from utilisateur/nom_tap
 <span class="o">==</span>&gt; Downloading https://nexus.client.tld/content/repositories/releases/tld/client/project/tool/1.0.0/tool-1.0.0-distribution.zip
@@ -1143,13 +1143,13 @@ Testing utilisateur/nom_tap/project-tool
 <p>Vous pouvez aussi vérifier le style de la formula via <code>brew style</code>.</p>
 </blockquote>
 <p>Comme tout s&rsquo;est bien passé, vous souhaitez maintenant la <strong>commiter</strong> pour que vos collègues puissent l&rsquo;installer plus simplement.</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="nb">cd</span> <span class="k">$(</span>brew --repo utilisateur/nom_tap<span class="k">)</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="nb">cd</span> <span class="k">$(</span>brew --repo utilisateur/nom_tap<span class="k">)</span>
 git add Formula/project-tool.rb
 git commit
 </code></pre></div><p>Votre collègue apprécie la nouvelle procédure</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">brew tap utilisateur/nom_tap git@git.client.tld:utilisateur/homebrew-nom_tap.git
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">brew tap utilisateur/nom_tap git@git.client.tld:utilisateur/homebrew-nom_tap.git
 brew install project-tool
-</code></pre></div><p>NOTE: le système de <strong>formula** permet également de gérer l&rsquo;installation depuis les sources (</strong>&ndash;HEAD**<a href="https://github.com/Homebrew/brew/blob/master/docs/Formula-Cookbook.md#head"></a>)
+</code></pre></div><p>NOTE: le système de <strong>formula</strong> permet également de gérer l&rsquo;installation depuis les sources (<a href="https://github.com/Homebrew/brew/blob/master/docs/Formula-Cookbook.md#head"><strong>&ndash;HEAD</strong></a>)
 ou les versions bêta (<a href="https://github.com/Homebrew/brew/blob/master/docs/Formula-Cookbook.md#devel"><strong>&ndash;devel</strong></a>).
 La documentation des formulas vous permettera d&rsquo;approfondir vos formulas (<a href="http://docs.brew.sh/Formula-Cookbook.html">http://docs.brew.sh/Formula-Cookbook.html</a>).</p>
 <p>Maintenant que vous savez créer des <strong>formulas</strong> pour votre client,
