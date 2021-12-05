@@ -27,5 +27,5 @@ jobs:
         if: github.ref == 'refs/heads/sources'
         with:
           deploy_key: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: master
+          publish_branch: site
           publish_dir: ./public
