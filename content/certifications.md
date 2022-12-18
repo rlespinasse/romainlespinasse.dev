@@ -19,7 +19,7 @@ date = "2022-12-18"
 
 | Certificate | Issue date |
 | - | - |
-| [GitLab Remote Foundation Certification](/pdf/gitlab-teamops-practitioner-certificate.pdf) | 2022-12-18 |
+| [GitLab Remote Foundation Certification](/pdf/gitlab-remote-foundation-certificate.pdf) | 2022-12-18 |
 | [GitLab TeamOps Practitioner Certification](/pdf/gitlab-teamops-practitioner-certificate.pdf) | 2022-12-17 |
 | [GitLab 201 Certification](/pdf/gitlab-201-certificate.pdf) | 2022-12-16 |
 | [GitLab 101 Certification](/pdf/gitlab-101-certificate.pdf) | 2022-12-16 |
