@@ -7,6 +7,7 @@ date = "2022-12-18"
 
 | Certifications | Issue date | Expiration date |
 | - | - | - |
+| [GitLab Certified DevOps Professional](https://www.credly.com/badges/584848a8-bca8-4549-b1b5-982bb5123105) | 2022-12-21 | _No date_ |
 | [GitLab Solutions Architect Core Verified Associate](https://www.credly.com/badges/4bf0c570-7c9f-4d2f-b0a0-676e0eb8043d) | 2022-12-18 | 2024-12-18 |
 | [GitLab Certified Security Specialist](https://www.credly.com/badges/43e8ddb6-01dd-462e-9506-70266e86c0d4) | 2022-12-16 | _No date_ |
 | [Google Cloud Certified Cloud Digital Leader](https://www.credential.net/fcdb3e75-a868-4bf5-a138-fef5678dd9da) | 2022-12-14 | 2025-12-14 |
