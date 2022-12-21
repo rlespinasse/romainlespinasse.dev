@@ -8,6 +8,7 @@ date = "2022-12-18"
 | Certifications | Issue date | Expiration date |
 | - | - | - |
 | [GitLab Solutions Architect Core Verified Associate](https://www.credly.com/badges/4bf0c570-7c9f-4d2f-b0a0-676e0eb8043d) | 2022-12-18 | 2024-12-18 |
+| [Google Cloud Certified Cloud Digital Leader]([https://www.credly.com/badges/4bf0c570-7c9f-4d2f-b0a0-676e0eb8043d](https://www.credential.net/fcdb3e75-a868-4bf5-a138-fef5678dd9da)) | 2022-12-14 | 2025-12-14 |
 | [GitLab Certified CI/CD Associate](https://www.credly.com/badges/2213767c-2dbe-4d4d-97c1-9f074e72f113) | 2022-12-11 | _No date_ |
 | [GitLab Certified Project Management Associate](https://www.credly.com/badges/582b3875-f092-4ef1-8e88-4f32f144de09) | 2022-12-11 | _No date_ |
 | [GitLab Certified Git Associate](https://www.credly.com/badges/ab36f29b-e0df-4b1b-b715-cb2891dd66cb) | 2022-12-11 | _No date_ |
