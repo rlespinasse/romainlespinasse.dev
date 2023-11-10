@@ -3,6 +3,11 @@ title: "Townscaper | Design | Colorful neighborhood"
 date: 2020-07-04T08:42:00+02:00
 draft: false
 toc: false
+description: Multiple neighborhoods, just colorful in theirs own ways.
+tags:
+- townscaper
+- game
+- creation
 ---
 
 Multiple `neighborhood`, just `colorful` in theirs own ways.

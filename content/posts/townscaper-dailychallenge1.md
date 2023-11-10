@@ -3,6 +3,11 @@ title: "Townscaper | Daily Challenge | Bridge (Day 1)"
 date: 2020-07-10T10:42:00+02:00
 draft: false
 toc: false
+description: Participation on a daily challenge about Townscaper. Day 1 - world Bridge.
+tags:
+- townscaper
+- game
+- creation
 ---
 
 Two islands, one `Bridge`, A lot of Stairs.

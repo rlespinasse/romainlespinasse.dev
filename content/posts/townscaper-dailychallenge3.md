@@ -3,6 +3,11 @@ title: "Townscaper | Daily Challenge | Neighbours (Day 3)"
 date: 2020-07-12T10:42:00+02:00
 draft: false
 toc: false
+description: Participation on a daily challenge about Townscaper. Day 3 - world Neighbours.
+tags:
+- townscaper
+- game
+- creation
 ---
 
 Sometimes, being a good neighbour is a difficult task.

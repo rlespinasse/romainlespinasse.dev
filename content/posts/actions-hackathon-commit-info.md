@@ -2,7 +2,8 @@
 title: "Actions Hackathon | Access commit info for your release and deployment workflows"
 date: 2020-08-16T11:42:00+02:00
 draft: false
-toc: true
+toc: false
+description: Submission of git-commit-data-action project to the dev.to Actions Hackathon.
 tags: 
   - actionshackathon
   - github

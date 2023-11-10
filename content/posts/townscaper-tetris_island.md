@@ -1,8 +1,13 @@
 ---
-title: "Townscaper | Townscaper | Creation | Tetris island"
+title: "Townscaper | Creation | Tetris island"
 date: 2020-07-12T18:42:00+02:00
 draft: false
 toc: false
+description: Welcome to the Tetris island ... and yes, the island float, we are aware of it.
+tags:
+- townscaper
+- game
+- creation
 ---
 
 Welcome to the `Tetris island` ... and yes, the island float, we are aware of it.

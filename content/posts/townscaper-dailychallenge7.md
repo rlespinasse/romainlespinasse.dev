@@ -3,6 +3,11 @@ title: "Townscaper | Daily Challenge | Labyrinth (Day 7)"
 date: 2020-07-16T21:42:00+02:00
 draft: false
 toc: false
+description: Participation on a daily challenge about Townscaper. Day 7 - world Labyrinth.
+tags:
+- townscaper
+- game
+- creation
 ---
 
 From the dock to the garden, go door to door.
