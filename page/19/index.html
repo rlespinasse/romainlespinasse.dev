@@ -1,0 +1,169 @@
+<!doctype html><html>
+<head lang=en>
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge"><title>Romain Lespinasse | Home </title><meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=description content>
+<meta property="og:image" content>
+<link rel=alternate type=application/rss+xml href=https://www.romainlespinasse.dev/index.xml title="Romain Lespinasse">
+<meta property="og:title" content="Romain Lespinasse">
+<meta property="og:description" content>
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.romainlespinasse.dev/">
+<meta name=twitter:card content="summary">
+<meta name=twitter:title content="Romain Lespinasse">
+<meta name=twitter:description content>
+<script src=https://www.romainlespinasse.devjs/feather.min.js></script>
+<link href=https://www.romainlespinasse.dev/css/fonts.2c2227b81b1970a03e760aa2e6121cd01f87c88586803cbb282aa224720a765f.css rel=stylesheet>
+<link rel=stylesheet type=text/css media=screen href=https://www.romainlespinasse.dev/css/main.ac08a4c9714baa859217f92f051deb58df2938ec352b506df655005dcaf98cc0.css>
+<link id=darkModeStyle rel=stylesheet type=text/css href=https://www.romainlespinasse.dev/css/dark.726cd11ca6eb7c4f7d48eb420354f814e5c1b94281aaf8fd0511c1319f7f78a4.css disabled>
+<script type=text/javascript src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type=text/x-mathjax-config>
+		MathJax.Hub.Config({
+			tex2jax: {
+				inlineMath: [['$','$'], ['\\(','\\)']],
+				displayMath: [['$$','$$'], ['\[','\]']],
+				processEscapes: true,
+				processEnvironments: true,
+				skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+				TeX: { equationNumbers: { autoNumber: "AMS" },
+						 extensions: ["AMSmath.js", "AMSsymbols.js"] }
+			}
+		});
+		</script>
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/auto-render.min.js onload=renderMathInElement(document.body)></script>
+<script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1}]})})</script>
+</head>
+<body>
+<div class=content>
+<header>
+<div class=main>
+<a href=https://www.romainlespinasse.dev>Romain Lespinasse</a>
+</div>
+<nav>
+<a href=/>Home</a>
+<a href=/posts>All posts</a>
+<a href=/about>About</a>
+<a href=/tags>Tags</a>
+| <span id=dark-mode-toggle onclick=toggleTheme()></span>
+<script src=https://www.romainlespinasse.devjs/themetoggle.js></script>
+</nav>
+</header>
+<main class=list>
+<div class=site-description><p>Technical Posts, Opensource Releases, and sometimes Games Creations</p></div>
+<section class=list-item>
+<h1 class=title><a href=/posts/release-github-slug-action-1.0.2/>Project github-slug-action | Release 1.0.2</a></h1>
+<time>Nov 6, 2019</time>
+<br><div class=description>
+</div>
+<a class=readmore href=/posts/release-github-slug-action-1.0.2/>Read more ⟶</a>
+</section>
+<section class=list-item>
+<h1 class=title><a href=/posts/release-github-slug-action-1.0.1/>Project github-slug-action | Release 1.0.1</a></h1>
+<time>Nov 6, 2019</time>
+<br><div class=description>
+</div>
+<a class=readmore href=/posts/release-github-slug-action-1.0.1/>Read more ⟶</a>
+</section>
+<section class=list-item>
+<h1 class=title><a href=/posts/release-github-slug-action-1.0.0/>Project github-slug-action | Release 1.0.0</a></h1>
+<time>Nov 6, 2019</time>
+<br><div class=description>
+</div>
+<a class=readmore href=/posts/release-github-slug-action-1.0.0/>Read more ⟶</a>
+</section>
+<section class=list-item>
+<h1 class=title><a href=/posts/gohugo/>Hugo | Generate your own site</a></h1>
+<time>Oct 27, 2019</time>
+<br><div class=description>
+I brought a domain name romainlespinasse.dev, so naturally I search to build a website, a small one.
+to give access to some social links about me, to make available all my posts across blog platforms (Company blog site, Medium, Dev.to). I choose
+to build a static site with Hugo support by Continuous Delivery using Github Actions to deploy it on GitHub User site. Step 1 | Build the site After installing Hugo, I bootstrap a site for romainlespinasse.&mldr;
+</div>
+<a class=readmore href=/posts/gohugo/>Read more ⟶</a>
+</section>
+<section class=list-item>
+<h1 class=title><a href=/posts/makefile-wrapper/>Makefile | Create a wrapper task</a></h1>
+<time>Oct 18, 2019</time>
+<br><div class=description>
+In makefile, you can define tasks and run them individually
+make run-task1 run-task2 run-task3
+run-task1: @echo "run task 1" run-task2: @echo "run task 2" run-task3: @echo "run task 3" When you want to run tasks from another tasks (e.g. make run-all-tasks), you can
+use makefile prerequisites mechanism run-all-tasks: run-task1 run-task2 run-task3 use sub-command line with $(MAKE) run-all-tasks: @$(MAKE) run-task1 @$(MAKE) run-task2 @$(MAKE) run-task3 You can also create a wrapper task to run all tasks with a specific naming.&mldr;
+</div>
+<a class=readmore href=/posts/makefile-wrapper/>Read more ⟶</a>
+</section>
+<section class=list-item>
+<h1 class=title><a href=/posts/hacktoberfest-2019/>Hacktoberfest | Let's go for 2019</a></h1>
+<time>Sep 30, 2019</time>
+<br><div class=description>
+Once again, I&rsquo;m participate to the 2019 edition of the Hacktoberfest.
+This month, I will focus on my open-source projects
+byteslice, a go library to manipulate a byte array, hoff, a go library to run workflows with high order functions - a new name is required :) , and the new one bitframe, a go library to manipulate bit frames using data protocol with encoder and decoder capabilities. But I don&rsquo;t forget to also work on my shell project : michel.&mldr;
+</div>
+<a class=readmore href=/posts/hacktoberfest-2019/>Read more ⟶</a>
+</section>
+<section class=list-item>
+<h1 class=title><a href=/posts/makefile-guard/>Makefile | How to check a mandatory variable</a></h1>
+<time>Jul 14, 2019</time>
+<br><div class=description>
+When you use a variable in a Makefile task and you want to make it mandatory and check it before run the effective task,
+You can guard it.
+task-who-need-SPECIFIC_ENVVAR: guard-SPECIFIC_ENVVAR @echo ${SPECIFIC_ENVVAR} You only need to add the following task
+guard-%: @ if [ "${${*}}" = "" ]; then \ echo "Environment variable $*not set"; \ exit 1; \ fi So when you run it, the guard will prevent to run the task&mldr;
+</div>
+<a class=readmore href=/posts/makefile-guard/>Read more ⟶</a>
+</section>
+<section class=list-item>
+<h1 class=title><a href=/posts/antora-en/>Antora 1.0 | Replace your wiki with a documentation site</a></h1>
+<time>Sep 11, 2018</time>
+<br><div class=description>
+Bonjour, la version française de cet article peut être lue sur ce site
+No matter what your IT project is, there will always be a need to store some documentation. The choice to use a wiki is quite common in the corporate world.
+Let&rsquo;s talk about you, developer on one of these programs, is documentation of your different projects managed by an easily accessible and editable wiki?
+If you look at the content of this wiki, you will probably find:&mldr;
+</div>
+<a class=readmore href=/posts/antora-en/>Read more ⟶</a>
+</section>
+<section class=list-item>
+<h1 class=title><a href=/posts/antora/>Antora 1.0 | Remplacer votre wiki par un site de documentation</a></h1>
+<time>Apr 18, 2018</time>
+<br><div class=description>
+Hi, the english version of this article can be read on this site
+Peu importe votre projet informatique, il y aura toujours un besoin de stocker de la documentation. Le choix d&rsquo;utiliser un wiki est assez courant en entreprise.
+Parlons de vous, développeur sur un de ces programmes, la documentation des différents projets est-elle gérée par un wiki facilement accessible et éditable?
+Et si vous regardez le contenu de ce wiki, vous y trouverez surement :&mldr;
+</div>
+<a class=readmore href=/posts/antora/>Read more ⟶</a>
+</section>
+<section class=list-item>
+<h1 class=title><a href=/posts/homebrew/>Homebrew | Utilisez un package manager sous macOS</a></h1>
+<time>Feb 28, 2017</time>
+<br><div class=description>
+Votre société ou votre client vient de vous confier un macbook pour travailler, il ne vous reste plus qu&rsquo;à installer tout un ensemble de programmes pour commencer.
+Sous linux, vous auriez un gestionnaire de formulas qui ferait bien l&rsquo;affaire pour aller plus vite. Mais sous macOS, pas de apt-get, pas de yum, vous voilà parti pour installer tout cela à la main.
+Pas de crainte, des gestionnaires de formulas existent aussi pour macOS comme Homebrew (ou MacPorts)&mldr;
+</div>
+<a class=readmore href=/posts/homebrew/>Read more ⟶</a>
+</section>
+<ul class=pagination>
+<span class="page-item page-prev">
+<a href=/page/18/ class=page-link aria-label=Previous><span aria-hidden=true>← Prev</span></a>
+</span>
+<span class="page-item page-next">
+</span>
+</ul>
+</main>
+<footer>
+<div style=display:flex><a class=soc href=https://github.com/rlespinasse rel=me title=GitHub><i data-feather=github></i></a>
+<a class=border></a><a class=soc href=https://www.linkedin.com/in/romain-lespinasse rel=me title=LinkedIn><i data-feather=linkedin></i></a>
+<a class=border></a></div>
+<div class=footer-info>
+2023 © Romain Lespinasse | <a href=https://github.com/athul/archie>Archie Theme</a> | Built with <a href=https://gohugo.io>Hugo</a>
+</div>
+</footer>
+<script>feather.replace()</script>
+</div>
+</body>
+</html>
