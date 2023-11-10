@@ -3,6 +3,11 @@ title: "Townscaper | Creation | City at sea"
 date: 2020-07-05T10:42:00+02:00
 draft: false
 toc: false
+description: 
+tags:
+- townscaper
+- game
+- creation
 ---
 
 A `city at sea`.

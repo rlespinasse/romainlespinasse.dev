@@ -3,10 +3,15 @@ title: "Townscaper | Creation | Sauron tower"
 date: 2020-07-10T10:42:00+02:00
 draft: false
 toc: false
+description: Do it look like Barad-dûr to you?
+tags:
+- townscaper
+- game
+- creation
 ---
 
 See some `Minas Tirith` on [twitter](https://twitter.com/search?q=minas%20tirith%20townscaper&src=typed_query), 
-so here the `Sauron` tower to match them.
+so here the `Sauron` tower `Barad-dûr` to match them.
 
 {{< load-photoswipe >}}
 

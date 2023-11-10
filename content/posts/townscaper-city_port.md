@@ -3,6 +3,11 @@ title: "Townscaper | Creation | City port"
 date: 2020-07-02T10:42:00+02:00
 draft: false
 toc: false
+description: City with a big port.
+tags:
+- townscaper
+- game
+- creation
 ---
 
 `City` with a big `port`.
