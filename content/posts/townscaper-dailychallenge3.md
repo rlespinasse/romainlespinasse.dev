@@ -1,5 +1,5 @@
 ---
-title: "Daily Challenge | Neighbours (Day 3)"
+title: "Townscaper | Daily Challenge | Neighbours (Day 3)"
 date: 2020-07-12T10:42:00+02:00
 draft: false
 toc: false

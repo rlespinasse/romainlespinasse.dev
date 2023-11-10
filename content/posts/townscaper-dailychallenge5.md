@@ -1,5 +1,5 @@
 ---
-title: "Daily Challenge | Eyrie (Day 5)"
+title: "Townscaper | Daily Challenge | Eyrie (Day 5)"
 date: 2020-07-14T13:42:00+02:00
 draft: false
 toc: false

@@ -1,5 +1,5 @@
 ---
-title: "Daily Challenge | Canal (Day 4)"
+title: "Townscaper | Daily Challenge | Canal (Day 4)"
 date: 2020-07-13T15:42:00+02:00
 draft: false
 toc: false
