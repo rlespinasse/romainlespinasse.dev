@@ -1,5 +1,5 @@
 ---
-title: "Daily Challenge | Bridge (Day 1)"
+title: "Townscaper | Daily Challenge | Bridge (Day 1)"
 date: 2020-07-10T10:42:00+02:00
 draft: false
 toc: false

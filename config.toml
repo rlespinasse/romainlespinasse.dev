@@ -2,99 +2,51 @@ baseURL = "https://www.romainlespinasse.dev"
 languageCode = "en-us"
 defaultContentLanguage = "en"
 title = "Romain Lespinasse"
-theme = "hermit"
+theme = "archie"
+copyright = "© Romain Lespinasse"
 
-# enableGitInfo = true
-pygmentsCodefences  = true
-pygmentsUseClasses  = true
-# hasCJKLanguage = true  # If Chinese/Japanese/Korean is your main content language, enable this to make wordCount works right.
-rssLimit = 10  # Maximum number of items in the RSS feed.
-copyright = "This work is licensed under a MIT License." # This message is only used by the RSS template.
-enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/functions/emojify/
-# googleAnalytics = ""
-# disqusShortname = ""
+# Code Highlight
+pygmentsstyle = "monokai"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
 
-staticDir = ["static"]
-
-[markup.goldmark.renderer]
-  unsafe = true
-
-[author]
-  name = "Romain Lespinasse"
-
-[blackfriday]
-  hrefTargetBlank = true
-  noreferrerLinks = true
-  nofollowLinks = true
-
-[taxonomies]
-  tag = "tags"
-  # Categories are disabled by default.
+paginate=10 # articles per page
 
 [params]
-  dateform        = "Jan 2, 2006"
-  dateformShort   = "Jan 2"
-  dateformNum     = "2006-01-02"
-  dateformNumTime = "2006-01-02 15:04 -0700"
+	mode="toggle" # color-mode → light,dark,toggle or auto
+	useCDN=false # don't use CDNs for fonts and icons, instead serve them locally.
+	subtitle = "Technical Posts, Opensource Releases, and sometimes Games Creations"
+	mathjax = true # enable MathJax support
+	katex = true # enable KaTeX support
 
-  # Metadata mostly used in document's head
-  # description = ""
-  # images = [""]
-  themeColor = "#494f5c"
+# Social Tags
 
-  homeSubtitle = "I'm not young enough to known everything. -- J. M. Barrie."
-  footerCopyright = ' &#183; <a href="https://tldrlegal.com/license/mit-license" target="_blank" rel="noopener">MIT License</a>'
-  # bgImg = "/img/placeholder.png"  # Homepage background-image URL
+[[params.social]]
+name = "GitHub"
+icon = "github"
+url = "https://github.com/rlespinasse"
 
-  # Prefix of link to the git commit detail page. GitInfo must be enabled.
-  # gitUrl = "https://github.com/username/repository/commit/"
+[[params.social]]
+name = "LinkedIn"
+icon = "linkedin"
+url = "https://www.linkedin.com/in/romain-lespinasse"
 
-  # Toggling this option needs to rebuild SCSS, requires Hugo extended version
-  justifyContent = false  # Set "text-align: justify" to `.content`.
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
 
-  relatedPosts = false  # Add a related content section to all single posts page
+[[menu.main]]
+name = "All posts"
+url = "/posts"
+weight = 2
 
-  code_copy_button = true # Turn on/off the code-copy-button for code-fields
-  
-  # Add custom css
-  # customCSS = ["css/foo.css", "css/bar.css"]
+[[menu.main]]
+name = "About"
+url = "/about"
+weight = 3
 
-  # Social Icons
-  # Check https://github.com/Track3/hermit#social-icons for more info.
-  [[params.social]]
-    name = "twitter"
-    url = "https://twitter.com/rlespinasse"
-
-  [[params.social]]
-    name = "linkedin"
-    url = "https://www.linkedin.com/in/romain-lespinasse"
-
-  [[params.social]]
-    name = "github"
-    url = "https://github.com/rlespinasse"
-
-  [[params.social]]
-    name = "instagram"
-    url = "https://www.instagram.com/rlespinasse/"
-
-[menu]
-
-  [[menu.main]]
-    name = "Technical posts"
-    url = "posts/"
-    weight = 10
-
-  [[menu.main]]
-    name = "Personal projects"
-    url = "personal-projects/"
-    weight = 20
-
-  [[menu.main]]
-    name = "Townscaper creations"
-    url = "townscaper/"
-    weight = 30
-
-  [[menu.main]]
-    name = "Certifications"
-    url = "certifications/"
-    weight = 40
+[[menu.main]]
+name = "Tags"
+url = "/tags"
+weight = 4
