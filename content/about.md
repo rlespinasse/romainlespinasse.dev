@@ -38,7 +38,7 @@ In the `golang` world,
 * You can manipulate some bytes with [byteslice](https://github.com/rlespinasse/byteslice) (**archived**).
 
 Because I love to play with `bash` scripts, [michel](https://github.com/rlespinasse/michel) help to structure all yours scripts (**archived**).
-> Try **michel** who serve as GitHub template.
+> Try **michel**, available as a GitHub template.
 
 And all my current and past projects are available on [https://github.com/rlespinasse](https://github.com/rlespinasse).
 
