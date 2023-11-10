@@ -1,18 +1,12 @@
-<!doctype html><html lang=en-us>
-<head>
+<!doctype html><html><head lang=en>
 <meta charset=utf-8>
-<meta name=viewport content="width=device-width,initial-scale=1">
-<meta http-equiv=x-ua-compatible content="ie=edge">
-<meta name=theme-color content="#494f5c">
-<meta name=msapplication-TileColor content="#494f5c">
-<meta itemprop=name content="Makefile | Create a wrapper task">
-<meta itemprop=description content="In makefile, you can define tasks and run them individually
+<meta http-equiv=x-ua-compatible content="IE=edge"><title>Makefile | Create a wrapper task - Romain Lespinasse</title><meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=description content="In makefile, you can define tasks and run them individually
  make run-task1 run-task2 run-task3
  run-task1: @echo &#34;run task 1&#34; run-task2: @echo &#34;run task 2&#34; run-task3: @echo &#34;run task 3&#34; When you want to run tasks from another tasks (e.g. make run-all-tasks), you can
- use makefile prerequisites mechanism  run-all-tasks: run-task1 run-task2 run-task3  use sub-command line with $(MAKE)  run-all-tasks: @$(MAKE) run-task1 @$(MAKE) run-task2 @$(MAKE) run-task3 You can also create a wrapper task to run all tasks with a specific naming."><meta itemprop=datePublished content="2019-10-18T10:00:00+01:00">
-<meta itemprop=dateModified content="2019-10-18T10:00:00+01:00">
-<meta itemprop=wordCount content="144">
-<meta itemprop=keywords content="tooltip,makefile,"><meta property="og:title" content="Makefile | Create a wrapper task">
+ use makefile prerequisites mechanism  run-all-tasks: run-task1 run-task2 run-task3  use sub-command line with $(MAKE)  run-all-tasks: @$(MAKE) run-task1 @$(MAKE) run-task2 @$(MAKE) run-task3 You can also create a wrapper task to run all tasks with a specific naming.">
+<meta property="og:image" content>
+<meta property="og:title" content="Makefile | Create a wrapper task">
 <meta property="og:description" content="In makefile, you can define tasks and run them individually
  make run-task1 run-task2 run-task3
  run-task1: @echo &#34;run task 1&#34; run-task2: @echo &#34;run task 2&#34; run-task3: @echo &#34;run task 3&#34; When you want to run tasks from another tasks (e.g. make run-all-tasks), you can
@@ -27,117 +21,110 @@
  make run-task1 run-task2 run-task3
  run-task1: @echo &#34;run task 1&#34; run-task2: @echo &#34;run task 2&#34; run-task3: @echo &#34;run task 3&#34; When you want to run tasks from another tasks (e.g. make run-all-tasks), you can
  use makefile prerequisites mechanism  run-all-tasks: run-task1 run-task2 run-task3  use sub-command line with $(MAKE)  run-all-tasks: @$(MAKE) run-task1 @$(MAKE) run-task2 @$(MAKE) run-task3 You can also create a wrapper task to run all tasks with a specific naming.">
-<link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png>
-<link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
-<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png>
-<link rel=manifest href=/site.webmanifest>
-<link rel=mask-icon href=/safari-pinned-tab.svg color>
-<link rel="shortcut icon" href=/favicon.ico>
-<title>Makefile | Create a wrapper task</title>
-<link rel=stylesheet href=https://www.romainlespinasse.dev/css/style.min.037b6ee8f8c1baab6a3d0a9da11c3ff18a7552471f16c59fd98538d5ce99208b.css integrity="sha256-A3tu6PjBuqtqPQqdoRw/8Yp1UkcfFsWf2YU41c6ZIIs=" crossorigin=anonymous>
+<script src=https://www.romainlespinasse.devjs/feather.min.js></script>
+<link href=https://www.romainlespinasse.dev/css/fonts.2c2227b81b1970a03e760aa2e6121cd01f87c88586803cbb282aa224720a765f.css rel=stylesheet>
+<link rel=stylesheet type=text/css media=screen href=https://www.romainlespinasse.dev/css/main.ac08a4c9714baa859217f92f051deb58df2938ec352b506df655005dcaf98cc0.css>
+<link id=darkModeStyle rel=stylesheet type=text/css href=https://www.romainlespinasse.dev/css/dark.726cd11ca6eb7c4f7d48eb420354f814e5c1b94281aaf8fd0511c1319f7f78a4.css disabled>
+<script type=text/javascript src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type=text/x-mathjax-config>
+		MathJax.Hub.Config({
+			tex2jax: {
+				inlineMath: [['$','$'], ['\\(','\\)']],
+				displayMath: [['$$','$$'], ['\[','\]']],
+				processEscapes: true,
+				processEnvironments: true,
+				skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+				TeX: { equationNumbers: { autoNumber: "AMS" },
+						 extensions: ["AMSmath.js", "AMSsymbols.js"] }
+			}
+		});
+		</script>
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/auto-render.min.js onload=renderMathInElement(document.body)></script>
+<script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1}]})})</script>
 </head>
-<body id=page>
-<header id=site-header class="animated slideInUp">
-<div class="hdr-wrapper section-inner">
-<div class=hdr-left>
-<div class=site-branding>
+<body>
+<div class=content><header>
+<div class=main>
 <a href=https://www.romainlespinasse.dev>Romain Lespinasse</a>
 </div>
-<nav class="site-nav hide-in-mobile">
-<a href=https://www.romainlespinasse.dev/posts/>Technical posts</a>
-<a href=https://www.romainlespinasse.dev/personal-projects/>Personal projects</a>
-<a href=https://www.romainlespinasse.dev/townscaper/>Townscaper creations</a>
-<a href=https://www.romainlespinasse.dev/certifications/>Certifications</a>
+<nav>
+<a href=/>Home</a>
+<a href=/posts>All posts</a>
+<a href=/about>About</a>
+<a href=/tags>Tags</a>
+| <span id=dark-mode-toggle onclick=toggleTheme()></span>
+<script src=https://www.romainlespinasse.devjs/themetoggle.js></script>
 </nav>
-</div>
-<div class="hdr-right hdr-icons">
-<span class="hdr-social hide-in-mobile"><a href=https://twitter.com/rlespinasse target=_blank rel="noopener me" title=Twitter><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9.0 01-3.14 1.53 4.48 4.48.0 00-7.86 3v1A10.66 10.66.0 013 4s-4 9 5 13a11.64 11.64.0 01-7 2c9 5 20 0 20-11.5a4.5 4.5.0 00-.08-.83A7.72 7.72.0 0023 3z"/></svg></a><a href=https://www.linkedin.com/in/romain-lespinasse target=_blank rel="noopener me" title=Linkedin><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a><a href=https://github.com/rlespinasse target=_blank rel="noopener me" title=Github><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37.0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44.0 0020 4.77 5.07 5.07.0 0019.91 1S18.73.65 16 2.48a13.38 13.38.0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07.0 005 4.77 5.44 5.44.0 003.5 8.55c0 5.42 3.3 6.61 6.44 7A3.37 3.37.0 009 18.13V22"/></svg></a><a href=https://www.instagram.com/rlespinasse/ target=_blank rel="noopener me" title=Instagram><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"/></svg></a></span><button id=menu-btn class=hdr-btn title=Menu><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
-</div>
-</div>
 </header>
-<div id=mobile-menu class="animated fast">
-<ul>
-<li><a href=https://www.romainlespinasse.dev/posts/>Technical posts</a></li>
-<li><a href=https://www.romainlespinasse.dev/personal-projects/>Personal projects</a></li>
-<li><a href=https://www.romainlespinasse.dev/townscaper/>Townscaper creations</a></li>
-<li><a href=https://www.romainlespinasse.dev/certifications/>Certifications</a></li>
-</ul>
+<main>
+<article>
+<div class=title>
+<h1 class=title>Makefile | Create a wrapper task</h1>
+<div class=meta>Posted on Oct 18, 2019</div>
 </div>
-<main class="site-main section-inner animated fadeIn faster">
-<article class=thin>
-<header class=post-header>
-<div class=post-meta><span>Oct 18, 2019</span></div>
-<h1>Makefile | Create a wrapper task</h1>
-</header>
-<div class=content>
+<section class=body>
 <p>In makefile, you can define tasks and run them individually</p>
 <blockquote>
 <p><code>make run-task1 run-task2 run-task3</code></p>
 </blockquote>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-Makefile data-lang=Makefile><span class=nf>run-task1</span><span class=o>:</span>
-	@echo <span class=s2>&#34;run task 1&#34;</span>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-Makefile data-lang=Makefile><span style=color:#a6e22e>run-task1</span><span style=color:#f92672>:</span>
+	@echo <span style=color:#e6db74>&#34;run task 1&#34;</span>
 
-<span class=nf>run-task2</span><span class=o>:</span>
-	@echo <span class=s2>&#34;run task 2&#34;</span>
+<span style=color:#a6e22e>run-task2</span><span style=color:#f92672>:</span>
+	@echo <span style=color:#e6db74>&#34;run task 2&#34;</span>
 
-<span class=nf>run-task3</span><span class=o>:</span>
-	@echo <span class=s2>&#34;run task 3&#34;</span>
+<span style=color:#a6e22e>run-task3</span><span style=color:#f92672>:</span>
+	@echo <span style=color:#e6db74>&#34;run task 3&#34;</span>
 </code></pre></div><p>When you want to run tasks from another tasks (e.g. <code>make run-all-tasks</code>), you can</p>
 <ul>
 <li>use <a href=https://www.gnu.org/software/make/manual/html_node/Prerequisite-Types.html#Prerequisite-Types><code>makefile</code> prerequisites mechanism</a></li>
 </ul>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-Makefile data-lang=Makefile><span class=nf>run-all-tasks</span><span class=o>:</span> <span class=n>run</span>-<span class=n>task</span>1 <span class=n>run</span>-<span class=n>task</span>2 <span class=n>run</span>-<span class=n>task</span>3
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-Makefile data-lang=Makefile><span style=color:#a6e22e>run-all-tasks</span><span style=color:#f92672>:</span> run-task1 run-task2 run-task3
 </code></pre></div><ul>
 <li>use sub-command line with <a href=https://www.gnu.org/software/make/manual/html_node/MAKE-Variable.html><code>$(MAKE)</code></a></li>
 </ul>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-Makefile data-lang=Makefile><span class=nf>run-all-tasks</span><span class=o>:</span>
-	@<span class=k>$(</span>MAKE<span class=k>)</span> run-task1
-	@<span class=k>$(</span>MAKE<span class=k>)</span> run-task2
-	@<span class=k>$(</span>MAKE<span class=k>)</span> run-task3
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-Makefile data-lang=Makefile><span style=color:#a6e22e>run-all-tasks</span><span style=color:#f92672>:</span>
+	@<span style=color:#66d9ef>$(</span>MAKE<span style=color:#66d9ef>)</span> run-task1
+	@<span style=color:#66d9ef>$(</span>MAKE<span style=color:#66d9ef>)</span> run-task2
+	@<span style=color:#66d9ef>$(</span>MAKE<span style=color:#66d9ef>)</span> run-task3
 </code></pre></div><p>You can also create a <code>wrapper</code> task to run all tasks with a specific naming.</p>
 <blockquote>
 <p>This will enable you to don&rsquo;t known all task names.
 Useful when using <code>include</code> mechanism in your makefile.</p>
 </blockquote>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-Makefile data-lang=Makefile><span class=err>include</span> <span class=err>makefile-with-run-tasks.mk</span>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-Makefile data-lang=Makefile><span style=color:#960050;background-color:#1e0010>include</span> <span style=color:#960050;background-color:#1e0010>makefile-with-run-tasks.mk</span>
 
-<span class=nf>run-all-tasks</span><span class=o>:</span>
-	@grep -E <span class=s1>&#39;^[\.a-zA-Z0-9_%-]+:.*$$&#39;</span> <span class=k>$(</span>MAKEFILE_LIST<span class=k>)</span> <span class=se>\
-</span><span class=se></span>		<span class=p>|</span> cut -d <span class=s2>&#34;:&#34;</span> -f2 <span class=p>|</span> grep <span class=s2>&#34;^run-task&#34;</span> <span class=p>|</span> sort -u <span class=se>\
-</span><span class=se></span>		<span class=p>|</span> xargs <span class=k>$(</span>MAKE<span class=k>)</span>
+<span style=color:#a6e22e>run-all-tasks</span><span style=color:#f92672>:</span>
+	@grep -E <span style=color:#e6db74>&#39;^[\.a-zA-Z0-9_%-]+:.*$$&#39;</span> <span style=color:#66d9ef>$(</span>MAKEFILE_LIST<span style=color:#66d9ef>)</span> <span style=color:#ae81ff>\
+</span><span style=color:#ae81ff></span>		| cut -d <span style=color:#e6db74>&#34;:&#34;</span> -f2 | grep <span style=color:#e6db74>&#34;^run-task&#34;</span> | sort -u <span style=color:#ae81ff>\
+</span><span style=color:#ae81ff></span>		| xargs <span style=color:#66d9ef>$(</span>MAKE<span style=color:#66d9ef>)</span>
 </code></pre></div><p>So when you run it, the <code>run-all-tasks</code> task will run all <code>run-task</code> tasks.</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell>$ make run-all-tasks
-run task <span class=m>1</span>
-run task <span class=m>2</span>
-run task <span class=m>3</span>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>$ make run-all-tasks
+run task <span style=color:#ae81ff>1</span>
+run task <span style=color:#ae81ff>2</span>
+run task <span style=color:#ae81ff>3</span>
 </code></pre></div>
+</section>
+<div class=post-tags>
+<nav class="nav tags">
+<ul class=tags>
+<li><a href=/tags/tooltip>tooltip</a></li>
+<li><a href=/tags/makefile>makefile</a></li>
+</ul>
+</nav>
 </div>
-<hr class=post-end>
-<footer class=post-info>
-<p>
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 01-2.83.0L2 12V2h10l8.59 8.59a2 2 0 010 2.82z"/><line x1="7" y1="7" x2="7" y2="7"/></svg><span class=tag><a href=https://www.romainlespinasse.dev/tags/tooltip>tooltip</a></span><span class=tag><a href=https://www.romainlespinasse.dev/tags/makefile>makefile</a></span>
-</p>
-<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6A2 2 0 004 4v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>144 Words</p>
-<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>2019-10-18 09:00 +0000</p>
-</footer>
 </article>
-<div class="post-nav thin">
-<a class=next-post href=https://www.romainlespinasse.dev/posts/gohugo/>
-<span class=post-nav-label><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>&nbsp;Newer</span><br><span>Hugo | Generate your own site</span>
-</a>
-<a class=prev-post href=https://www.romainlespinasse.dev/posts/hacktoberfest-2019/>
-<span class=post-nav-label>Older&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span><br><span>Hacktoberfest | Let's go for 2019</span>
-</a>
-</div>
-<div id=comments class=thin>
-</div>
 </main>
-<footer id=site-footer class="section-inner thin animated fadeIn faster">
-<p>&copy; 2023 <a href=https://www.romainlespinasse.dev>Romain Lespinasse</a> &#183; <a href=https://tldrlegal.com/license/mit-license target=_blank rel=noopener>MIT License</a></p>
-<p>
-Made with <a href=https://gohugo.io/ target=_blank rel=noopener>Hugo</a> &#183; Theme <a href=https://github.com/Track3/hermit target=_blank rel=noopener>Hermit</a> &#183; <a href=https://www.romainlespinasse.dev/posts/index.xml target=_blank title=rss><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 019 9"/><path d="M4 4a16 16 0 0116 16"/><circle cx="5" cy="19" r="1"/></svg></a>
-</p>
+<footer>
+<div style=display:flex><a class=soc href=https://github.com/rlespinasse rel=me title=GitHub><i data-feather=github></i></a>
+<a class=border></a><a class=soc href=https://www.linkedin.com/in/romain-lespinasse rel=me title=LinkedIn><i data-feather=linkedin></i></a>
+<a class=border></a></div>
+<div class=footer-info>
+2023 © Romain Lespinasse | <a href=https://github.com/athul/archie>Archie Theme</a> | Built with <a href=https://gohugo.io>Hugo</a>
+</div>
 </footer>
-<script src=https://www.romainlespinasse.dev/js/bundle.min.7d8545daa55d62427355498dd8da13f98ff79a7938ce7d2a5e2ae1ec0de3beb8.js integrity="sha256-fYVF2qVdYkJzVUmN2NoT+Y/3mnk4zn0qXirh7A3jvrg=" crossorigin=anonymous></script>
+<script>feather.replace()</script></div>
 </body>
 </html>
