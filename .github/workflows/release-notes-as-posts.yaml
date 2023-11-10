@@ -11,7 +11,7 @@ concurrency:
   group: release-notes-as-posts
   cancel-in-progress: true
 jobs:
-  autoupdate:
+  generate:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

@@ -1,9 +1,9 @@
-name: ci
+name: Build and Deploy
 
 on: push
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
