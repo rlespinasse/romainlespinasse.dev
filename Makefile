@@ -1,7 +1,7 @@
-.PHONY: server release-notes-to-posts
+.PHONY: server release-notes-as-posts
 
 server:
 	@hugo server -D
 
-release-notes-to-posts:
-	@./release-notes-to-posts.sh
+release-notes-as-posts:
+	@./release-notes-as-posts.sh
