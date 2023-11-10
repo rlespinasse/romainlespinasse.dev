@@ -1,0 +1,27 @@
+name: Release Notes as Posts
+on:
+  schedule:
+    - cron: "0 0 * * *" # Every day at midnight (UTC)
+  workflow_dispatch:
+  pull_request:
+permissions:
+  contents: write
+  pull-requests: write
+concurrency:
+  group: release-notes-as-posts
+  cancel-in-progress: true
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GH_TOKEN }}
+      - run: make release-notes-as-posts
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        shell: bash
+      - name: Commit changed files
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "New release notes as posts"
