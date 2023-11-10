@@ -77,9 +77,7 @@
 <h1 class=title><a href=/posts/gohugo/>Hugo | Generate your own site</a></h1>
 <time>Oct 27, 2019</time>
 <br><div class=description>
-I brought a domain name romainlespinasse.dev, so naturally I search to build a website, a small one.
-to give access to some social links about me, to make available all my posts across blog platforms (Company blog site, Medium, Dev.to). I choose
-to build a static site with Hugo support by Continuous Delivery using Github Actions to deploy it on GitHub User site. Step 1 | Build the site After installing Hugo, I bootstrap a site for romainlespinasse.&mldr;
+Post about how I build this blog ... like any developer must-do.
 </div>
 <a class=readmore href=/posts/gohugo/>Read more ⟶</a>
 </section>
@@ -87,10 +85,7 @@ to build a static site with Hugo support by Continuous Delivery using Github Act
 <h1 class=title><a href=/posts/makefile-wrapper/>Makefile | Create a wrapper task</a></h1>
 <time>Oct 18, 2019</time>
 <br><div class=description>
-In makefile, you can define tasks and run them individually
-make run-task1 run-task2 run-task3
-run-task1: @echo "run task 1" run-task2: @echo "run task 2" run-task3: @echo "run task 3" When you want to run tasks from another tasks (e.g. make run-all-tasks), you can
-use makefile prerequisites mechanism run-all-tasks: run-task1 run-task2 run-task3 use sub-command line with $(MAKE) run-all-tasks: @$(MAKE) run-task1 @$(MAKE) run-task2 @$(MAKE) run-task3 You can also create a wrapper task to run all tasks with a specific naming.&mldr;
+Explore Makefile nice features to ease your developer life.
 </div>
 <a class=readmore href=/posts/makefile-wrapper/>Read more ⟶</a>
 </section>
@@ -98,9 +93,7 @@ use makefile prerequisites mechanism run-all-tasks: run-task1 run-task2 run-task
 <h1 class=title><a href=/posts/hacktoberfest-2019/>Hacktoberfest | Let's go for 2019</a></h1>
 <time>Sep 30, 2019</time>
 <br><div class=description>
-Once again, I&rsquo;m participate to the 2019 edition of the Hacktoberfest.
-This month, I will focus on my open-source projects
-byteslice, a go library to manipulate a byte array, hoff, a go library to run workflows with high order functions - a new name is required :) , and the new one bitframe, a go library to manipulate bit frames using data protocol with encoder and decoder capabilities. But I don&rsquo;t forget to also work on my shell project : michel.&mldr;
+Report on my Hacktoberfest 2019 journey.
 </div>
 <a class=readmore href=/posts/hacktoberfest-2019/>Read more ⟶</a>
 </section>
@@ -108,10 +101,7 @@ byteslice, a go library to manipulate a byte array, hoff, a go library to run wo
 <h1 class=title><a href=/posts/makefile-guard/>Makefile | How to check a mandatory variable</a></h1>
 <time>Jul 14, 2019</time>
 <br><div class=description>
-When you use a variable in a Makefile task and you want to make it mandatory and check it before run the effective task,
-You can guard it.
-task-who-need-SPECIFIC_ENVVAR: guard-SPECIFIC_ENVVAR @echo ${SPECIFIC_ENVVAR} You only need to add the following task
-guard-%: @ if [ "${${*}}" = "" ]; then \ echo "Environment variable $*not set"; \ exit 1; \ fi So when you run it, the guard will prevent to run the task&mldr;
+Explore Makefile nice features to ease your developer life.
 </div>
 <a class=readmore href=/posts/makefile-guard/>Read more ⟶</a>
 </section>
@@ -119,10 +109,7 @@ guard-%: @ if [ "${${*}}" = "" ]; then \ echo "Environment variable $*not set"; 
 <h1 class=title><a href=/posts/antora-en/>Antora 1.0 | Replace your wiki with a documentation site</a></h1>
 <time>Sep 11, 2018</time>
 <br><div class=description>
-Bonjour, la version française de cet article peut être lue sur ce site
-No matter what your IT project is, there will always be a need to store some documentation. The choice to use a wiki is quite common in the corporate world.
-Let&rsquo;s talk about you, developer on one of these programs, is documentation of your different projects managed by an easily accessible and editable wiki?
-If you look at the content of this wiki, you will probably find:&mldr;
+Discover Antora as your next documentation site.
 </div>
 <a class=readmore href=/posts/antora-en/>Read more ⟶</a>
 </section>
@@ -130,10 +117,7 @@ If you look at the content of this wiki, you will probably find:&mldr;
 <h1 class=title><a href=/posts/antora/>Antora 1.0 | Remplacer votre wiki par un site de documentation</a></h1>
 <time>Apr 18, 2018</time>
 <br><div class=description>
-Hi, the english version of this article can be read on this site
-Peu importe votre projet informatique, il y aura toujours un besoin de stocker de la documentation. Le choix d&rsquo;utiliser un wiki est assez courant en entreprise.
-Parlons de vous, développeur sur un de ces programmes, la documentation des différents projets est-elle gérée par un wiki facilement accessible et éditable?
-Et si vous regardez le contenu de ce wiki, vous y trouverez surement :&mldr;
+Decouverte d'Antora comme votre prochain site de documentation.
 </div>
 <a class=readmore href=/posts/antora/>Read more ⟶</a>
 </section>
@@ -141,9 +125,7 @@ Et si vous regardez le contenu de ce wiki, vous y trouverez surement :&mldr;
 <h1 class=title><a href=/posts/homebrew/>Homebrew | Utilisez un package manager sous macOS</a></h1>
 <time>Feb 28, 2017</time>
 <br><div class=description>
-Votre société ou votre client vient de vous confier un macbook pour travailler, il ne vous reste plus qu&rsquo;à installer tout un ensemble de programmes pour commencer.
-Sous linux, vous auriez un gestionnaire de formulas qui ferait bien l&rsquo;affaire pour aller plus vite. Mais sous macOS, pas de apt-get, pas de yum, vous voilà parti pour installer tout cela à la main.
-Pas de crainte, des gestionnaires de formulas existent aussi pour macOS comme Homebrew (ou MacPorts)&mldr;
+Découvrez homebrew pour vous facilitez la vie sous macOS dans la gestion de vos installations de packages.
 </div>
 <a class=readmore href=/posts/homebrew/>Read more ⟶</a>
 </section>
