@@ -30,6 +30,11 @@ url = "https://github.com/rlespinasse"
 name = "LinkedIn"
 icon = "linkedin"
 url = "https://www.linkedin.com/in/romain-lespinasse"
+ 
+[[params.social]]
+name = "Bluesky"
+icon = "bluesky"
+url = "https://bsky.app/profile/rlespinasse.bsky.social"
 
 [[menu.main]]
 name = "Home"
