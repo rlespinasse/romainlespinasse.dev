@@ -33,7 +33,7 @@ url = "https://www.linkedin.com/in/romain-lespinasse"
  
 [[params.social]]
 name = "Bluesky"
-icon = "bluesky"
+icon = "cloud"
 url = "https://bsky.app/profile/rlespinasse.bsky.social"
 
 [[menu.main]]
