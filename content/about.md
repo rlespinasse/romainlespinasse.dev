@@ -57,6 +57,7 @@ Want more
 
 | Certifications                                                                                                               | Issue date | Expiration date |
 | ---------------------------------------------------------------------------------------------------------------------------- | ---------- | --------------- |
+| [Google Cloud Certified Professional Cloud DevOps Engineer](https://www.credential.net/3e0d0549-247d-4352-b772-92ed0c6cbca1) | 2022-03-01 | 2026-03-01      |
 | [GitLab Certified DevOps Professional](https://www.credly.com/badges/584848a8-bca8-4549-b1b5-982bb5123105)                   | 2022-12-21 | _No date_       |
 | [GitLab Solutions Architect Core Verified Associate](https://www.credly.com/badges/4bf0c570-7c9f-4d2f-b0a0-676e0eb8043d)     | 2022-12-18 | 2024-12-18      |
 | [GitLab Certified Security Specialist](https://www.credly.com/badges/43e8ddb6-01dd-462e-9506-70266e86c0d4)                   | 2022-12-16 | _No date_       |
@@ -83,5 +84,6 @@ Want more
 
 | Certifications                                                                                                               | Issue date | Expiration date |
 | ---------------------------------------------------------------------------------------------------------------------------- | ---------- | --------------- |
+| [Google Cloud Certified Professional Cloud DevOps Engineer](https://www.credential.net/3e0d0549-247d-4352-b772-92ed0c6cbca1) | 2022-03-01 | 2024-03-01      |
 | [Google Cloud Certified Professional Cloud DevOps Engineer](https://www.credential.net/c102e08e-597d-4a80-be2d-95ded26e3867) | 2020-01-23 | 2022-01-23      |
 | [Google Cloud Certified Professional Cloud Developer](https://www.credential.net/186d7c68-966e-417d-9b15-7ea693414957)       | 2019-12-04 | 2021-12-04      |
