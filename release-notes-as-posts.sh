@@ -3,7 +3,7 @@
 release-notes-as-posts() {
     echo "+ Extract releases from repo $1"
     while read -r release; do
-        test -f "content/posts/release-$1-${release}.md" && {
+        test -f "content/oss/release-$1-${release}.md" && {
             echo "- Convert release $release notes as post : Skip"
             continue
         }
@@ -19,7 +19,7 @@ tags:
 - github
 - release
 ---
-'"${2}"'{{.body}}' >"content/posts/release-$1-${release}.md"
+'"${2}"'{{.body}}' >"content/oss/release-$1-${release}.md"
         if [ -f "content/posts/release-$1-${release}.md" ]; then
             echo "- Convert release $release notes as post : Done"
         else
