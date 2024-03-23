@@ -1,0 +1,32 @@
+---
+title: "Project github-slug-action | Release 3.0.0"
+date: 2020-10-26T20:28:00Z
+toc: false
+description: 
+draft: false
+tags:
+- opensource
+- github
+- release
+---
+## [3.0.0](http://github.com/rlespinasse/github-slug-action/compare/2.1.0...3.0.0) (2020-10-26)
+
+
+### Bug Fixes
+
+* upgrade actions core due to CVE fix ([d0549c1](http://github.com/rlespinasse/github-slug-action/commit/d0549c1f85ab9567b439f9d660b01ce1142b9fbe))
+
+
+### Features
+
+* add support for windows and macos jobs ([13c2f38](http://github.com/rlespinasse/github-slug-action/commit/13c2f38dad5f32529f37c25736412b1e4cf687fe))
+
+
+### BREAKING CHANGES
+
+* The action implementation move from container action to node.js action
+
+Co-authored-by: Romain Lespinasse <romain.lespinasse@gmail.com>
+
+
+
