@@ -28,7 +28,7 @@ EOF
                 --template "${2}"'{{.body}}' >>"content/oss/release-$1-${year}.md"
         done < <(gh release list --exclude-drafts --exclude-pre-releases --order desc --repo "rlespinasse/$1" --jq '.[]|select(.publishedAt | startswith("'"${year}"'"))' --json name,publishedAt | jq -r '.name')
 
-    done < <(gh release list --exclude-drafts --exclude-pre-releases --order desc --repo "rlespinasse/$1" --json publishedAt | jq -r '.[].publishedAt' | sed 's/-.*//' | uniq)
+    done < <(gh release list --exclude-drafts --exclude-pre-releases --order desc --repo "rlespinasse/$1" --json publishedAt | jq -r '.[].publishedAt' | sed 's/-.*//' | uniq | awk -F '[()]' "\$1 >= ${3:-2000}")
 }
 
 # release notes
@@ -36,10 +36,10 @@ EOF
 release-notes-as-posts docker-drawio-desktop-headless '#'
 release-notes-as-posts drawio-export '#'
 release-notes-as-posts drawio-export-action '#'
-release-notes-as-posts drawio-exporter '#'
+release-notes-as-posts drawio-exporter '#' '2024' # Before 2024, the release was not created at the same time as the tag
 release-notes-as-posts git-commit-data-action '#'
 release-notes-as-posts github-slug-action '#'
 release-notes-as-posts release-that '#'
 release-notes-as-posts shortify-git-revision '#'
 release-notes-as-posts slugify-value '#'
-release-notes-as-posts wints '#'
+release-notes-as-posts wints '#' '2024' # Before 2024, the release was not created at the same time as the tag
