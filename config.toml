@@ -1,5 +1,5 @@
 baseURL = "https://www.romainlespinasse.dev/"
-languageCode = "en-us"
+languageCode = "en-gb"
 defaultContentLanguage = "en"
 title = "Romain Lespinasse"
 theme = "archie"
@@ -38,25 +38,25 @@ url = "https://bsky.app/profile/rlespinasse.bsky.social"
 
 [[menu.main]]
 name = "Home"
-url = "/"
+pageRef = "/"
 weight = 1
 
 [[menu.main]]
 name = "Posts"
-url = "/posts"
+pageRef = "/posts"
 weight = 2
 
 [[menu.main]]
 name = "OSS"
-url = "/oss"
+pageRef = "/oss"
 weight = 3
 
 [[menu.main]]
 name = "About"
-url = "/about"
+pageRef = "/about"
 weight = 4
 
 [[menu.main]]
 name = "Tags"
-url = "/tags"
+pageRef = "/tags"
 weight = 5
