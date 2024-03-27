@@ -2,7 +2,7 @@
 title: "Project 'drawio-export' | 2020 Releases"
 date: 2020-10-21T06:33:54Z
 toc: false
-description: Changelog of the 8 releases of 2020
+description: Changelog of the 7 releases of 2020
 draft: false
 tags:
 - opensource
@@ -79,15 +79,6 @@ tags:
 ### Bug Fixes
 
 * support file from vscode drawio plugin ([28f719b](http://github.com/rlespinasse/drawio-export/commit/28f719b191f0cd04296ea93db246ea7416d6b332))
-
-
-
-## [2.4.0](http://github.com/rlespinasse/drawio-export/compare/2.3.1...2.4.0) (2020-05-11)
-
-
-### Features
-
-* stop export immediately on kill signals ([78fe758](http://github.com/rlespinasse/drawio-export/commit/78fe7587964a963d86279da9c3bcb76d1e117f0d))
 
 
 
