@@ -1,14 +1,23 @@
 ---
 title: "Project 'drawio-export-action' | 2024 Releases"
-date: 2024-02-21T05:58:56Z
+date: 2024-03-27T05:32:25Z
 toc: false
-description: Changelog of the 5 releases of 2024
+description: Changelog of the 6 releases of 2024
 draft: false
 tags:
 - opensource
 - github
 - release
 ---
+## [2.15.0](https://github.com/rlespinasse/drawio-export-action/compare/v2.14.0...v2.15.0) (2024-03-27)
+
+
+### Features
+
+* bump rlespinasse/drawio-export from v4.16.0 to v4.17.0 ([#45](https://github.com/rlespinasse/drawio-export-action/issues/45)) ([5c05baf](https://github.com/rlespinasse/drawio-export-action/commit/5c05bafd15b6f50e657325673f5ed903629c1d6f))
+
+
+
 ## [2.14.0](https://github.com/rlespinasse/drawio-export-action/compare/v2.13.0...v2.14.0) (2024-02-21)
 
 
