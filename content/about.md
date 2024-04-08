@@ -55,19 +55,19 @@ Want more
 
 ### Valid Certifications
 
-| Certifications                                                                                                                  | Issue date | Expiration date | Renewed |
-| ------------------------------------------------------------------------------------------------------------------------------- | ---------- | --------------- | ------- |
-| [Google Cloud Certified Professional Cloud DevOps Engineer](https://www.credly.com/badges/630d230b-7ef7-4276-8909-cd63695c4d66) | 2022-03-01 | 2026-03-01      | 2       |
-| [GitLab Certified DevOps Professional](https://www.credly.com/badges/584848a8-bca8-4549-b1b5-982bb5123105)                      | 2022-12-21 | _No date_       | -       |
-| [GitLab Solutions Architect Core Verified Associate](https://www.credly.com/badges/4bf0c570-7c9f-4d2f-b0a0-676e0eb8043d)        | 2022-12-18 | 2024-12-18      |         |
-| [GitLab Certified Security Specialist](https://www.credly.com/badges/43e8ddb6-01dd-462e-9506-70266e86c0d4)                      | 2022-12-16 | _No date_       | -       |
-| [Google Cloud Certified Cloud Digital Leader](https://www.credly.com/badges/ad8a49cd-f599-4694-8fbf-a3d81e1687a5)               | 2022-12-14 | 2025-12-14      |         |
-| [GitLab Certified CI/CD Associate](https://www.credly.com/badges/2213767c-2dbe-4d4d-97c1-9f074e72f113)                          | 2022-12-11 | _No date_       | -       |
-| [GitLab Certified Project Management Associate](https://www.credly.com/badges/582b3875-f092-4ef1-8e88-4f32f144de09)             | 2022-12-11 | _No date_       | -       |
-| [GitLab Certified Git Associate](https://www.credly.com/badges/ab36f29b-e0df-4b1b-b715-cb2891dd66cb)                            | 2022-12-11 | _No date_       | -       |
-| [Google Cloud Certified Professional Cloud Developer](https://www.credly.com/badges/16df9b45-1899-4fa5-8fe1-45dd6646df53)       | 2022-11-25 | 2024-11-25      | 1       |
-| [Google Cloud Certified Professional Cloud Architect](https://www.credly.com/badges/e8fcd4a6-6881-4d6b-bcdd-e99b095ad112)       | 2022-07-31 | 2024-07-31      |         |
-| [Google Cloud Certified Professional Data Engineer](https://www.credly.com/badges/e7d6fa27-fef1-4531-8210-4acde2fe3ebc)         | 2022-07-31 | 2024-07-31      |         |
+| Certifications                                                                                                                  | Issue date | Expiration date |
+| ------------------------------------------------------------------------------------------------------------------------------- | ---------- | --------------- |
+| [Google Cloud Certified Professional Cloud DevOps Engineer](https://www.credly.com/badges/630d230b-7ef7-4276-8909-cd63695c4d66) | 2022-03-01 | 2026-03-01      |
+| [GitLab Certified DevOps Professional](https://www.credly.com/badges/584848a8-bca8-4549-b1b5-982bb5123105)                      | 2022-12-21 | _No date_       |
+| [GitLab Solutions Architect Core Verified Associate](https://www.credly.com/badges/4bf0c570-7c9f-4d2f-b0a0-676e0eb8043d)        | 2022-12-18 | 2024-12-18      |
+| [GitLab Certified Security Specialist](https://www.credly.com/badges/43e8ddb6-01dd-462e-9506-70266e86c0d4)                      | 2022-12-16 | _No date_       |
+| [Google Cloud Certified Cloud Digital Leader](https://www.credly.com/badges/ad8a49cd-f599-4694-8fbf-a3d81e1687a5)               | 2022-12-14 | 2025-12-14      |
+| [GitLab Certified CI/CD Associate](https://www.credly.com/badges/2213767c-2dbe-4d4d-97c1-9f074e72f113)                          | 2022-12-11 | _No date_       |
+| [GitLab Certified Project Management Associate](https://www.credly.com/badges/582b3875-f092-4ef1-8e88-4f32f144de09)             | 2022-12-11 | _No date_       |
+| [GitLab Certified Git Associate](https://www.credly.com/badges/ab36f29b-e0df-4b1b-b715-cb2891dd66cb)                            | 2022-12-11 | _No date_       |
+| [Google Cloud Certified Professional Cloud Developer](https://www.credly.com/badges/16df9b45-1899-4fa5-8fe1-45dd6646df53)       | 2022-11-25 | 2024-11-25      |
+| [Google Cloud Certified Professional Cloud Architect](https://www.credly.com/badges/e8fcd4a6-6881-4d6b-bcdd-e99b095ad112)       | 2022-07-31 | 2024-07-31      |
+| [Google Cloud Certified Professional Data Engineer](https://www.credly.com/badges/e7d6fa27-fef1-4531-8210-4acde2fe3ebc)         | 2022-07-31 | 2024-07-31      |
 
 ### Course Certificates
 
