@@ -2,7 +2,7 @@
 title: "Project 'drawio-export' | 2020 Releases"
 date: 2020-10-21T06:33:54Z
 toc: false
-description: Changelog of the 7 releases of 2020
+description: Changelog of the 6 releases of 2020
 draft: false
 tags:
 - opensource
@@ -70,15 +70,6 @@ tags:
 ### Features
 
 * remove page suffix when only one page ([1393511](http://github.com/rlespinasse/drawio-export/commit/1393511711719d05d8a2d287dc4cf290506d821f))
-
-
-
-### [2.4.1](http://github.com/rlespinasse/drawio-export/compare/2.4.0...2.4.1) (2020-05-30)
-
-
-### Bug Fixes
-
-* support file from vscode drawio plugin ([28f719b](http://github.com/rlespinasse/drawio-export/commit/28f719b191f0cd04296ea93db246ea7416d6b332))
 
 
 
