@@ -2,7 +2,7 @@
 title: "Project 'github-slug-action' | 2020 Releases"
 date: 2020-11-01T19:40:34Z
 toc: false
-description: Changelog of the 3 releases of 2020
+description: Changelog of the 2 releases of 2020
 draft: false
 tags:
 - opensource
@@ -39,4 +39,3 @@ Co-authored-by: Romain Lespinasse <romain.lespinasse@gmail.com>
 
 
 
-#
