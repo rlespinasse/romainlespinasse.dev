@@ -1,8 +1,8 @@
 ---
 title: "Project 'drawio-export' | 2023 Releases"
-date: 2023-12-26T07:02:21Z
+date: 
 toc: false
-description: Changelog of the 6 releases of 2023
+description: Changelog of the 1 releases of 2023
 draft: false
 tags:
 - opensource
