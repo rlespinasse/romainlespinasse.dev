@@ -1,14 +1,23 @@
 ---
 title: "Project 'docker-drawio-desktop-headless' | 2024 Releases"
-date: 2024-06-01T22:14:18Z
+date: 2024-06-02T22:10:37Z
 toc: false
-description: Changelog of the 11 releases of 2024
+description: Changelog of the 12 releases of 2024
 draft: false
 tags:
 - opensource
 - github
 - release
 ---
+### [1.30.1](https://github.com/rlespinasse/docker-drawio-desktop-headless/compare/v1.30.0...v1.30.1) (2024-06-02)
+
+
+### Bug Fixes
+
+* revert to debian bullseye base due to missing libssl1.1 in bookworm ([#77](https://github.com/rlespinasse/docker-drawio-desktop-headless/issues/77)) ([e2105c5](https://github.com/rlespinasse/docker-drawio-desktop-headless/commit/e2105c59c87a228aa057f16c5e2071b9cc6baaad))
+
+
+
 ## [1.30.0](https://github.com/rlespinasse/docker-drawio-desktop-headless/compare/v1.29.0...v1.30.0) (2024-06-01)
 
 

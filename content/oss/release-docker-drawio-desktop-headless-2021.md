@@ -2,7 +2,7 @@
 title: "Project 'docker-drawio-desktop-headless' | 2021 Releases"
 date: 2021-12-31T14:46:53Z
 toc: false
-description: Changelog of the 4 releases of 2021
+description: Changelog of the 3 releases of 2021
 draft: false
 tags:
 - opensource
@@ -39,15 +39,6 @@ tags:
 ### Features
 
 * reduce number of installed packages ([97ac804](http://github.com/rlespinasse/docker-drawio-desktop-headless/commit/97ac8043805f366d0148b8407dd11c1fc51988fc))
-
-
-
-## [1.2.0](http://github.com/rlespinasse/docker-drawio-desktop-headless/compare/1.1.1...1.2.0) (2021-06-06)
-
-
-### Features
-
-* update to drawio-desktop 14.6.13 ([e4b7df9](http://github.com/rlespinasse/docker-drawio-desktop-headless/commit/e4b7df91aa7652618c1d906fe41e3352289e1a5f))
 
 
 
