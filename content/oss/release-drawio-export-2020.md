@@ -2,7 +2,7 @@
 title: "Project 'drawio-export' | 2020 Releases"
 date: 2020-10-21T06:33:54Z
 toc: false
-description: Changelog of the 5 releases of 2020
+description: Changelog of the 4 releases of 2020
 draft: false
 tags:
 - opensource
@@ -42,25 +42,6 @@ tags:
 ### Features
 
 * support draw.io options directly ([f9ed896](http://github.com/rlespinasse/drawio-export/commit/f9ed896ff72b2a9c3aafc1985555595e175cbdf4))
-
-
-
-## [3.0.0](http://github.com/rlespinasse/drawio-export/compare/2.5.0...3.0.0) (2020-10-03)
-
-
-### Bug Fixes
-
-* move --disable-dev-shm-usage to the end of the command ([78f9d93](http://github.com/rlespinasse/drawio-export/commit/78f9d9325f748f68a39637a1dc554082d84b74c4))
-
-
-### Features
-
-* bump to drawio-cli 3.0.0 ([0433ee9](http://github.com/rlespinasse/drawio-export/commit/0433ee908d920f90de628df7216ea2a6a807340a))
-
-
-### BREAKING CHANGES
-
-* Major update of drawio-cli
 
 
 
