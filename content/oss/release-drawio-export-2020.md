@@ -2,7 +2,7 @@
 title: "Project 'drawio-export' | 2020 Releases"
 date: 2020-10-21T06:33:54Z
 toc: false
-description: Changelog of the 4 releases of 2020
+description: Changelog of the 3 releases of 2020
 draft: false
 tags:
 - opensource
@@ -33,15 +33,6 @@ tags:
 ### Features
 
 * support xml export ([8e2ad22](http://github.com/rlespinasse/drawio-export/commit/8e2ad2274a3a09f0aa137498f7d93acb6d4432ce))
-
-
-
-## [3.1.0](http://github.com/rlespinasse/drawio-export/compare/3.0.0...3.1.0) (2020-10-03)
-
-
-### Features
-
-* support draw.io options directly ([f9ed896](http://github.com/rlespinasse/drawio-export/commit/f9ed896ff72b2a9c3aafc1985555595e175cbdf4))
 
 
 
