@@ -1,14 +1,23 @@
 ---
 title: "Project 'docker-drawio-desktop-headless' | 2024 Releases"
-date: 2024-06-18T07:42:42Z
+date: 2024-06-24T08:08:30Z
 toc: false
-description: Changelog of the 15 releases of 2024
+description: Changelog of the 16 releases of 2024
 draft: false
 tags:
 - opensource
 - github
 - release
 ---
+## [1.34.0](https://github.com/rlespinasse/docker-drawio-desktop-headless/compare/v1.33.0...v1.34.0) (2024-06-24)
+
+
+### Features
+
+* update to drawio-desktop 24.6.1 ([#81](https://github.com/rlespinasse/docker-drawio-desktop-headless/issues/81)) ([918d6f3](https://github.com/rlespinasse/docker-drawio-desktop-headless/commit/918d6f3f4ab941e8ebc34750cc893d6688681113))
+
+
+
 ## [1.33.0](https://github.com/rlespinasse/docker-drawio-desktop-headless/compare/v1.32.0...v1.33.0) (2024-06-18)
 
 
