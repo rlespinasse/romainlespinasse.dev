@@ -2,7 +2,7 @@
 title: "Project 'docker-drawio-desktop-headless' | 2023 Releases"
 date: 2023-12-25T08:16:27Z
 toc: false
-description: Changelog of the 12 releases of 2023
+description: Changelog of the 13 releases of 2023
 draft: false
 tags:
 - opensource
@@ -115,6 +115,15 @@ tags:
 ### Features
 
 * update to drawio-desktop 21.5.1 ([#37](https://github.com/rlespinasse/docker-drawio-desktop-headless/issues/37)) ([6dd1f81](https://github.com/rlespinasse/docker-drawio-desktop-headless/commit/6dd1f8161c4e480646b4c75693d75e7e542be205))
+
+
+
+### [1.7.1](http://github.com/rlespinasse/docker-drawio-desktop-headless/compare/1.7.0...1.7.1) (2022-06-28)
+
+
+### Bug Fixes
+
+* Use previous election security warning filtering [#34](https://github.com/rlespinasse/docker-drawio-desktop-headless/pull/34)
 
 
 

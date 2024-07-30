@@ -2,7 +2,7 @@
 title: "Project 'github-slug-action' | 2020 Releases"
 date: 2020-11-01T19:40:34Z
 toc: false
-description: Changelog of the 2 releases of 2020
+description: Changelog of the 6 releases of 2020
 draft: false
 tags:
 - opensource
@@ -36,6 +36,42 @@ tags:
 * The action implementation move from container action to node.js action
 
 Co-authored-by: Romain Lespinasse <romain.lespinasse@gmail.com>
+
+
+
+#### [1.1.1](http://github.com/rlespinasse/github-slug-action/compare/1.1.0...1.1.1) (2020-10-07)
+
+
+### Bug Fixes
+
+* remove set-env due to CVE fix ([6c69465](http://github.com/rlespinasse/github-slug-action/commit/6c69465e62a6430b5742c5bc0fce732f55630ee7))
+
+
+
+## [2.1.0](http://github.com/rlespinasse/github-slug-action/compare/2.0.0...2.1.0) (2020-07-28)
+
+
+### Features
+
+* expose slug variables for github.event.ref ([5a334a8](http://github.com/rlespinasse/github-slug-action/commit/5a334a8573fc27451af5b2a6ee175d8e11579e10))
+
+
+
+## [2.0.0](http://github.com/rlespinasse/github-slug-action/compare/1.1.0...2.0.0) (2020-04-26)
+
+
+### Features
+
+* **slug:** expose GITHUB_REPOSITORY slugs ([ca9a67f](http://github.com/rlespinasse/github-slug-action/commit/ca9a67fa1f1126b377a9d80dc1ea354284c71d21))
+* **slug:** keep period in slug variable ([e95fe45](http://github.com/rlespinasse/github-slug-action/commit/e95fe45d8b382665f2f82ffe17541c705f1adc05))
+
+
+### BREAKING CHANGES
+
+* **slug:** The previous slug function is rename slug_url
+to be able to still use itin the subdomain of an url.
+
+Co-authored-by: Marc Schiller <m4rc.schiller@gmail.com>
 
 
 
