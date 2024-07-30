@@ -2,7 +2,7 @@
 title: "Project 'drawio-export-action' | 2021 Releases"
 date: 2021-12-31T17:41:48Z
 toc: false
-description: Changelog of the 6 releases of 2021
+description: Changelog of the 5 releases of 2021
 draft: false
 tags:
 - opensource
@@ -56,15 +56,6 @@ tags:
 ### Features
 
 * updates drawio-export 4.1.0 ([244144a](http://github.com/rlespinasse/drawio-export-action/commit/244144a7e8fbd1b86ac955049f35737d2f3a4bc9))
-
-
-
-## 1.0.0 (2021-04-07)
-
-
-### Features
-
-* expose drawio-export as github action ([5d48015](http://github.com/rlespinasse/drawio-export-action/commit/5d48015f3e8be66b71d05e93eb85a6f207b69e12))
 
 
 
