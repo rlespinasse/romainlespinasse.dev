@@ -1,14 +1,23 @@
 ---
 title: "Project 'drawio-export' | 2024 Releases"
-date: 2024-09-02T16:15:03Z
+date: 2024-10-02T19:57:54Z
 toc: false
-description: Changelog of the 14 releases of 2024
+description: Changelog of the 15 releases of 2024
 draft: false
 tags:
 - opensource
 - github
 - release
 ---
+## [4.26.0](https://github.com/rlespinasse/drawio-export/compare/v4.25.0...v4.26.0) (2024-10-02)
+
+
+### Features
+
+* bump rlespinasse/drawio-desktop-headless from v1.37.0 to v1.38.0 ([#121](https://github.com/rlespinasse/drawio-export/issues/121)) ([25157c9](https://github.com/rlespinasse/drawio-export/commit/25157c9d3b3ff756e8c7749657943c74e652f732))
+
+
+
 ## [4.25.0](https://github.com/rlespinasse/drawio-export/compare/v4.24.0...v4.25.0) (2024-09-02)
 
 
