@@ -4,6 +4,9 @@ on:
     - cron: "0 0 * * *" # Every day at midnight (UTC)
   workflow_dispatch:
   pull_request:
+    paths:
+      - "release-notes-as-posts.sh"
+      - ".github/workflows/release-notes-as-posts.yaml"
 permissions:
   contents: write
   pull-requests: write
