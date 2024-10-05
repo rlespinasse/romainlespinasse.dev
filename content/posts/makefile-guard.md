@@ -3,7 +3,7 @@ title: "Makefile | How to check a mandatory variable"
 date: 2019-07-14T10:00:00+02:00
 draft: false
 toc: false
-description: Explore Makefile nice features to ease your developer life.
+summary: Explore Makefile nice features to ease your developer life.
 tags: 
   - tooltip
   - makefile

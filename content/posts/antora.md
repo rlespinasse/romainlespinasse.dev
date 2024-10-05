@@ -3,7 +3,7 @@ title: "Antora 1.0 | Remplacer votre wiki par un site de documentation"
 date: 2018-04-18T10:42:00+02:00
 draft: false
 toc: false
-description: Decouverte d'Antora comme votre prochain site de documentation.
+summary: Decouverte d'Antora comme votre prochain site de documentation.
 images: 
   - /img/posts/antora/featured.jpg
 tags: 

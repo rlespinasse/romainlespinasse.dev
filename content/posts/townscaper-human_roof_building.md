@@ -3,7 +3,7 @@ title: "Townscaper | Creation | Human roof building"
 date: 2020-06-30T10:42:00+02:00
 draft: false
 toc: false
-description: A building with a root in form of a little human.
+summary: A building with a root in form of a little human.
 tags:
 - townscaper
 - game

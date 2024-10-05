@@ -3,7 +3,7 @@ title: "Townscaper | Daily Challenge | Eyrie (Day 5)"
 date: 2020-07-14T13:42:00+02:00
 draft: false
 toc: false
-description: Participation on a daily challenge about Townscaper. Day 5 - world Eyrie.
+summary: Participation on a daily challenge about Townscaper. Day 5 - world Eyrie.
 tags:
 - townscaper
 - game

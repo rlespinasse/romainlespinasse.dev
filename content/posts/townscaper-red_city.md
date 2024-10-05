@@ -3,7 +3,7 @@ title: "Townscaper | Creation | Red city"
 date: 2020-07-06T10:42:00+02:00
 draft: false
 toc: false
-description: Red city, the island with a little secret.
+summary: Red city, the island with a little secret.
 tags:
 - townscaper
 - game

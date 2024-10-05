@@ -3,7 +3,7 @@ title: "Townscaper | Design | Creativity city"
 date: 2020-07-02T09:42:00+02:00
 draft: false
 toc: false
-description: A empty city to deploy your creativity.
+summary: A empty city to deploy your creativity.
 tags:
 - townscaper
 - game

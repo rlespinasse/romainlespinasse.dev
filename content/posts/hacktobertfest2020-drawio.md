@@ -3,7 +3,7 @@ title: "Hacktoberfest 2020 Report | drawio-cli and drawio-export Maintainer"
 date: 2020-11-01T10:42:00+02:00
 draft: false
 toc: false
-description: Report on the Hacktoberfest 2020 for drawio-releated projects.
+summary: Report on the Hacktoberfest 2020 for drawio-releated projects.
 tags: 
   - hacktoberfest
   - drawio

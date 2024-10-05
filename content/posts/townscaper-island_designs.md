@@ -3,7 +3,7 @@ title: "Townscaper | Design | exploring island designs"
 date: 2020-07-03T10:42:00+02:00
 draft: false
 toc: false
-description: 
+summary: Explore island designs.
 tags:
 - townscaper
 - game

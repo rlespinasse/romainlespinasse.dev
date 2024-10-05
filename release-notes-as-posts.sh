@@ -8,12 +8,12 @@ release-notes-as-posts() {
         last_date=$(echo "${dates}" | head -1)
         releases_count=$(echo "${dates}" | wc -l)
 
-        cat <<EOF >"content/oss/release-$1-${year}.md"
+        cat <<EOF >"content/posts/release-$1-${year}.md"
 ---
 title: "Project '${1}' | ${year} Releases"
 date: ${last_date}
 toc: false
-description: Changelog of the ${releases_count} releases of ${year}
+summary: Changelog of the ${releases_count} releases of ${year}
 draft: false
 tags:
 - opensource
@@ -25,7 +25,7 @@ EOF
         while read -r release; do
             echo "\\ Add release ${release}"
             gh release view "${release}" --repo "rlespinasse/$1" --json body \
-                --template "${2}"'{{.body}}' >>"content/oss/release-$1-${year}.md"
+                --template "${2}"'{{.body}}' >>"content/posts/release-$1-${year}.md"
         done < <(gh release list --limit 100 --exclude-drafts --exclude-pre-releases --order desc --repo "rlespinasse/$1" --jq '.[]|select(.publishedAt | startswith("'"${year}"'"))' --json name,publishedAt | jq -r '.name')
 
     done < <(gh release list --limit 100 --exclude-drafts --exclude-pre-releases --order desc --repo "rlespinasse/$1" --json publishedAt | jq -r '.[].publishedAt' | sed 's/-.*//' | uniq | awk -F '[()]' "\$1 >= ${3:-2000}")
