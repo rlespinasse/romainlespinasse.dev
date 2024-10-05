@@ -3,7 +3,7 @@ title: "Hacktoberfest 2020 Report | Lessons learned as Maintainer"
 date: 2020-11-01T10:42:00+02:00
 draft: false
 toc: false
-description: Report on the Hacktoberfest 2020 about my maintainer journey.
+summary: Report on the Hacktoberfest 2020 about my maintainer journey.
 tags: 
   - hacktoberfest
   - lessons

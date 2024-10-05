@@ -3,7 +3,7 @@ title: "Hacktoberfest 2020 Report | github-slug-action Maintainer"
 date: 2020-11-01T11:42:00+02:00
 draft: false
 toc: false
-description: Report on the Hacktoberfest 2020 for github-slug-action project.
+summary: Report on the Hacktoberfest 2020 for github-slug-action project.
 tags: 
   - hacktoberfest
   - githubaction

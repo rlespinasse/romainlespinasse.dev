@@ -3,7 +3,7 @@ title: "Townscaper | Daily Challenge | Fortress (Day 6)"
 date: 2020-07-15T22:42:00+02:00
 draft: false
 toc: false
-description: Participation on a daily challenge about Townscaper. Day 6 - world Fortress.
+summary: Participation on a daily challenge about Townscaper. Day 6 - world Fortress.
 tags:
 - townscaper
 - game

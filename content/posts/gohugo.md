@@ -3,7 +3,7 @@ title: "Hugo | Generate your own site"
 date: 2019-10-27T10:42:00+02:00
 draft: false
 toc: false
-description: Post about how I build this blog ... like any developer must-do.
+summary: Post about how I build this blog ... like any developer must-do.
 tags:
   - feedback
   - hugo

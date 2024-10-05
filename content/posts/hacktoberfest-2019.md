@@ -3,7 +3,7 @@ title: "Hacktoberfest | Let's go for 2019"
 date: 2019-09-30T10:42:00+02:00
 draft: false
 toc: false
-description: Report on my Hacktoberfest 2019 journey.
+summary: Report on my Hacktoberfest 2019 journey.
 tags: 
   - hacktoberfest
   - opensource

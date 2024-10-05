@@ -3,7 +3,7 @@ title: "Actions Hackathon | Use Slug variables for your release and deployment w
 date: 2020-08-16T10:42:00+02:00
 draft: false
 toc: false
-description: Submission of github-slug-action project to the dev.to Actions Hackathon.
+summary: Submission of github-slug-action project to the dev.to Actions Hackathon.
 tags: 
   - actionshackathon
   - github

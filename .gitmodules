@@ -1,3 +1,4 @@
-[submodule "themes/archie"]
-path = themes/archie
-url = https://github.com/athul/archie.git
+[submodule "themes/kayal"]
+path = themes/kayal
+url = https://github.com/mnjm/kayal.git
+branch = main
