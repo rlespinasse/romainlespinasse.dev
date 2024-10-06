@@ -11,7 +11,7 @@ tags:
 
 When you use a variable in a Makefile task and you want to make it mandatory and check it before run the effective task,
 
-You can `guard` it.
+You can `guard` it
 
 ```Makefile
 task-who-need-SPECIFIC_ENVVAR: guard-SPECIFIC_ENVVAR

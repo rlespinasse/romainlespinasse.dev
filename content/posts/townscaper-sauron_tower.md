@@ -10,8 +10,7 @@ tags:
 - creation
 ---
 
-See some `Minas Tirith` on [twitter](https://twitter.com/search?q=minas%20tirith%20townscaper&src=typed_query), 
-so here the `Sauron` tower `Barad-dûr` to match them.
+See some `Minas Tirith` on [twitter](https://twitter.com/search?q=minas%20tirith%20townscaper&src=typed_query), so here the `Sauron` tower `Barad-dûr` to match them.
 
 {{< load-photoswipe >}}
 

@@ -11,29 +11,24 @@ tags:
   - french
 ---
 
-Votre société ou votre client vient de vous confier un macbook pour travailler,
-il ne vous reste plus qu'à installer tout un ensemble de programmes pour commencer.
+Votre société ou votre client vient de vous confier un macbook pour travailler, il ne vous reste plus qu'à installer tout un ensemble de programmes pour commencer.
 
-Sous linux, vous auriez un gestionnaire de formulas
-qui ferait bien l'affaire pour aller plus vite.
-Mais sous macOS, pas de apt-get, pas de yum,
-vous voilà parti pour installer tout cela à la main.
+Sous linux, vous auriez un gestionnaire de formulas qui ferait bien l'affaire pour aller plus vite.
+Mais sous macOS, pas de apt-get, pas de yum, vous voilà parti pour installer tout cela à la main.
 
-Pas de crainte, des gestionnaires de formulas existent aussi pour macOS comme [**Homebrew**](http://brew.sh/) (ou [MacPorts](https://www.macports.org))
+Pas de crainte, des gestionnaires de formulas existent aussi pour macOS comme [**Homebrew**](http://brew.sh/) (ou [MacPorts](https://www.macports.org)).
 
-Installer homebrew en une ligne de commande
+Installer homebrew en une ligne de commande :
 
 ```shell
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-> **Homebrew** est un gestionnaire basé sur des **formulas** d'installation de formula (en __Ruby__)
-et utilise des __repositories git__ comme conteneurs de ces **formulas**.
+> **Homebrew** est un gestionnaire basé sur des **formulas** d'installation de formula (en _Ruby_) et utilise des _repositories git_ comme conteneurs de ces **formulas**.
 
-Après une simple installation, vous avez à votre disposition une nouvelle commande,
-petit tour du proprietaire :
+Après une simple installation, vous avez à votre disposition une nouvelle commande, petit tour du proprietaire :
 
-La commande **"brew"** vous montre les commandes les plus courantes.
+La commande **"brew"** vous montre les commandes les plus courantes :
 
 ```shell
 $ brew
@@ -52,21 +47,23 @@ Troubleshooting:
   brew install -vd FORMULA
 ```
 
-Dans ces commandes, on retourne notamment celles pour gérer le __cycle de vie de votre formula__
+Dans ces commandes, on retourne notamment celles pour gérer le _cycle de vie de votre formula_ :
 
-  brew install FORMULA...
-  brew update
-  brew upgrade [FORMULA...]
-  brew uninstall FORMULA...
+```shell
+brew install FORMULA...
+brew update
+brew upgrade [FORMULA...]
+brew uninstall FORMULA...
+```
 
-TIP: En executant `brew doctor`, vous vérifiez que votre installation de Homebrew est correcte.
-La commande vous indiquera les différents problèmes de votre installation (s'il y en a).
+> :bulb: **Tip**
+> En executant `brew doctor`, vous vérifiez que votre installation de Homebrew est correcte.
+> La commande vous indiquera les différents problèmes de votre installation (s'il y en a).
 
 Maintenant que homebrew est installé, vous souhaitez installer vos premiers formulas.
 
 Vous commencez par vos besoins pour le projet.
-Comme il s'agit d'un projet en **Java** sous **Gradle** avec des outils écrits en **Go**
-et que l'ensemble est géré par Ansible, vous avez votre liste de formulas:
+Comme il s'agit d'un projet en **Java** sous **Gradle** avec des outils écrits en **Go** et que l'ensemble est géré par Ansible, vous avez votre liste de formulas:
 
 * Ansible
 * Java
@@ -90,7 +87,7 @@ Gradle 3.3
 
 Vous installer java à part, car vous souhaitez installer java 8.
 
-Vous rechercher donc les **formulas** nommées **java**
+Vous rechercher donc les **formulas** nommées **java** :
 
 ```shell
 $ brew search java
@@ -113,36 +110,34 @@ Caskroom/versions/java7
 Caskroom/versions/java9-beta
 ```
 
-**Aie**, il n'y a pas de __formula__ nommée **java** ou **java8**.
+**Aie**, il n'y a pas de _formula_ nommée **java** ou **java8**.
 Par contre la recherche vous propose les formulas contenant le mot **java**.
 Parmis les formulas, ceux avec un chemin (**a/b/formula**) sont des formulas contenues dans des **taps**.
 
 **Mais qu'est-ce qu'un tap**, il s'agit d'un autre **repository git**
 contenant des formulas dédiées ou des nouvelles commandes.
 
-> On installe un **tap** via la commande `brew tap utilisateur/nom_tap`.
->
-> Avec le tap **utilisateur/nom_tap**, brew installera le __repository git__ associé à l'url [https://github.com/utilisateur/homebrew-nom_tap](https://github.com/utilisateur/homebrew-nom_tap).
->
-> Pour les autres possibilités, utilisez `brew tap -h`.
+* On installe un **tap** via la commande `brew tap utilisateur/nom_tap`,
+* Avec le tap **utilisateur/nom_tap**, brew installera le _repository git_ associé à l'url [https://github.com/utilisateur/homebrew-nom_tap](https://github.com/utilisateur/homebrew-nom_tap),
+* Pour les autres possibilités, utilisez `brew tap -h`.
 
-TIP: `brew install a/b/formula` installera le **tap** et la formula en même temps.
+> :bulb: **Tip**
+> `brew install a/b/formula` installera le **tap** et la formula en même temps.
 
 Parmis les **taps** officiels, on peut trouver :
 
-* [**homebrew/core**](https://github.com/Homebrew/homebrew-core) - __Core formulae for the Homebrew formula manager__ **(the default tap)**
-* [**homebrew/science**](https://github.com/Homebrew/homebrew-science) - __Scientific formulae for the Homebrew formula manager__
-* [**homebrew/games**](https://github.com/Homebrew/homebrew-games) - __Games formulae for the Homebrew formula manager__
-* [**homebrew/completions**](https://github.com/Homebrew/homebrew-completions) - __Shell completion formulae for the Homebrew formula manager__
-* [**homebrew/command-not-found**](https://github.com/Homebrew/homebrew-command-not-found) - __Ubuntu’s command-not-found equivalent for Homebrew on OSX__
-* [**homebrew/services**](https://github.com/Homebrew/homebrew-services) - __Starts Homebrew formulae's plists with launchctl__
+* [**homebrew/core**](https://github.com/Homebrew/homebrew-core) - _Core formulae for the Homebrew formula manager_ **(the default tap)**
+* [**homebrew/science**](https://github.com/Homebrew/homebrew-science) - _Scientific formulae for the Homebrew formula manager_
+* [**homebrew/games**](https://github.com/Homebrew/homebrew-games) - _Games formulae for the Homebrew formula manager_
+* [**homebrew/completions**](https://github.com/Homebrew/homebrew-completions) - _Shell completion formulae for the Homebrew formula manager_
+* [**homebrew/command-not-found**](https://github.com/Homebrew/homebrew-command-not-found) - _Ubuntu's command-not-found equivalent for Homebrew on OSX_
+* [**homebrew/services**](https://github.com/Homebrew/homebrew-services) - _Starts Homebrew formulae's plists with launchctl_
 
-Tous ces **taps** sont gérés par la communauté Homebrew,
-mais certains **taps** officiels ne sont pas de Homebrew mais sont bien intégrés comme **Caskroom/cask**.
+Tous ces **taps** sont gérés par la communauté Homebrew, mais certains **taps** officiels ne sont pas de Homebrew mais sont bien intégrés comme **Caskroom/cask**.
 
-Les **formulas** de **Caskroom/cask** sont dédiés aux installations d'applications macOS
+Les **formulas** de **Caskroom/cask** sont dédiés aux installations d'applications macOS.
 
-Maintenant, vous installez **java 8**
+Maintenant, vous installez **java 8** :
 
 ```shell
 $ brew install Caskroom/cask/java
@@ -157,14 +152,16 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.112-b16, mixed mode)
 
 Lors du lancement de la commande, brew a transféré votre demande à `brew cask install` pour son installation.
 
-Avec **Cask**, vous pouvez, en plus de vos formulas, installer votre navigateur, votre éditeur de code,...
+Avec **Cask**, vous pouvez, en plus de vos formulas, installer votre navigateur, votre éditeur de code, ...
 
 ```shell
 brew cask install google-chrome intellij-idea docker slack
 ```
 
-TIP: `brew tap caskroom/drivers` vous permet d'installer les drivers pour macOS.
-Les fonts s'installent elles via `brew tap caskroom/fonts`.
+> :bulb: **Tip**
+>
+> * `brew tap caskroom/drivers` vous permet d'installer les drivers pour macOS.
+> * Les fonts s'installent elles via `brew tap caskroom/fonts`.
 
 Certains formulas sont gérées comme des **services** via macOS **launchd**.
 Pour cela, brew propose, via [**homebrew/services**](https://github.com/Homebrew/homebrew-services),
@@ -172,7 +169,7 @@ la commande **brew services** pour faciliter leurs utilisations.
 
 Pour votre projet, vous avez aussi besoin d'une base de données **MySQL**.
 
-Vous installez **MySQL** qui possède un service sous macOS
+Vous installez **MySQL** qui possède un service sous macOS :
 
 ```shell
 $ brew install mysql
@@ -189,59 +186,59 @@ Name           Status  User            Plist
 mysql          started <your_username> ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist
 ```
 
-Votre installation de poste est terminée. Vous pouvez commencer à travailler.
+Votre installation de poste est terminée.
+Vous pouvez commencer à travailler.
 
 Au bout d'un certain temps, vous souhaiteriez mettre à jour vos formulas.
 
 La procédure de mise à jour se fait en deux commandes **update** + **upgrade**.
 Avec ces 2 commandes, vous pouvez aussi utiliser deux autres commandes **outdated** et **cleanup** utiles suivant vos besoins.
 
-* **update** met à jour les __repositories git__ des **taps**,
+* **update** met à jour les _repositories git_ des **taps**,
 
-```shell
-$ brew update
-Updated 2 taps (caskroom/cask, homebrew/core).
-==> New Formulae
-==> Updated Formulae
-go ✔
-```
+  ```shell
+  $ brew update
+  Updated 2 taps (caskroom/cask, homebrew/core).
+  ==> New Formulae
+  ==> Updated Formulae
+  go ✔
+  ```
 
 * **upgrade** met à jour les formulas,
 
-```
-$ brew upgrade
-==> Upgrading 1 outdated formula, with result:
-go 1.7.4_1
-==> Upgrading go
-==> Downloading https://homebrew.bintray.com/bottles/go-1.7.4_1.sierra.bottle.tar.gz
-...
-🍺  /usr/local/Cellar/go/1.7.4_1: 6,438 files, 250.7M
-```
+  ```shell
+  $ brew upgrade
+  ==> Upgrading 1 outdated formula, with result:
+  go 1.7.4_1
+  ==> Upgrading go
+  ==> Downloading https://homebrew.bintray.com/bottles/go-1.7.4_1.sierra.bottle.tar.gz
+  ...
+  🍺  /usr/local/Cellar/go/1.7.4_1: 6,438 files, 250.7M
+  ```
 
 * **outdated** liste les formulas qui doivent être mis à jour,
 
-```shell
-$ brew outdated
-go (1.6) < 1.7.4_1
-```
+  ```shell
+  $ brew outdated
+  go (1.6) < 1.7.4_1
+  ```
 
 * **cleanup** supprime les anciennes versions des formulas (car Homebrew les garde indéfiniment).
 
-```shell
-$ brew cleanup
-Removing: /usr/local/Cellar/go/1.6... (6,438 files, 250.7M)
-==> This operation has freed approximately 250.7M of disk space.
-```
+  ```shell
+  $ brew cleanup
+  Removing: /usr/local/Cellar/go/1.6... (6,438 files, 250.7M)
+  ==> This operation has freed approximately 250.7M of disk space.
+  ```
 
 > Définissez un alias **bubu** (déjà disponible par défaut dans **zsh**) pour `brew update && brew outdated && brew upgrade && brew cleanup`, et ainsi en une commande gèrer vos formulas plus simplement.
 
-Vous venez d'apprendre qu'un des mécanismes par défaut de Homebrew
-est de conserver toutes les versions installées de vos formulas.
+Vous venez d'apprendre qu'un des mécanismes par défaut de Homebrew est de conserver toutes les versions installées de vos formulas.
 Ceci dans le but de vous permettre de facilement switcher entre ces versions.
 
 > **brew install \<formula>** ne permet d'installer que la version courante du formula, jamais une ancienne version.
 
-Par exemple comment passer à une version go 1.6 puis revenir sur une version go 1.7
+Par exemple comment passer à une version go 1.6 puis revenir sur une version go 1.7 :
 
 ```shell
 $ brew switch go 1.6
@@ -255,13 +252,12 @@ Cleaning /usr/local/Cellar/go/1.7.4_1
 3 links created for /usr/local/Cellar/go/1.7.4_1
 ```
 
-TIP: Le tap **homebrew/versions** vous permet d'accèder à d'anciennes versions.
+> :bulb: **Tip**
+> Le tap **homebrew/versions** vous permet d'accèder à d'anciennes versions.
 
-Sur le projet, votre voisin de bureau commence sa première journée
-et vous demande de lui passer votre liste de formulas et d'applications
-pour faire lui aussi l'installation rapidement.
+Sur le projet, votre voisin de bureau commence sa première journée et vous demande de lui passer votre liste de formulas et d'applications pour faire lui aussi l'installation rapidement.
 
-Vous appliquez la méthode KISS
+Vous appliquez la méthode KISS :
 
 ```shell
 brew list > brew-formulas.txt
@@ -273,7 +269,7 @@ C'est KISS mais seulement pour vous.
 
 Mais là encore, Homebrew a pensé à faciliter ce genre d'actions via **brew bundle**.
 
-Vous créez un Brewfile de votre poste via `brew bundle dump`
+Vous créez un Brewfile de votre poste via `brew bundle dump` :
 
 ```shell
 $ brew bundle dump
@@ -293,12 +289,12 @@ cask 'java'
 cask 'slack'
 ```
 
-Un fichier __Brewfile__ commence par lister les **taps** installés, puis les formulas installés, ainsi que les applications.
+Un fichier _Brewfile_ commence par lister les **taps** installés, puis les formulas installés, ainsi que les applications.
 Il garde même en mémoire les status des services (ici, **mysql** est lancé).
 
 Vous transmettez le fichier **Brewfile** à votre voisin et il n'a plus qu'à l'utiliser.
 
-Votre voisin de bureau installe ce Brewfile sur son poste
+Votre voisin de bureau installe ce Brewfile sur son poste :
 
 ```shell
 $ brew bundle
@@ -317,7 +313,7 @@ Installing java
 Installing slack
 ```
 
-TIP: Par défaut, **brew bundle** utilise le fichier **Brewfile** depuis le dossier courant.
+> :bulb: **Tip:** Par défaut, **brew bundle** utilise le fichier **Brewfile** depuis le dossier courant.
 L'option `--file=path` permet de définir un autre chemin vers le fichier **Brewfile**.
 L'option `--global` ira lire un fichier **.Brefile** depuis votre **$HOME**.
 
@@ -343,7 +339,7 @@ cask 'java'
 Après que ce nouveau projet soit prêt, il est temps que les autres développeurs l'utilisent.
 Pour faciliter sa distribution, vous l'avez publié dans votre repository manager de votre client (ex. **Nexus**).
 
-Un de vos collègues teste l'installation du nouvel outil
+Un de vos collègues teste l'installation du nouvel outil :
 
 ```shell
 $ tool_url='https://nexus.client.tld/content/repositories/releases/tld/client/project/tool/1.0.0/tool-1.0.0-distribution.zip'
@@ -369,7 +365,7 @@ Avant de la créer, vous vous demandez comment la sauvegarder?
 Homebrew vous propose déjà des **taps** pour avoir plus de **formulas** disponibles.
 
 Vous pouvez créer un **tap** privé qui est un simple repository git.
-Par défaut, un __tap__ ajouté via `brew tap utilisateur/nom_tap` corresponds à l'url [https://github.com/utilisateur/homebrew-nom_tap.git](https://github.com/utilisateur/homebrew-nom_tap.git)
+Par défaut, un _tap_ ajouté via `brew tap utilisateur/nom_tap` corresponds à l'url [https://github.com/utilisateur/homebrew-nom_tap.git](https://github.com/utilisateur/homebrew-nom_tap.git).
 
 Si vous voulez le stocker ailleurs, l'ajout se fait par `brew tap utilisateur/nom_tap git@git.client.tld:utilisateur/homebrew-nom_tap.git`.
 
@@ -385,7 +381,7 @@ Please `brew audit --new-formula project-tool` before submitting, thanks.
 Editing /usr/local/Homebrew/Library/Taps/utilisateur/nom_tap/project-tool.rb
 ```
 
-Suite à la création de votre **formula**, homebrew ouvre automatiquement le fichier associé.
+Suite à la création de votre **formula**, homebrew ouvre automatiquement le fichier associé :
 
 ```ruby
 # Documentation: http://docs.brew.sh/Formula-Cookbook.html # <1>
@@ -451,9 +447,9 @@ Error: 10 problems in 1 formula
 ```
 
 Vous devez donc définir la **description** et la **homepage** de la formula (ex. l'url du repository git).
-Et comme il ne s'agit pas d'un __build cmake__, vous pouvez enlever les commentaires ainsi que le code lié à __cmake__.
+Et comme il ne s'agit pas d'un _build cmake_, vous pouvez enlever les commentaires ainsi que le code lié à _cmake_.
 
-Vous faites les premiers changements afin que l'audit passe
+Vous faites les premiers changements afin que l'audit passe :
 
 ```ruby
 class ProjectTool < Formula
@@ -474,7 +470,7 @@ class ProjectTool < Formula
 end
 ```
 
-Puis vous auditez et tentez d'installer la formula
+Puis vous auditez et tentez d'installer la formula :
 
 ```shell
 $ brew audit --new-formula project-tool
@@ -487,19 +483,19 @@ Error: Empty installation
 
 L'audit est bien passé, mais l'installation de la formula vous indique que la procédure d'installation reste à faire.
 
-La procédure d'installation manuelle vous sert de guide dans l'écriture de votre formula
+La procédure d'installation manuelle vous sert de guide dans l'écriture de votre formula :
 
 1. Télécharger le zip,
 2. Décompresser le zip,
 3. Aller dans le dossier décompressé,
 4. Rendre éxecutable le script **bin/tool**,
-5. Ajouter le dossier **bin** au __PATH__,
+5. Ajouter le dossier **bin** au _PATH_,
 6. Tester que `tool --version` donne bien le numéro de version de l'outil.
 
 Homebrew téléchargera et décompressera le zip du projet automatiquement (via **url** et **sha256**) réalisant les étapes 1 et 2.
 
 Pour l'étape 3, la fonction **install** s'éxecute dans le dossier décompressé.
-Par contre, ce dossier est temporaire, vous devez demander à garder les dossiers **bin** et **lib** dans __libexec__.
+Par contre, ce dossier est temporaire, vous devez demander à garder les dossiers **bin** et **lib** dans _libexec_.
 
 Une **formula** propose plusieurs répertoires pour stocker des fichiers utiles.
 Le dossier **libexec** sert à stocker des fichiers uniquement nécessaire à la **formula**.
@@ -508,13 +504,13 @@ Via `libexec.install`, vous pouvez demander qu'un dossier y soit stocké.
 Afin de réaliser l'étape 4, vous devez demander à lier le script **libexec/bin/tool** au PATH via `bin.install_symlink`.
 Cette action réalise également l'étape 5 car `bin.install_symlink` gére aussi les permissions.
 
-Le test de l'étape 6 se fera par `brew test`, ceci une fois la fonction **test** remplie dans la __formula__.
+Le test de l'étape 6 se fera par `brew test`, ceci une fois la fonction **test** remplie dans la _formula_.
 Ce test peut simplement être que l'éxecution de `tool --version` fonctionne.
 
 De plus, une formula peut définir des pré-requis comme par exemple que Java 8 (ou plus) soit installé.
 Via `depends_on :java => "1.8+"` vous définissez un tel prérequis.
 
-Vous ajoutez les différentes étapes dans la formula
+Vous ajoutez les différentes étapes dans la formula :
 
 ```ruby
 class ProjectTool < Formula
@@ -566,19 +562,19 @@ git add Formula/project-tool.rb
 git commit
 ```
 
-Votre collègue apprécie la nouvelle procédure
+Votre collègue apprécie la nouvelle procédure :
 
 ```shell
 brew tap utilisateur/nom_tap git@git.client.tld:utilisateur/homebrew-nom_tap.git
 brew install project-tool
 ```
 
-NOTE: le système de **formula** permet également de gérer l'installation depuis les sources ([**--HEAD**](https://github.com/Homebrew/brew/blob/master/docs/Formula-Cookbook.md#head))
+> :memo: **Note**
+> Le système de **formula** permet également de gérer l'installation depuis les sources ([**--HEAD**](https://github.com/Homebrew/brew/blob/master/docs/Formula-Cookbook.md#head))
 ou les versions bêta ([**--devel**](https://github.com/Homebrew/brew/blob/master/docs/Formula-Cookbook.md#devel)).
-La documentation des formulas vous permettera d'approfondir vos formulas ([http://docs.brew.sh/Formula-Cookbook.html](http://docs.brew.sh/Formula-Cookbook.html)).
+> La documentation des formulas vous permettera d'approfondir vos formulas ([http://docs.brew.sh/Formula-Cookbook.html](http://docs.brew.sh/Formula-Cookbook.html)).
 
-Maintenant que vous savez créer des **formulas** pour votre client,
-vous pouvez aussi créer des formulas ou les maintenir sur les **taps** officiels.
+Maintenant que vous savez créer des **formulas** pour votre client, vous pouvez aussi créer des formulas ou les maintenir sur les **taps** officiels.
 
 Pour contribuer, la formula dans les taps officiels (comme **homebrew-core**) doit respecter [certaines conditions pour être acceptable](https://github.com/Homebrew/brew/blob/master/docs/Acceptable-Formulae.md).
 
@@ -591,11 +587,9 @@ Le projet installé par la formula doit être
 Une fois la formula créée ou modifiée, vous pouvez créer une pull-request vers le project **homebrew-core**.
 Votre pull-request sera automatiquement analysée et validée par [bot.brew.sh](https://bot.brew.sh/).
 
-Dans le but d'aider les mainteneurs du projet, [bot.brew.sh](https://bot.brew.sh/) traite toutes pull-requests
-en testant la formula sur les trois dernières versions supportées de macOS (__yosemite, el capitan, et sierra__).
+Dans le but d'aider les mainteneurs du projet, [bot.brew.sh](https://bot.brew.sh/) traite toutes pull-requests en testant la formula sur les trois dernières versions supportées de macOS (_yosemite, el capitan, et sierra_).
 
-Concernant votre projet **tool**, il ne vous reste plus qu'à le rendre open-source
-et proposer votre **formula** sur **homebrew-core** quand le projet sera plus connu.
+Concernant votre projet **tool**, il ne vous reste plus qu'à le rendre open-source et proposer votre **formula** sur **homebrew-core** quand le projet sera plus connu.
 
 En attendant ce jour, n'hesitez pas à contribuer sur les formulas existantes et rejoindre les 6200 contibuteurs de **homebrew-core**.
 

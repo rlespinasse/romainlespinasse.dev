@@ -27,7 +27,7 @@ Due to that breaking change, I take the decision to change my branching strategy
 
 The `master` branch have been depreciated ([rlespinasse/github-slug-action#15](https://github.com/rlespinasse/github-slug-action/issues/15))
 
-A removal of the `master` branch have been plan 6-months later. 
+A removal of the `master` branch have been plan 6-months later.
 This work is complete.
 Some repositories still used the `master` branch and a pull-request to migrate have been created of each of them during October before the `master` branch deletion.
 
