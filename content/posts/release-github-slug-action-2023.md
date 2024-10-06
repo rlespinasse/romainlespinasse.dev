@@ -1,8 +1,9 @@
 ---
-title: "Project 'github-slug-action' | 2023 Releases"
-date: 2023-10-20T10:59:57Z
+title: "2023 Changelog: All Releases and Updates for 'rlespinasse/github-slug-action'"
+summary: Changelog of the 2 releases for 2023
+date: 2023-02-20T11:00:14Z
+lastmod: 2023-10-20T10:59:57Z
 toc: false
-summary: Changelog of the 2 releases of 2023
 draft: false
 tags:
 - opensource

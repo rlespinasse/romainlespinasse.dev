@@ -1,8 +1,9 @@
 ---
-title: "Project 'drawio-export' | 2024 Releases"
-date: 2024-10-02T19:57:54Z
+title: "2024 Changelog: All Releases and Updates for 'rlespinasse/drawio-export'"
+summary: Changelog of the 15 releases for 2024
+date: 2024-01-02T05:40:22Z
+lastmod: 2024-10-02T19:57:54Z
 toc: false
-summary: Changelog of the 15 releases of 2024
 draft: false
 tags:
 - opensource

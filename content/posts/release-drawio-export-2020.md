@@ -1,8 +1,9 @@
 ---
-title: "Project 'drawio-export' | 2020 Releases"
-date: 2020-10-21T06:33:54Z
+title: "2020 Changelog: All Releases and Updates for 'rlespinasse/drawio-export'"
+summary: Changelog of the 18 releases for 2020
+date: 2020-05-01T16:08:57Z
+lastmod: 2020-10-21T06:33:54Z
 toc: false
-summary: Changelog of the 18 releases of 2020
 draft: false
 tags:
 - opensource

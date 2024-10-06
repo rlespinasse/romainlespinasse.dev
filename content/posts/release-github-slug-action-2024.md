@@ -1,8 +1,9 @@
 ---
-title: "Project 'github-slug-action' | 2024 Releases"
-date: 2024-04-30T20:32:29Z
+title: "2024 Changelog: All Releases and Updates for 'rlespinasse/github-slug-action'"
+summary: Changelog of the 2 releases for 2024
+date: 2024-01-28T19:30:37Z
+lastmod: 2024-04-30T20:32:29Z
 toc: false
-summary: Changelog of the 2 releases of 2024
 draft: false
 tags:
 - opensource

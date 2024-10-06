@@ -1,8 +1,9 @@
 ---
-title: "Project 'release-that' | 2023 Releases"
-date: 2023-12-26T22:02:34Z
+title: "2023 Changelog: All Releases and Updates for 'rlespinasse/release-that'"
+summary: Changelog of the 3 releases for 2023
+date: 2023-02-04T15:37:46Z
+lastmod: 2023-12-26T22:02:34Z
 toc: false
-summary: Changelog of the 3 releases of 2023
 draft: false
 tags:
 - opensource

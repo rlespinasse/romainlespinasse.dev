@@ -1,5 +1,5 @@
 ---
-title: "Townscaper | Creation | Sauron tower"
+title: "Townscaper: Crafting the Ominous Sauron Tower"
 date: 2020-07-10T10:42:00+02:00
 draft: false
 toc: false

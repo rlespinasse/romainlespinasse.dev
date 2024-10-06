@@ -1,5 +1,5 @@
 ---
-title: "Townscaper | Daily Challenge | Garden (Day 2)"
+title: "Townscaper: Cultivating Beauty - Daily Challenge Day 2"
 date: 2020-07-11T10:42:00+02:00
 draft: false
 toc: false

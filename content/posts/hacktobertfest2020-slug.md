@@ -1,5 +1,5 @@
 ---
-title: "Hacktoberfest 2020 Report | github-slug-action Maintainer"
+title: "Hacktoberfest 2020: Insights from a github-slug-action Maintainer"
 date: 2020-11-01T11:42:00+02:00
 draft: false
 toc: false

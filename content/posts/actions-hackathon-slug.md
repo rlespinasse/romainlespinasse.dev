@@ -1,5 +1,5 @@
 ---
-title: "Actions Hackathon | Use Slug variables for your release and deployment workflows"
+title: "Actions Hackathon: Streamlining Workflows with Slug Variables"
 date: 2020-08-16T10:42:00+02:00
 draft: false
 toc: false

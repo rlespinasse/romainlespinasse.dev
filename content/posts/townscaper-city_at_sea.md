@@ -1,5 +1,5 @@
 ---
-title: "Townscaper | Creation | City at sea"
+title: "Townscaper: Island Metropolis - Urban Oasis Emerges from the Sea"
 date: 2020-07-05T10:42:00+02:00
 draft: false
 toc: false

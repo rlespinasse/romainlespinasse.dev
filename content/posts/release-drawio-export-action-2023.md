@@ -1,8 +1,9 @@
 ---
-title: "Project 'drawio-export-action' | 2023 Releases"
-date: 2023-12-27T04:15:25Z
+title: "2023 Changelog: All Releases and Updates for 'rlespinasse/drawio-export-action'"
+summary: Changelog of the 7 releases for 2023
+date: 2023-03-29T12:51:35Z
+lastmod: 2023-12-27T04:15:25Z
 toc: false
-summary: Changelog of the 7 releases of 2023
 draft: false
 tags:
 - opensource

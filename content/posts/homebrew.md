@@ -1,5 +1,5 @@
 ---
-title: "Homebrew | Utilisez un package manager sous macOS"
+title: "Homebrew : Optimisez la gestion de paquets sur macOS"
 date: 2017-02-28T10:42:00+01:00
 draft: false
 summary: Découvrez homebrew pour vous facilitez la vie sous macOS dans la gestion de vos installations de packages.

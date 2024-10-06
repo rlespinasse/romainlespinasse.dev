@@ -1,8 +1,9 @@
 ---
-title: "Project 'release-that' | 2021 Releases"
-date: 2021-12-15T21:40:38Z
+title: "2021 Changelog: All Releases and Updates for 'rlespinasse/release-that'"
+summary: Changelog of the 7 releases for 2021
+date: 2021-10-02T15:17:18Z
+lastmod: 2021-12-15T21:40:38Z
 toc: false
-summary: Changelog of the 7 releases of 2021
 draft: false
 tags:
 - opensource

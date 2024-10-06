@@ -1,8 +1,9 @@
 ---
-title: "Project 'git-commit-data-action' | 2022 Releases"
-date: 2022-09-30T20:33:14Z
+title: "2022 Changelog: All Releases and Updates for 'rlespinasse/git-commit-data-action'"
+summary: Changelog of the 2 releases for 2022
+date: 2022-09-30T20:23:24Z
+lastmod: 2022-09-30T20:33:14Z
 toc: false
-summary: Changelog of the 2 releases of 2022
 draft: false
 tags:
 - opensource

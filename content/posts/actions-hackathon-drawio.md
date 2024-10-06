@@ -1,5 +1,5 @@
 ---
-title: "Actions Hackathon | Keep your draw.io diagrams in sync inside your repository"
+title: "Actions Hackathon: Keeping Your draw.io Diagrams in Sync Within Your Repository"
 date: 2020-08-16T12:42:00+02:00
 draft: false
 toc: false

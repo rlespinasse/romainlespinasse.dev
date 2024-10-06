@@ -1,5 +1,5 @@
 ---
-title: "Hacktoberfest 2020 Report | Lessons learned as Maintainer"
+title: "Hacktoberfest 2020: Key Takeaways from a Maintainer's Perspective"
 date: 2020-11-01T10:42:00+02:00
 draft: false
 toc: false

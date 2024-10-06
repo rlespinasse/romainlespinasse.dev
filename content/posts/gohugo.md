@@ -1,5 +1,5 @@
 ---
-title: "Hugo | Generate your own site"
+title: "Hugo: Crafting Your Digital Identity"
 date: 2019-10-27T10:42:00+02:00
 draft: false
 toc: false

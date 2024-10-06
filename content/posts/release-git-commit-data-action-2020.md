@@ -1,8 +1,9 @@
 ---
-title: "Project 'git-commit-data-action' | 2020 Releases"
-date: 2020-12-18T15:44:04Z
+title: "2020 Changelog: All Releases and Updates for 'rlespinasse/git-commit-data-action'"
+summary: Changelog of the 3 releases for 2020
+date: 2020-05-05T07:06:13Z
+lastmod: 2020-12-18T15:44:04Z
 toc: false
-summary: Changelog of the 3 releases of 2020
 draft: false
 tags:
 - opensource

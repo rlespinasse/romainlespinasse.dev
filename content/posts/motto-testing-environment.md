@@ -1,5 +1,5 @@
 ---
-title: "Motto | Everybody has a testing environment"
+title: "Motto: Everyone Has a Testing Environment, ..."
 date: 2020-09-20T10:42:00+02:00
 draft: false
 toc: false

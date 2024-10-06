@@ -1,8 +1,9 @@
 ---
-title: "Project 'release-that' | 2022 Releases"
-date: 2022-10-31T18:49:09Z
+title: "2022 Changelog: All Releases and Updates for 'rlespinasse/release-that'"
+summary: Changelog of the 2 releases for 2022
+date: 2022-10-15T19:57:53Z
+lastmod: 2022-10-31T18:49:09Z
 toc: false
-summary: Changelog of the 2 releases of 2022
 draft: false
 tags:
 - opensource

@@ -1,5 +1,5 @@
 ---
-title: "Actions Hackathon | Access commit info for your release and deployment workflows"
+title: "Actions Hackathon: Leveraging Commit Info for Enhanced Release and Deployment Workflows"
 date: 2020-08-16T11:42:00+02:00
 draft: false
 toc: false

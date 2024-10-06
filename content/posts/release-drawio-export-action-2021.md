@@ -1,8 +1,9 @@
 ---
-title: "Project 'drawio-export-action' | 2021 Releases"
-date: 2021-12-31T17:41:48Z
+title: "2021 Changelog: All Releases and Updates for 'rlespinasse/drawio-export-action'"
+summary: Changelog of the 6 releases for 2021
+date: 2021-04-07T06:28:07Z
+lastmod: 2021-12-31T17:41:48Z
 toc: false
-summary: Changelog of the 6 releases of 2021
 draft: false
 tags:
 - opensource

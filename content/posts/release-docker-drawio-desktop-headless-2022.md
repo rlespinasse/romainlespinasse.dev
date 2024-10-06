@@ -1,8 +1,9 @@
 ---
-title: "Project 'docker-drawio-desktop-headless' | 2022 Releases"
-date: 2022-10-20T18:25:00Z
+title: "2022 Changelog: All Releases and Updates for 'rlespinasse/docker-drawio-desktop-headless'"
+summary: Changelog of the 2 releases for 2022
+date: 2022-10-01T13:38:37Z
+lastmod: 2022-10-20T18:25:00Z
 toc: false
-summary: Changelog of the 2 releases of 2022
 draft: false
 tags:
 - opensource

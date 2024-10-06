@@ -1,5 +1,5 @@
 ---
-title: "Hacktoberfest | Let's go for 2019"
+title: "Hacktoberfest 2019: Dive into the Open Source month"
 date: 2019-09-30T10:42:00+02:00
 draft: false
 toc: false

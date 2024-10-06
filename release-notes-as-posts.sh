@@ -4,21 +4,24 @@ release-notes-as-posts() {
     echo "+ Extract releases from repo $1"
     while read -r year; do
         echo "- ${year} releases"
-        dates=$(gh release list --limit 100 --exclude-drafts --exclude-pre-releases --repo "rlespinasse/$1" --jq '.[]|select(.publishedAt | startswith("'"${year}"'"))' --json name,publishedAt | jq -r '.publishedAt' | sort -r)
-        last_date=$(echo "${dates}" | head -1)
+        dates=$(gh release list --limit 100 --exclude-drafts --exclude-pre-releases --repo "rlespinasse/$1" --jq '.[]|select(.publishedAt | startswith("'"${year}"'"))' --json name,publishedAt | jq -r '.publishedAt')
+        date=$(echo "${dates}" | sort | head -1)
+        lastmod=$(echo "${dates}" | sort -r | head -1)
         releases_count=$(echo "${dates}" | wc -l)
 
         cat <<EOF >"content/posts/release-$1-${year}.md"
 ---
-title: "Project '${1}' | ${year} Releases"
-date: ${last_date}
+title: "${year} Changelog: All Releases and Updates for 'rlespinasse/${1}'"
+summary: Changelog of the ${releases_count} releases for ${year}
+date: ${date}
+lastmod: ${lastmod}
 toc: false
-summary: Changelog of the ${releases_count} releases of ${year}
 draft: false
 tags:
 - opensource
 - github
 - release
+- ${year}-changelog
 ---
 EOF
 

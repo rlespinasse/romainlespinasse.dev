@@ -1,5 +1,5 @@
 ---
-title: "Antora 1.0 | Replace your wiki with a documentation site"
+title: "Antora 1.0: Elevate Your Wiki to a Professional Documentation Hub"
 date: 2018-09-11T10:42:00+02:00
 draft: false
 toc: false

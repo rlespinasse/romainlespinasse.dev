@@ -1,8 +1,9 @@
 ---
-title: "Project 'drawio-export-action' | 2022 Releases"
-date: 2022-10-31T18:45:08Z
+title: "2022 Changelog: All Releases and Updates for 'rlespinasse/drawio-export-action'"
+summary: Changelog of the 5 releases for 2022
+date: 2022-07-26T19:00:58Z
+lastmod: 2022-10-31T18:45:08Z
 toc: false
-summary: Changelog of the 5 releases of 2022
 draft: false
 tags:
 - opensource

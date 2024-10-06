@@ -1,5 +1,5 @@
 ---
-title: "Townscaper | Daily Challenge | Fortress (Day 6)"
+title: "Townscaper: Impregnable Citadels - Daily Challenge Day 6"
 date: 2020-07-15T22:42:00+02:00
 draft: false
 toc: false

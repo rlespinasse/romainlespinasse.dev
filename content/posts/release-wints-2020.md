@@ -1,13 +1,15 @@
 ---
-title: "Project 'wints' | 2020 Releases"
-date: 2020-12-20T23:22:08Z
-toc: false
+title: "2020 Changelog: All Releases and Updates for 'rlespinasse/wints'"
 summary: Changelog of the 2 releases of 2020
+date: 2020-12-20T10:22:08Z
+lastmod: 2020-12-20T23:22:08Z
+toc: false
 draft: false
 tags:
 - opensource
 - github
 - release
+- 2020-changelog
 ---
 ## [0.4.0](https://github.com/rlespinasse/wints/compare/v0.3.0...v0.4.0) (2020-12-20)
 

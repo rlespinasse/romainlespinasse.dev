@@ -1,5 +1,5 @@
 ---
-title: "Townscaper | Design | Creativity city"
+title: "Townscaper: Canvas City - Unleash Your Urban Imagination"
 date: 2020-07-02T09:42:00+02:00
 draft: false
 toc: false
@@ -12,7 +12,7 @@ tags:
 
 A empty city to deploy your creativity.
 
-This map serve as base for the City port.
+This map serve as base for the [City port](/posts/townscaper-city_port/).
 
 {{< load-photoswipe >}}
 

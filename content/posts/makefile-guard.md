@@ -1,5 +1,5 @@
 ---
-title: "Makefile | How to check a mandatory variable"
+title: "Makefile: Ensuring Essential Variables with Validation Checks"
 date: 2019-07-14T10:00:00+02:00
 draft: false
 toc: false

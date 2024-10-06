@@ -1,8 +1,9 @@
 ---
-title: "Project 'shortify-git-revision' | 2021 Releases"
-date: 2021-12-09T21:58:00Z
+title: "2021 Changelog: All Releases and Updates for 'rlespinasse/shortify-git-revision'"
+summary: Changelog of the 4 releases for 2021
+date: 2021-12-04T22:52:22Z
+lastmod: 2021-12-09T21:58:00Z
 toc: false
-summary: Changelog of the 4 releases of 2021
 draft: false
 tags:
 - opensource

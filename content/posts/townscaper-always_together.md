@@ -1,5 +1,5 @@
 ---
-title: "Townscaper | Creation | Always together"
+title: "Townscaper: Bridging Divides - A Tale of Unbreakable Connections"
 date: 2020-07-13T12:42:00+02:00
 draft: false
 toc: false

@@ -1,8 +1,9 @@
 ---
-title: "Project 'slugify-value' | 2021 Releases"
-date: 2021-12-08T20:49:42Z
+title: "2021 Changelog: All Releases and Updates for 'rlespinasse/slugify-value'"
+summary: Changelog of the 3 releases for 2021
+date: 2021-10-12T11:11:27Z
+lastmod: 2021-12-08T20:49:42Z
 toc: false
-summary: Changelog of the 3 releases of 2021
 draft: false
 tags:
 - opensource

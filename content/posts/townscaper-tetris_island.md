@@ -1,5 +1,5 @@
 ---
-title: "Townscaper | Creation | Tetris island"
+title: "Townscaper: Building a Tetris-Inspired Island Paradise"
 date: 2020-07-12T18:42:00+02:00
 draft: false
 toc: false
