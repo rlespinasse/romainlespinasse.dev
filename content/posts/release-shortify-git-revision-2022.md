@@ -9,6 +9,7 @@ tags:
 - opensource
 - github
 - release
+- 2022-changelog
 ---
 ## [1.6.0](https://github.com/rlespinasse/shortify-git-revision/compare/v1.5.1...v1.6.0) (2022-10-31)
 

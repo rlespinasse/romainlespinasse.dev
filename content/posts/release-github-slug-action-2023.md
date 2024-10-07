@@ -9,6 +9,7 @@ tags:
 - opensource
 - github
 - release
+- 2023-changelog
 ---
 ## [3.8.0](https://github.com/rlespinasse/github-slug-action/compare/v3.7.1...v3.8.0) (2023-10-20)
 

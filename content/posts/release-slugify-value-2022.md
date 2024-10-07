@@ -9,6 +9,7 @@ tags:
 - opensource
 - github
 - release
+- 2022-changelog
 ---
 ## [1.4.0](https://github.com/rlespinasse/slugify-value/compare/v1.3.3...v1.4.0) (2022-10-31)
 

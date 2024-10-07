@@ -9,6 +9,7 @@ tags:
 - opensource
 - github
 - release
+- 2021-changelog
 ---
 ## [3.6.0](http://github.com/rlespinasse/github-slug-action/compare/3.5.1...3.6.0) (2021-09-15)
 

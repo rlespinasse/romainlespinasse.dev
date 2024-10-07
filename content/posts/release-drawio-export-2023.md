@@ -9,6 +9,7 @@ tags:
 - opensource
 - github
 - release
+- 2023-changelog
 ---
 ## [4.11.0](https://github.com/rlespinasse/drawio-export/compare/v4.10.0...v4.11.0) (2023-12-26)
 

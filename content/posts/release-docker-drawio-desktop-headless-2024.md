@@ -9,6 +9,7 @@ tags:
 - opensource
 - github
 - release
+- 2024-changelog
 ---
 ## [1.38.0](https://github.com/rlespinasse/docker-drawio-desktop-headless/compare/v1.37.0...v1.38.0) (2024-10-01)
 

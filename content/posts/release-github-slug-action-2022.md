@@ -9,6 +9,7 @@ tags:
 - opensource
 - github
 - release
+- 2022-changelog
 ---
 ## [4.4.0](https://github.com/rlespinasse/github-slug-action/compare/v4.3.2...v4.4.0) (2022-10-31)
 

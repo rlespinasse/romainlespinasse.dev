@@ -9,6 +9,7 @@ tags:
 - opensource
 - github
 - release
+- 2024-changelog
 ---
 ## [0.6.0](https://github.com/rlespinasse/wints/compare/v0.5.0...v0.6.0) (2024-01-07)
 

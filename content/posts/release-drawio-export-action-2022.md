@@ -9,6 +9,7 @@ tags:
 - opensource
 - github
 - release
+- 2022-changelog
 ---
 ## [2.5.0](https://github.com/rlespinasse/drawio-export-action/compare/v2.4.0...v2.5.0) (2022-10-31)
 

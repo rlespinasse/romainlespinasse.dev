@@ -9,6 +9,7 @@ tags:
 - opensource
 - github
 - release
+- 2021-changelog
 ---
 ## [1.2.0](https://github.com/rlespinasse/git-commit-data-action/compare/1.1.2...1.2.0) (2021-10-14)
 

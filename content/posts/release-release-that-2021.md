@@ -9,6 +9,7 @@ tags:
 - opensource
 - github
 - release
+- 2021-changelog
 ---
 ## [1.5.0](https://github.com/rlespinasse/release-that/compare/v1.4.0...v1.5.0) (2021-12-15)
 
