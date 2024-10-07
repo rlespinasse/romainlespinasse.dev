@@ -43,7 +43,7 @@ categories:
 
 
 
-### [1.1.1](https://github.com/rlespinasse/drawio-export-action/compare/1.1.0...1.1.1) (2021-10-17)
+## [1.1.1](https://github.com/rlespinasse/drawio-export-action/compare/1.1.0...1.1.1) (2021-10-17)
 
 
 ### Bug Fixes

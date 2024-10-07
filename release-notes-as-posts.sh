@@ -27,22 +27,21 @@ EOF
 
         while read -r release; do
             echo "\\ Add release ${release}"
-            gh release view "${release}" --repo "rlespinasse/$1" --json body \
-                --template "${2}"'{{.body}}' >>"content/posts/release-$1-${year}.md"
+            gh release view "${release}" --repo "rlespinasse/$1" --json body --template '{{.body}}' |
+                sed "s/^# /## /" >>"content/posts/release-$1-${year}.md"
         done < <(gh release list --limit 100 --exclude-drafts --exclude-pre-releases --order desc --repo "rlespinasse/$1" --jq '.[]|select(.publishedAt | startswith("'"${year}"'"))' --json name,publishedAt | jq -r '.name')
 
-    done < <(gh release list --limit 100 --exclude-drafts --exclude-pre-releases --order desc --repo "rlespinasse/$1" --json publishedAt | jq -r '.[].publishedAt' | sed 's/-.*//' | uniq | awk -F '[()]' "\$1 >= ${3:-2000}")
+    done < <(gh release list --limit 100 --exclude-drafts --exclude-pre-releases --order desc --repo "rlespinasse/$1" --json publishedAt | jq -r '.[].publishedAt' | sed 's/-.*//' | uniq | awk -F '[()]' "\$1 >= ${2:-2000}")
 }
 
 # release notes
-# extra '#' is due to semantic-release release-generation
-release-notes-as-posts docker-drawio-desktop-headless '#'
-release-notes-as-posts drawio-export '#'
-release-notes-as-posts drawio-export-action '#'
-release-notes-as-posts drawio-exporter '#' '2024' # Before 2024, the release was not created at the same time as the tag
-release-notes-as-posts git-commit-data-action '#'
-release-notes-as-posts github-slug-action '#'
-release-notes-as-posts release-that '#'
-release-notes-as-posts shortify-git-revision '#'
-release-notes-as-posts slugify-value '#'
-release-notes-as-posts wints '#' '2024' # Before 2024, the release was not created at the same time as the tag
+release-notes-as-posts docker-drawio-desktop-headless
+release-notes-as-posts drawio-export
+release-notes-as-posts drawio-export-action
+release-notes-as-posts drawio-exporter '2024' # Before 2024, the release was not created at the same time as the tag
+release-notes-as-posts git-commit-data-action
+release-notes-as-posts github-slug-action
+# release-notes-as-posts release-that
+# release-notes-as-posts shortify-git-revision
+# release-notes-as-posts slugify-value
+# release-notes-as-posts wints '2024' # Before 2024, the release was not created at the same time as the tag

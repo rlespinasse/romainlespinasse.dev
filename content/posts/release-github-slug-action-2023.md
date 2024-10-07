@@ -20,7 +20,7 @@ categories:
 
 
 
-### [4.4.1](https://github.com/rlespinasse/github-slug-action/compare/v4.4.0...v4.4.1) (2023-02-20)
+## [4.4.1](https://github.com/rlespinasse/github-slug-action/compare/v4.4.0...v4.4.1) (2023-02-20)
 
 
 ### Bug Fixes

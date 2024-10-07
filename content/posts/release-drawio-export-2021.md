@@ -71,7 +71,7 @@ categories:
 
 
 
-### [3.3.2](http://github.com/rlespinasse/drawio-export/compare/3.3.1...3.3.2) (2021-01-11)
+## [3.3.2](http://github.com/rlespinasse/drawio-export/compare/3.3.1...3.3.2) (2021-01-11)
 
 
 ### Bug Fixes
@@ -80,7 +80,7 @@ categories:
 
 
 
-### [3.3.1](http://github.com/rlespinasse/drawio-export/compare/3.3.0...3.3.1) (2021-01-10)
+## [3.3.1](http://github.com/rlespinasse/drawio-export/compare/3.3.0...3.3.1) (2021-01-10)
 
 
 ### Bug Fixes

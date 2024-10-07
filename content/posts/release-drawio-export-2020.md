@@ -20,7 +20,7 @@ categories:
 
 
 
-### [3.2.1](http://github.com/rlespinasse/drawio-export/compare/3.2.0...3.2.1) (2020-10-18)
+## [3.2.1](http://github.com/rlespinasse/drawio-export/compare/3.2.0...3.2.1) (2020-10-18)
 
 
 ### Bug Fixes
@@ -75,7 +75,7 @@ categories:
 
 
 
-### [2.4.1](http://github.com/rlespinasse/drawio-export/compare/2.4.0...2.4.1) (2020-05-30)
+## [2.4.1](http://github.com/rlespinasse/drawio-export/compare/2.4.0...2.4.1) (2020-05-30)
 
 
 ### Bug Fixes
@@ -93,7 +93,7 @@ categories:
 
 
 
-### [2.3.1](http://github.com/rlespinasse/drawio-export/compare/2.3.0...2.3.1) (2020-05-10)
+## [2.3.1](http://github.com/rlespinasse/drawio-export/compare/2.3.0...2.3.1) (2020-05-10)
 
 
 ### Bug Fixes
@@ -118,7 +118,7 @@ categories:
 
 
 
-### [2.2.2](http://github.com/rlespinasse/drawio-export/compare/2.2.1...2.2.2) (2020-05-05)
+## [2.2.2](http://github.com/rlespinasse/drawio-export/compare/2.2.1...2.2.2) (2020-05-05)
 
 
 ### Bug Fixes
@@ -127,7 +127,7 @@ categories:
 
 
 
-### [2.2.1](http://github.com/rlespinasse/drawio-export/compare/2.2.0...2.2.1) (2020-05-03)
+## [2.2.1](http://github.com/rlespinasse/drawio-export/compare/2.2.0...2.2.1) (2020-05-03)
 
 
 ### Bug Fixes
@@ -162,7 +162,7 @@ categories:
 
 
 
-### [2.0.1](http://github.com/rlespinasse/drawio-export/compare/2.0.0...2.0.1) (2020-05-02)
+## [2.0.1](http://github.com/rlespinasse/drawio-export/compare/2.0.0...2.0.1) (2020-05-02)
 
 
 ### Bug Fixes

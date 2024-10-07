@@ -21,7 +21,7 @@ categories:
 
 
 
-### [1.0.1](http://github.com/rlespinasse/git-commit-data-action/compare/1.0.0...1.0.1) (2020-10-07)
+## [1.0.1](http://github.com/rlespinasse/git-commit-data-action/compare/1.0.0...1.0.1) (2020-10-07)
 
 
 ### Bug Fixes

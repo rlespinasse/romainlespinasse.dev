@@ -20,7 +20,7 @@ categories:
 
 
 
-### [1.0.2](http://github.com/rlespinasse/github-slug-action/compare/1.0.1...1.0.2) (2019-11-06)
+## [1.0.2](http://github.com/rlespinasse/github-slug-action/compare/1.0.1...1.0.2) (2019-11-06)
 
 
 ### Bug Fixes
@@ -29,7 +29,7 @@ categories:
 
 
 
-### [1.0.1](http://github.com/rlespinasse/github-slug-action/compare/1.0.0...1.0.1) (2019-11-06)
+## [1.0.1](http://github.com/rlespinasse/github-slug-action/compare/1.0.0...1.0.1) (2019-11-06)
 
 
 ### Bug Fixes
@@ -38,7 +38,7 @@ categories:
 
 
 
-### [1.0.0](http://github.com/rlespinasse/github-slug-action/compare/e93e3eb...1.0.0) (2019-11-05)
+## [1.0.0](http://github.com/rlespinasse/github-slug-action/compare/e93e3eb...1.0.0) (2019-11-05)
 
 
 ### Features

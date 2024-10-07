@@ -53,7 +53,7 @@ categories:
 
 
 
-### [1.1.1](http://github.com/rlespinasse/docker-drawio-desktop-headless/compare/1.1.0...1.1.1) (2021-04-10)
+## [1.1.1](http://github.com/rlespinasse/docker-drawio-desktop-headless/compare/1.1.0...1.1.1) (2021-04-10)
 
 
 ### Bug Fixes
@@ -71,7 +71,7 @@ categories:
 
 
 
-### [1.0.1](http://github.com/rlespinasse/docker-drawio-desktop-headless/compare/1.0.0...1.0.1) (2021-02-02)
+## [1.0.1](http://github.com/rlespinasse/docker-drawio-desktop-headless/compare/1.0.0...1.0.1) (2021-02-02)
 
 
 ### Bug Fixes

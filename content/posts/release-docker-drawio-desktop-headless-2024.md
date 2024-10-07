@@ -83,7 +83,7 @@ categories:
 
 
 
-### [1.30.1](https://github.com/rlespinasse/docker-drawio-desktop-headless/compare/v1.30.0...v1.30.1) (2024-06-02)
+## [1.30.1](https://github.com/rlespinasse/docker-drawio-desktop-headless/compare/v1.30.0...v1.30.1) (2024-06-02)
 
 
 ### Bug Fixes

@@ -29,7 +29,7 @@ categories:
 
 
 
-### [2.3.1](https://github.com/rlespinasse/drawio-export-action/compare/v2.3.0...v2.3.1) (2022-10-15)
+## [2.3.1](https://github.com/rlespinasse/drawio-export-action/compare/v2.3.0...v2.3.1) (2022-10-15)
 
 
 ### Bug Fixes

@@ -41,7 +41,7 @@ Co-authored-by: Romain Lespinasse <romain.lespinasse@gmail.com>
 
 
 
-#### [1.1.1](http://github.com/rlespinasse/github-slug-action/compare/1.1.0...1.1.1) (2020-10-07)
+## [1.1.1](http://github.com/rlespinasse/github-slug-action/compare/1.1.0...1.1.1) (2020-10-07)
 
 
 ### Bug Fixes

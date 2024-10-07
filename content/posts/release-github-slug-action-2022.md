@@ -20,7 +20,7 @@ categories:
 
 
 
-### [4.3.2](https://github.com/rlespinasse/github-slug-action/compare/v4.3.1...v4.3.2) (2022-10-17)
+## [4.3.2](https://github.com/rlespinasse/github-slug-action/compare/v4.3.1...v4.3.2) (2022-10-17)
 
 
 ### Bug Fixes
@@ -29,7 +29,7 @@ categories:
 
 
 
-### [4.3.1](https://github.com/rlespinasse/github-slug-action/compare/v4.3.0...v4.3.1) (2022-10-15)
+## [4.3.1](https://github.com/rlespinasse/github-slug-action/compare/v4.3.0...v4.3.1) (2022-10-15)
 
 
 ### Bug Fixes
@@ -38,7 +38,7 @@ categories:
 
 
 
-### [3.7.1](https://github.com/rlespinasse/github-slug-action/compare/v3.7.0...v3.7.1) (2022-10-15)
+## [3.7.1](https://github.com/rlespinasse/github-slug-action/compare/v3.7.0...v3.7.1) (2022-10-15)
 
 
 ### Bug Fixes
@@ -65,7 +65,7 @@ categories:
 
 
 
-### [3.6.1](https://github.com/rlespinasse/github-slug-action/compare/3.6.0...3.6.1) (2022-08-22)
+## [3.6.1](https://github.com/rlespinasse/github-slug-action/compare/3.6.0...3.6.1) (2022-08-22)
 
 
 ### Bug Fixes
@@ -74,7 +74,7 @@ categories:
 
 
 
-### [4.2.5](https://github.com/rlespinasse/github-slug-action/compare/4.2.4...4.2.5) (2022-06-16)
+## [4.2.5](https://github.com/rlespinasse/github-slug-action/compare/4.2.4...4.2.5) (2022-06-16)
 
 
 ### Bug Fixes
@@ -83,7 +83,7 @@ categories:
 
 
 
-### [4.2.4](https://github.com/rlespinasse/github-slug-action/compare/4.2.3...4.2.4) (2022-04-16)
+## [4.2.4](https://github.com/rlespinasse/github-slug-action/compare/4.2.3...4.2.4) (2022-04-16)
 
 
 ### Bug Fixes
@@ -92,7 +92,7 @@ categories:
 
 
 
-### [4.2.3](https://github.com/rlespinasse/github-slug-action/compare/4.2.2...4.2.3) (2022-04-08)
+## [4.2.3](https://github.com/rlespinasse/github-slug-action/compare/4.2.2...4.2.3) (2022-04-08)
 
 
 ### Bug Fixes
@@ -102,7 +102,7 @@ categories:
 
 
 
-### [4.2.2](https://github.com/rlespinasse/github-slug-action/compare/4.2.1...4.2.2) (2022-03-24)
+## [4.2.2](https://github.com/rlespinasse/github-slug-action/compare/4.2.1...4.2.2) (2022-03-24)
 
 
 ### Bug Fixes
@@ -111,7 +111,7 @@ categories:
 
 
 
-### [4.2.1](https://github.com/rlespinasse/github-slug-action/compare/4.2.0...4.2.1) (2022-03-22)
+## [4.2.1](https://github.com/rlespinasse/github-slug-action/compare/4.2.0...4.2.1) (2022-03-22)
 
 
 ### Bug Fixes
@@ -138,7 +138,7 @@ categories:
 
 
 
-### [4.0.1](https://github.com/rlespinasse/github-slug-action/compare/4.0.0...4.0.1) (2022-03-19)
+## [4.0.1](https://github.com/rlespinasse/github-slug-action/compare/4.0.0...4.0.1) (2022-03-19)
 
 
 ### Bug Fixes

@@ -20,7 +20,7 @@ categories:
 
 
 
-### [1.1.2](http://github.com/rlespinasse/git-commit-data-action/compare/1.1.1...1.1.2) (2021-03-20)
+## [1.1.2](http://github.com/rlespinasse/git-commit-data-action/compare/1.1.1...1.1.2) (2021-03-20)
 
 
 ### Bug Fixes
@@ -29,7 +29,7 @@ categories:
 
 
 
-### [1.1.1](http://github.com/rlespinasse/git-commit-data-action/compare/1.1.0...1.1.1) (2021-03-17)
+## [1.1.1](http://github.com/rlespinasse/git-commit-data-action/compare/1.1.0...1.1.1) (2021-03-17)
 
 
 ### Bug Fixes

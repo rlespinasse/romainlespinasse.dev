@@ -120,7 +120,7 @@ categories:
 
 
 
-### [1.7.1](http://github.com/rlespinasse/docker-drawio-desktop-headless/compare/1.7.0...1.7.1) (2022-06-28)
+## [1.7.1](http://github.com/rlespinasse/docker-drawio-desktop-headless/compare/1.7.0...1.7.1) (2022-06-28)
 
 
 ### Bug Fixes

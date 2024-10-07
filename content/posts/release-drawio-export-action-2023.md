@@ -20,7 +20,7 @@ categories:
 
 
 
-### [2.8.1](https://github.com/rlespinasse/drawio-export-action/compare/v2.8.0...v2.8.1) (2023-12-16)
+## [2.8.1](https://github.com/rlespinasse/drawio-export-action/compare/v2.8.0...v2.8.1) (2023-12-16)
 
 
 ### Bug Fixes
@@ -56,7 +56,7 @@ categories:
 
 
 
-### [2.5.2](https://github.com/rlespinasse/drawio-export-action/compare/v2.5.1...v2.5.2) (2023-06-05)
+## [2.5.2](https://github.com/rlespinasse/drawio-export-action/compare/v2.5.1...v2.5.2) (2023-06-05)
 
 
 ### Bug Fixes
@@ -65,7 +65,7 @@ categories:
 
 
 
-### [2.5.1](https://github.com/rlespinasse/drawio-export-action/compare/v2.5.0...v2.5.1) (2023-03-29)
+## [2.5.1](https://github.com/rlespinasse/drawio-export-action/compare/v2.5.0...v2.5.1) (2023-03-29)
 
 
 ### Bug Fixes

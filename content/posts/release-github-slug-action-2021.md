@@ -38,7 +38,7 @@ categories:
 
 
 
-### [3.5.1](http://github.com/rlespinasse/github-slug-action/compare/3.5.0...3.5.1) (2021-03-31)
+## [3.5.1](http://github.com/rlespinasse/github-slug-action/compare/3.5.0...3.5.1) (2021-03-31)
 
 
 ### Bug Fixes
