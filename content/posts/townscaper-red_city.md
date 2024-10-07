@@ -6,8 +6,8 @@ toc: false
 summary: Red city, the island with a little secret.
 tags:
 - townscaper
-- game
-- creation
+categories:
+- Gaming posts
 ---
 
 `Red city`, the island with a `little` secret.

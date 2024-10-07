@@ -6,8 +6,8 @@ toc: false
 summary: Embark on a creative journey through Townscaper's unique island designs, exploring various architectural styles and layouts.
 tags:
 - townscaper
-- game
-- creation
+categories:
+- Gaming posts
 ---
 
 Explore island designs.

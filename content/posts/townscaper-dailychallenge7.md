@@ -6,8 +6,8 @@ toc: false
 summary: Participation on a daily challenge about Townscaper. Day 7 - world Labyrinth.
 tags:
 - townscaper
-- game
-- creation
+categories:
+- Gaming posts
 ---
 
 From the dock to the garden, go door to door.

@@ -8,8 +8,8 @@ draft: false
 tags:
 - opensource
 - github
-- release
-- 2020-changelog
+categories:
+- Changelog posts
 ---
 ## [3.3.0](http://github.com/rlespinasse/drawio-export/compare/3.2.1...3.3.0) (2020-10-21)
 

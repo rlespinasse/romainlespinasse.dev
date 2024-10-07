@@ -8,8 +8,8 @@ draft: false
 tags:
 - opensource
 - github
-- release
-- 2021-changelog
+categories:
+- Changelog posts
 ---
 ## [1.3.0](https://github.com/rlespinasse/shortify-git-revision/compare/v1.2.0...v1.3.0) (2021-12-09)
 

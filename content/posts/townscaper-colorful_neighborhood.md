@@ -6,8 +6,8 @@ toc: false
 summary: Multiple neighborhoods, just colorful in theirs own ways.
 tags:
 - townscaper
-- game
-- creation
+categories:
+- Gaming posts
 ---
 
 Multiple `neighborhood`, just `colorful` in theirs own ways.

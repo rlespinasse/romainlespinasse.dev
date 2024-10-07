@@ -8,8 +8,8 @@ draft: false
 tags:
 - opensource
 - github
-- release
-- 2022-changelog
+categories:
+- Changelog posts
 ---
 ## [4.6.0](https://github.com/rlespinasse/drawio-export/compare/v4.5.0...v4.6.0) (2022-10-20)
 

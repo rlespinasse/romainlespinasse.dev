@@ -9,7 +9,8 @@ tags:
 - opensource
 - github
 - release
-- 2021-changelog
+categories:
+- Changelog posts
 ---
 ## [0.5.0](https://github.com/rlespinasse/wints/compare/v0.4.0...v0.5.0) (2021-01-03)
 

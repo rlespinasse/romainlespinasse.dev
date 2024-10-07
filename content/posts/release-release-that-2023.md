@@ -8,8 +8,8 @@ draft: false
 tags:
 - opensource
 - github
-- release
-- 2023-changelog
+categories:
+- Changelog posts
 ---
 ## [1.8.0](https://github.com/rlespinasse/release-that/compare/v1.7.1...v1.8.0) (2023-12-26)
 

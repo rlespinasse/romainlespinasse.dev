@@ -8,8 +8,8 @@ draft: false
 tags:
 - opensource
 - github
-- release
-- 2024-changelog
+categories:
+- Changelog posts
 ---
 ## [2.24.0](https://github.com/rlespinasse/drawio-export-action/compare/v2.23.0...v2.24.0) (2024-10-03)
 

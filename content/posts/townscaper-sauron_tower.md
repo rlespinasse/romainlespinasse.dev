@@ -6,8 +6,8 @@ toc: false
 summary: Do it look like Barad-dûr to you?
 tags:
 - townscaper
-- game
-- creation
+categories:
+- Gaming posts
 ---
 
 See some `Minas Tirith` on [twitter](https://twitter.com/search?q=minas%20tirith%20townscaper&src=typed_query), so here the `Sauron` tower `Barad-dûr` to match them.

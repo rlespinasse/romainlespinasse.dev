@@ -6,10 +6,10 @@ toc: false
 summary: Report on the Hacktoberfest 2020 about my maintainer journey.
 tags: 
   - hacktoberfest
-  - lessons
   - opensource
-  - creator
   - maintainer
+categories:
+  - Technical posts
 ---
 
 > This post have been published first on [dev.to](https://dev.to/rlespinasse/hacktoberfest-2020-lessons-learned-57kg).

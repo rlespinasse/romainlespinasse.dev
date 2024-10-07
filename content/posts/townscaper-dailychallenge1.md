@@ -6,8 +6,8 @@ toc: false
 summary: Participation on a daily challenge about Townscaper. Day 1 - world Bridge.
 tags:
 - townscaper
-- game
-- creation
+categories:
+- Gaming posts
 ---
 
 Two islands, one `Bridge`, A lot of Stairs.

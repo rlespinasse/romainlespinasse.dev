@@ -20,8 +20,8 @@ draft: false
 tags:
 - opensource
 - github
-- release
-- ${year}-changelog
+categories:
+- Changelog posts
 ---
 EOF
 

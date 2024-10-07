@@ -6,8 +6,8 @@ toc: false
 summary: Participation on a daily challenge about Townscaper. Day 3 - world Neighbours.
 tags:
 - townscaper
-- game
-- creation
+categories:
+- Gaming posts
 ---
 
 Sometimes, being a good neighbour is a difficult task.

@@ -6,8 +6,8 @@ toc: false
 summary: Participation on a daily challenge about Townscaper. Day 2 - world Garden.
 tags:
 - townscaper
-- game
-- creation
+categories:
+- Gaming posts
 ---
 
 A `Garden` bring colors in your life.

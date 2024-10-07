@@ -4,11 +4,13 @@ date: 2017-02-28T10:42:00+01:00
 draft: false
 summary: Découvrez homebrew pour vous facilitez la vie sous macOS dans la gestion de vos installations de packages.
 images: 
-  - /img/posts/homebrew/featured.jpg
+- /img/posts/homebrew/featured.jpg
 tags: 
-  - homebrew
-  - macos
-  - french
+- homebrew
+- macos
+categories:
+- Technical posts
+- French posts
 ---
 
 Votre société ou votre client vient de vous confier un macbook pour travailler, il ne vous reste plus qu'à installer tout un ensemble de programmes pour commencer.

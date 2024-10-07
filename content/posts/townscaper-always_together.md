@@ -6,8 +6,8 @@ toc: false
 summary: When you're separated from your people, you always find a way to get through it.
 tags:
 - townscaper
-- game
-- creation
+categories:
+- Gaming posts
 ---
 
 When you're separated from your people, you always find a way to get through it.

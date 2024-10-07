@@ -5,9 +5,10 @@ draft: false
 toc: false
 summary: Report on my Hacktoberfest 2019 journey.
 tags: 
-  - hacktoberfest
-  - opensource
-  - contributions
+- hacktoberfest
+- opensource
+categories:
+- Technical posts
 ---
 
 ![Hacktoberfest 2019](/img/posts/hacktoberfest-2019/banner.png)

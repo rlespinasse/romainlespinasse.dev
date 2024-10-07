@@ -6,8 +6,8 @@ toc: false
 summary: Welcome to the Tetris island ... and yes, the island float, we are aware of it.
 tags:
 - townscaper
-- game
-- creation
+categories:
+- Gaming posts
 ---
 
 Welcome to the `Tetris island` ... and yes, the island float, we are aware of it.

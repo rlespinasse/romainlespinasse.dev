@@ -6,8 +6,8 @@ toc: false
 summary: A `city at sea`.
 tags:
 - townscaper
-- game
-- creation
+categories:
+- Gaming posts
 ---
 
 A `city at sea`.

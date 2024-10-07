@@ -5,10 +5,11 @@ draft: false
 toc: false
 summary: Post about how I build this blog ... like any developer must-do.
 tags:
-  - feedback
-  - hugo
-  - staticsite
-  - github
+- hugo
+- staticsite
+- github
+categories:
+- Technical posts
 ---
 
 I brought a domain name `romainlespinasse.dev`, so naturally I search to build a website, a small one.

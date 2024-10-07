@@ -8,8 +8,8 @@ draft: false
 tags:
 - opensource
 - github
-- release
-- 2020-changelog
+categories:
+- Changelog posts
 ---
 ## [3.1.0](http://github.com/rlespinasse/github-slug-action/compare/3.0.0...3.1.0) (2020-11-01)
 

@@ -6,8 +6,8 @@ toc: false
 summary: A empty city to deploy your creativity.
 tags:
 - townscaper
-- game
-- creation
+categories:
+- Gaming posts
 ---
 
 A empty city to deploy your creativity.

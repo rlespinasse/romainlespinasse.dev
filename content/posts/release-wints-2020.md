@@ -8,8 +8,8 @@ draft: false
 tags:
 - opensource
 - github
-- release
-- 2020-changelog
+categories:
+- Changelog posts
 ---
 ## [0.4.0](https://github.com/rlespinasse/wints/compare/v0.3.0...v0.4.0) (2020-12-20)
 

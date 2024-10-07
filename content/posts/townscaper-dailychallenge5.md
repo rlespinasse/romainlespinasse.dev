@@ -6,8 +6,8 @@ toc: false
 summary: Participation on a daily challenge about Townscaper. Day 5 - world Eyrie.
 tags:
 - townscaper
-- game
-- creation
+categories:
+- Gaming posts
 ---
 
 From his sea `eyrie`, the Lighthouse keeper watch over passing ships.

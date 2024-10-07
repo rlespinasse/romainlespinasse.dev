@@ -8,8 +8,8 @@ draft: false
 tags:
 - opensource
 - github
-- release
-- 2024-changelog
+categories:
+- Changelog posts
 ---
 ## [4.5.0](https://github.com/rlespinasse/github-slug-action/compare/v4.4.1...v4.5.0) (2024-04-30)
 

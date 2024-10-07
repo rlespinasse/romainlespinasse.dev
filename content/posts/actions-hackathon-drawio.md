@@ -5,10 +5,11 @@ draft: false
 toc: false
 summary: Submission of drawio-export project to the dev.to Actions Hackathon.
 tags: 
-  - actionshackathon
-  - github
-  - opensource
-  - drawio
+- hackathon
+- opensource
+- ci/cd
+categories:
+- Technical posts
 ---
 
 > This post is link to a submission on Dev.to Github Action Hackathon

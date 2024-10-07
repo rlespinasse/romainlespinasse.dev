@@ -5,10 +5,12 @@ draft: false
 toc: false
 summary: Discover Antora as your next documentation site.
 images: 
-  - /img/posts/antora/featured.jpg
+- /img/posts/antora/featured.jpg
 tags: 
-  - antora
-  - asciidoctor
+- antora
+- asciidoctor
+categories:
+- Technical posts
 ---
 
 > Bonjour, la version française de cet article peut être lue [sur ce site](/posts/antora/)

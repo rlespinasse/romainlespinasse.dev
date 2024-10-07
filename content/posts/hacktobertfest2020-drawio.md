@@ -6,9 +6,10 @@ toc: false
 summary: Report on the Hacktoberfest 2020 for drawio-releated projects.
 tags: 
   - hacktoberfest
-  - drawio
   - opensource
   - maintainer
+categories:
+  - Technical posts
 ---
 
 > This post have been published first on [dev.to](https://dev.to/rlespinasse/hacktoberfest-2020-maintainer-of-drawio-cli-and-drawio-export-1018).

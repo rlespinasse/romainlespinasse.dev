@@ -5,11 +5,13 @@ draft: false
 toc: false
 summary: Decouverte d'Antora comme votre prochain site de documentation.
 images: 
-  - /img/posts/antora/featured.jpg
+- /img/posts/antora/featured.jpg
 tags: 
-  - antora
-  - asciidoctor
-  - french
+- antora
+- asciidoctor
+categories:
+- Technical posts
+- French posts
 ---
 
 > Hi, the english version of this article can be read [on this site](/posts/antora-en/)

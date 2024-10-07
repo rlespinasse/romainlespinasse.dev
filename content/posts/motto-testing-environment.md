@@ -7,8 +7,8 @@ summary: Some people are lucky enough enough to have a totally separate environm
 tags: 
   - quote
   - motto
-  - production
-  - testing
+categories:
+  - Technical posts
 ---
 
 > This post have been published first on [dev.to](https://dev.to/rlespinasse/everybody-has-a-testing-environment-7p).

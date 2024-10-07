@@ -8,8 +8,8 @@ draft: false
 tags:
 - opensource
 - github
-- release
-- 2023-changelog
+categories:
+- Changelog posts
 ---
 ## [1.19.0](https://github.com/rlespinasse/docker-drawio-desktop-headless/compare/v1.18.0...v1.19.0) (2023-12-25)
 

@@ -6,8 +6,8 @@ toc: false
 summary: A building with a root in form of a little human.
 tags:
 - townscaper
-- game
-- creation
+categories:
+- Gaming posts
 ---
 
 A building with a root in form of a little human.

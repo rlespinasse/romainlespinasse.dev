@@ -6,8 +6,8 @@ toc: false
 summary: Same concept, Same buildings, a lot of islands.
 tags:
 - townscaper
-- game
-- creation
+categories:
+- Gaming posts
 ---
 
 Same concept, Same buildings, a lot of islands.

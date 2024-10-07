@@ -6,8 +6,8 @@ toc: false
 summary: City with a big port.
 tags:
 - townscaper
-- game
-- creation
+categories:
+- Gaming posts
 ---
 
 `City` with a big `port`.

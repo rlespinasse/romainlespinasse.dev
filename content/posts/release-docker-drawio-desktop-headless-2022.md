@@ -8,8 +8,8 @@ draft: false
 tags:
 - opensource
 - github
-- release
-- 2022-changelog
+categories:
+- Changelog posts
 ---
 ## [1.7.0](https://github.com/rlespinasse/docker-drawio-desktop-headless/compare/v1.6.0...v1.7.0) (2022-10-20)
 

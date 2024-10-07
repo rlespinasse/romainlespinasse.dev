@@ -9,7 +9,8 @@ tags:
 - opensource
 - github
 - release
-- 2021-changelog
+categories:
+- Changelog posts
 ---
 ## [1.1.0](https://github.com/rlespinasse/drawio-export/compare/v1.0.0...v1.1.0) (2021-03-29)
 

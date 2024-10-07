@@ -8,8 +8,8 @@ draft: false
 tags:
 - opensource
 - github
-- release
-- 2022-changelog
+categories:
+- Changelog posts
 ---
 ## [1.4.0](https://github.com/rlespinasse/git-commit-data-action/compare/v1.3.0...v1.4.0) (2022-09-30)
 

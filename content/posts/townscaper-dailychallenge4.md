@@ -6,8 +6,8 @@ toc: false
 summary: Participation on a daily challenge about Townscaper. Day 4 - world Canal.
 tags:
 - townscaper
-- game
-- creation
+categories:
+- Gaming posts
 ---
 
 A `canal` can have many forms

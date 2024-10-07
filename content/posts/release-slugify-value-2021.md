@@ -8,8 +8,8 @@ draft: false
 tags:
 - opensource
 - github
-- release
-- 2021-changelog
+categories:
+- Changelog posts
 ---
 ## [1.1.0](https://github.com/rlespinasse/slugify-value/compare/v1.0.1...v1.1.0) (2021-12-08)
 
