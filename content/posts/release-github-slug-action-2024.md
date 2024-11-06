@@ -1,8 +1,8 @@
 ---
 title: "2024 Changelog: All Releases and Updates for 'rlespinasse/github-slug-action'"
-summary: Changelog of the 2 releases for 2024
+summary: Changelog of the 3 releases for 2024
 date: 2024-01-28T19:30:37Z
-lastmod: 2024-04-30T20:32:29Z
+lastmod: 2024-11-05T23:18:37Z
 toc: false
 draft: false
 tags:
@@ -11,6 +11,21 @@ tags:
 categories:
 - Changelog posts
 ---
+## [5.0.0](https://github.com/rlespinasse/github-slug-action/compare/v4.5.0...v5.0.0) (2024-11-05)
+
+
+### Features
+
+* use GITHUB_REF_POINT as variable for the branch name ([#149](https://github.com/rlespinasse/github-slug-action/issues/149)) ([aba9f8d](https://github.com/rlespinasse/github-slug-action/commit/aba9f8db6ef36e0733227a62673d6592b1f430ea))
+
+
+### BREAKING CHANGES
+
+* Change the behavior of GITHUB_REF_NAME to match the default GitHub Action behavior,
+* Introduce GITHUB_REF_POINT as a replacement for GITHUB_REF_NAME to match this GitHub Action behavior in v4.
+
+
+
 ## [4.5.0](https://github.com/rlespinasse/github-slug-action/compare/v4.4.1...v4.5.0) (2024-04-30)
 
 
