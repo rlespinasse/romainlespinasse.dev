@@ -4,8 +4,7 @@ date: 2018-04-18T10:42:00+02:00
 draft: false
 showToC: false
 summary: Decouverte d'Antora comme votre prochain site de documentation.
-images: 
-- /img/posts/antora/featured.jpg
+coverImg: "cover.webp"
 tags: 
 - antora
 - asciidoctor
@@ -14,7 +13,7 @@ categories:
 - French posts
 ---
 
-> Hi, the english version of this article can be read [on this site](/posts/antora-en/)
+> Hi, the english version of this article can be read [on this site](/posts/antora/en/)
 
 Peu importe votre projet informatique, il y aura toujours un besoin de stocker de la documentation.
 Le choix d'utiliser un [wiki](https://fr.wikipedia.org/wiki/Wiki) est assez courant en entreprise.
@@ -54,7 +53,7 @@ Même si votre programme se compose d'un ensemble de projets avec chacun sa docu
 
 Les personnes derrière Asciidoctor ont récemment ouvert, à la communauté open-source, un générateur de site de documentations aggrégées: [Antora](https://antora.org/) en version stable (`1.0.0`).
 
-![Antora](/img/posts/antora/site.png)
+![Antora](site.webp)
 
 ## Vous créez votre nouveau site de documentation avec Antora / Asciidoctor
 
@@ -144,11 +143,11 @@ Vous pouvez installer antora via ce [guide](https://docs.antora.org/antora/1.0/i
 
 Le playbook défini le dossier `docs` pour mettre à disposition votre nouveau site de documentation.
 
-![Site preview](/img/posts/antora/site-preview.png)
+![Site preview](site-preview.webp)
 
 Par exemple, pour le rendre accessible sur Github, vous le déployez via les Github Pages de votre projet `docssite`.
 
-![Github document configuration](/img/posts/antora/github.png)
+![Github document configuration](github.webp)
 
 La plateforme s'occupera automatiquement d'exposer le contenu du dossier `/docs` à l'adresse [https://rlespinasse.github.io/docssite](https://rlespinasse.github.io/docssite).
 
@@ -160,4 +159,4 @@ Le site [docs.antora.org](https://docs.antora.org) utilise lui-même le projet `
 
 > Merci à [Aurélien Allienne](https://twitter.com/sn0rks), [Antoine Méausoone](https://twitter.com/AMeausoone), [Hubert Sablonnière](https://twitter.com/hsablonniere), [Tanguy Baudrin](https://twitter.com/TanguyBAUDRIN), et [Tony Proum](https://twitter.com/chezTone) pour la relecture de l'article.
 
-Cet article a été publié en premier sur [lemag.sfeir.com](https://sfeir.com).
+Cet article a été publié en premier sur [lemag.sfeir.com](https://sfeir.dev).

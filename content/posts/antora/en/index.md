@@ -4,8 +4,7 @@ date: 2018-09-11T10:42:00+02:00
 draft: false
 showToC: false
 summary: Discover Antora as your next documentation site.
-images: 
-- /img/posts/antora/featured.jpg
+coverImg: "en/cover.webp"
 tags: 
 - antora
 - asciidoctor
@@ -53,7 +52,7 @@ Even if your program consists of a set of projects, each with its own documentat
 
 The people behind Asciidoctor have recently released an aggregated documentation site generator: [Antora](https://antora.org/) in a stable version (`1.0.0`) to the open-source community.
 
-![Antora](/img/posts/antora/site.png)
+![Antora](en/site.webp)
 
 ## You create your new documentation site with Antora / Asciidoctor
 
@@ -81,7 +80,7 @@ To be used by Antora, a project must respect a [file structure](https://docs.ant
 
 So you apply yourself to put it up on:
 
-* Your APIs ([api A](https://github.com/rlespinasse/api-a), [api B](https://github.com/rlespinasse/api-b), [api C](https : //github.com/rlespinasse/api-c))
+* Your APIs ([api A](https://github.com/rlespinasse/api-a), [api B](https://github.com/rlespinasse/api-b), [api C](https://github.com/rlespinasse/api-c))
 * Your tools ([build tools](https://github.com/rlespinasse/buildtools)),
 * Your development guide ([guidelines](https://github.com/rlespinasse/guidelines)).
 
@@ -143,11 +142,11 @@ You can install antora via this [guide](https://docs.antora.org/antora/1.0/insta
 
 The playbook defines the `docs` folder to make your new documentation site available.
 
-![Site preview](/img/posts/antora/site-preview.png)
+![Site preview](en/site-preview.webp)
 
 For example, to make it accessible on Github, you deploy it via the Github Pages of your `docssite` project.
 
-![Github document configuration](/img/posts/antora/github.png)
+![Github document configuration](en/github.webp)
 
 The platform will automatically expose the contents of the `/docs` folder to [https://rlespinasse.github.io/docssite](https://rlespinasse.github.io/docssite).
 

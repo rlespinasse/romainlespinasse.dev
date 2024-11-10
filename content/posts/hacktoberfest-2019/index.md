@@ -4,14 +4,13 @@ date: 2019-09-30T10:42:00+02:00
 draft: false
 showToC: false
 summary: Report on my Hacktoberfest 2019 journey.
+coverImg: "cover.webp"
 tags: 
 - hacktoberfest
 - opensource
 categories:
 - Technical posts
 ---
-
-![Hacktoberfest 2019](/img/posts/hacktoberfest-2019/banner.png)
 
 Once again, I'm participate to the 2019 edition of the Hacktoberfest.
 
