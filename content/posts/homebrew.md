@@ -58,7 +58,7 @@ brew upgrade [FORMULA...]
 brew uninstall FORMULA...
 ```
 
-> :bulb: **Tip**
+> [!TIP]
 > En executant `brew doctor`, vous vérifiez que votre installation de Homebrew est correcte.
 > La commande vous indiquera les différents problèmes de votre installation (s'il y en a).
 
@@ -123,7 +123,7 @@ contenant des formulas dédiées ou des nouvelles commandes.
 * Avec le tap **utilisateur/nom_tap**, brew installera le _repository git_ associé à l'url [https://github.com/utilisateur/homebrew-nom_tap](https://github.com/utilisateur/homebrew-nom_tap),
 * Pour les autres possibilités, utilisez `brew tap -h`.
 
-> :bulb: **Tip**
+> [!TIP]
 > `brew install a/b/formula` installera le **tap** et la formula en même temps.
 
 Parmis les **taps** officiels, on peut trouver :
@@ -160,7 +160,7 @@ Avec **Cask**, vous pouvez, en plus de vos formulas, installer votre navigateur,
 brew cask install google-chrome intellij-idea docker slack
 ```
 
-> :bulb: **Tip**
+> [!TIP]
 >
 > * `brew tap caskroom/drivers` vous permet d'installer les drivers pour macOS.
 > * Les fonts s'installent elles via `brew tap caskroom/fonts`.
@@ -254,7 +254,7 @@ Cleaning /usr/local/Cellar/go/1.7.4_1
 3 links created for /usr/local/Cellar/go/1.7.4_1
 ```
 
-> :bulb: **Tip**
+> [!TIP]
 > Le tap **homebrew/versions** vous permet d'accèder à d'anciennes versions.
 
 Sur le projet, votre voisin de bureau commence sa première journée et vous demande de lui passer votre liste de formulas et d'applications pour faire lui aussi l'installation rapidement.
@@ -315,9 +315,11 @@ Installing java
 Installing slack
 ```
 
-> :bulb: **Tip:** Par défaut, **brew bundle** utilise le fichier **Brewfile** depuis le dossier courant.
-L'option `--file=path` permet de définir un autre chemin vers le fichier **Brewfile**.
-L'option `--global` ira lire un fichier **.Brefile** depuis votre **$HOME**.
+> [!TIP]
+> Par défaut, **brew bundle** utilise le fichier **Brewfile** depuis le dossier courant.
+>
+> * L'option `--file=path` permet de définir un autre chemin vers le fichier **Brewfile**.
+> * L'option `--global` ira lire un fichier **.Brefile** depuis votre **$HOME**.
 
 Après la découverte de **brew bundle**,
 vous vous dites autant partager la liste des formulas nécessaire pour un projet spécifiquement.
@@ -371,7 +373,8 @@ Par défaut, un _tap_ ajouté via `brew tap utilisateur/nom_tap` corresponds à 
 
 Si vous voulez le stocker ailleurs, l'ajout se fait par `brew tap utilisateur/nom_tap git@git.client.tld:utilisateur/homebrew-nom_tap.git`.
 
-NOTE: Dans un **Brewfile**, ajouter la ligne `tap 'utilisateur/nom_tap', 'git@git.client.tld:utilisateur/homebrew-nom_tap.git'` pour déclarer ce tap.
+> [!NOTE]
+> Dans un **Brewfile**, ajouter la ligne `tap 'utilisateur/nom_tap', 'git@git.client.tld:utilisateur/homebrew-nom_tap.git'` pour déclarer ce tap.
 
 Une fois que vous avez créé et ajouté ce **tap** privé, vous pouvez passer à la création de la **formula** via la commande `create`.
 
@@ -571,7 +574,7 @@ brew tap utilisateur/nom_tap git@git.client.tld:utilisateur/homebrew-nom_tap.git
 brew install project-tool
 ```
 
-> :memo: **Note**
+> [!NOTE]
 > Le système de **formula** permet également de gérer l'installation depuis les sources ([**--HEAD**](https://github.com/Homebrew/brew/blob/master/docs/Formula-Cookbook.md#head))
 ou les versions bêta ([**--devel**](https://github.com/Homebrew/brew/blob/master/docs/Formula-Cookbook.md#devel)).
 > La documentation des formulas vous permettera d'approfondir vos formulas ([http://docs.brew.sh/Formula-Cookbook.html](http://docs.brew.sh/Formula-Cookbook.html)).
