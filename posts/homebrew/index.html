@@ -28,7 +28,7 @@ Mais sous macOS, pas de apt-get, pas de yum, vous voilà parti pour installer to
 </span></span><span style=display:flex><span>brew update
 </span></span><span style=display:flex><span>brew upgrade <span style=color:#f92672>[</span>FORMULA...<span style=color:#f92672>]</span>
 </span></span><span style=display:flex><span>brew uninstall FORMULA...
-</span></span></code></pre></div><blockquote><p>:bulb: <strong>Tip</strong>
+</span></span></code></pre></div><blockquote><p>[!TIP]
 En executant <code>brew doctor</code>, vous vérifiez que votre installation de Homebrew est correcte.
 La commande vous indiquera les différents problèmes de votre installation (s&rsquo;il y en a).</p></blockquote><p>Maintenant que homebrew est installé, vous souhaitez installer vos premiers formulas.</p><p>Vous commencez par vos besoins pour le projet.
 Comme il s&rsquo;agit d&rsquo;un projet en <strong>Java</strong> sous <strong>Gradle</strong> avec des outils écrits en <strong>Go</strong> et que l&rsquo;ensemble est géré par Ansible, vous avez votre liste de formulas:</p><ul><li>Ansible</li><li>Java</li><li>Go</li><li>Gradle</li></ul><p>Vous installez vos formulas hors java</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=display:flex><span>$ brew install ansible go gradle
@@ -63,7 +63,7 @@ Comme il s&rsquo;agit d&rsquo;un projet en <strong>Java</strong> sous <strong>Gr
 Par contre la recherche vous propose les formulas contenant le mot <strong>java</strong>.
 Parmis les formulas, ceux avec un chemin (<strong>a/b/formula</strong>) sont des formulas contenues dans des <strong>taps</strong>.</p><p><strong>Mais qu&rsquo;est-ce qu&rsquo;un tap</strong>, il s&rsquo;agit d&rsquo;un autre <strong>repository git</strong>
 contenant des formulas dédiées ou des nouvelles commandes.</p><ul><li>On installe un <strong>tap</strong> via la commande <code>brew tap utilisateur/nom_tap</code>,</li><li>Avec le tap <strong>utilisateur/nom_tap</strong>, brew installera le <em>repository git</em> associé à l&rsquo;url <a href=https://github.com/utilisateur/homebrew-nom_tap target=_blank>https://github.com/utilisateur/homebrew-nom_tap</a>
-,</li><li>Pour les autres possibilités, utilisez <code>brew tap -h</code>.</li></ul><blockquote><p>:bulb: <strong>Tip</strong>
+,</li><li>Pour les autres possibilités, utilisez <code>brew tap -h</code>.</li></ul><blockquote><p>[!TIP]
 <code>brew install a/b/formula</code> installera le <strong>tap</strong> et la formula en même temps.</p></blockquote><p>Parmis les <strong>taps</strong> officiels, on peut trouver :</p><ul><li><a href=https://github.com/Homebrew/homebrew-core target=_blank><strong>homebrew/core</strong></a>
 - <em>Core formulae for the Homebrew formula manager</em> <strong>(the default tap)</strong></li><li><a href=https://github.com/Homebrew/homebrew-science target=_blank><strong>homebrew/science</strong></a>
 - <em>Scientific formulae for the Homebrew formula manager</em></li><li><a href=https://github.com/Homebrew/homebrew-games target=_blank><strong>homebrew/games</strong></a>
@@ -79,7 +79,7 @@ contenant des formulas dédiées ou des nouvelles commandes.</p><ul><li>On insta
 </span></span><span style=display:flex><span>Java<span style=color:#f92672>(</span>TM<span style=color:#f92672>)</span> SE Runtime Environment <span style=color:#f92672>(</span>build 1.8.0_112-b16<span style=color:#f92672>)</span>
 </span></span><span style=display:flex><span>Java HotSpot<span style=color:#f92672>(</span>TM<span style=color:#f92672>)</span> 64-Bit Server VM <span style=color:#f92672>(</span>build 25.112-b16, mixed mode<span style=color:#f92672>)</span>
 </span></span></code></pre></div><p>Lors du lancement de la commande, brew a transféré votre demande à <code>brew cask install</code> pour son installation.</p><p>Avec <strong>Cask</strong>, vous pouvez, en plus de vos formulas, installer votre navigateur, votre éditeur de code, &mldr;</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=display:flex><span>brew cask install google-chrome intellij-idea docker slack
-</span></span></code></pre></div><blockquote><p>:bulb: <strong>Tip</strong></p><ul><li><code>brew tap caskroom/drivers</code> vous permet d&rsquo;installer les drivers pour macOS.</li><li>Les fonts s&rsquo;installent elles via <code>brew tap caskroom/fonts</code>.</li></ul></blockquote><p>Certains formulas sont gérées comme des <strong>services</strong> via macOS <strong>launchd</strong>.
+</span></span></code></pre></div><blockquote><p>[!TIP]</p><ul><li><code>brew tap caskroom/drivers</code> vous permet d&rsquo;installer les drivers pour macOS.</li><li>Les fonts s&rsquo;installent elles via <code>brew tap caskroom/fonts</code>.</li></ul></blockquote><p>Certains formulas sont gérées comme des <strong>services</strong> via macOS <strong>launchd</strong>.
 Pour cela, brew propose, via <a href=https://github.com/Homebrew/homebrew-services target=_blank><strong>homebrew/services</strong></a>
 ,
 la commande <strong>brew services</strong> pour faciliter leurs utilisations.</p><p>Pour votre projet, vous avez aussi besoin d&rsquo;une base de données <strong>MySQL</strong>.</p><p>Vous installez <strong>MySQL</strong> qui possède un service sous macOS :</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=display:flex><span>$ brew install mysql
@@ -123,7 +123,7 @@ Ceci dans le but de vous permettre de facilement switcher entre ces versions.</p
 </span></span><span style=display:flex><span>Cleaning /usr/local/Cellar/go/1.6
 </span></span><span style=display:flex><span>Cleaning /usr/local/Cellar/go/1.7.4_1
 </span></span><span style=display:flex><span><span style=color:#ae81ff>3</span> links created <span style=color:#66d9ef>for</span> /usr/local/Cellar/go/1.7.4_1
-</span></span></code></pre></div><blockquote><p>:bulb: <strong>Tip</strong>
+</span></span></code></pre></div><blockquote><p>[!TIP]
 Le tap <strong>homebrew/versions</strong> vous permet d&rsquo;accèder à d&rsquo;anciennes versions.</p></blockquote><p>Sur le projet, votre voisin de bureau commence sa première journée et vous demande de lui passer votre liste de formulas et d&rsquo;applications pour faire lui aussi l&rsquo;installation rapidement.</p><p>Vous appliquez la méthode KISS :</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=display:flex><span>brew list &gt; brew-formulas.txt
 </span></span><span style=display:flex><span>brew cask list &gt; brew-applications.txt
 </span></span></code></pre></div><p>Et votre voisin devrait se débrouiller avec les deux fichers bruts que vous venez de lui envoyer par email.
@@ -157,9 +157,8 @@ Il garde même en mémoire les status des services (ici, <strong>mysql</strong> 
 </span></span><span style=display:flex><span>Installing intellij-idea
 </span></span><span style=display:flex><span>Installing java
 </span></span><span style=display:flex><span>Installing slack
-</span></span></code></pre></div><blockquote><p>:bulb: <strong>Tip:</strong> Par défaut, <strong>brew bundle</strong> utilise le fichier <strong>Brewfile</strong> depuis le dossier courant.
-L&rsquo;option <code>--file=path</code> permet de définir un autre chemin vers le fichier <strong>Brewfile</strong>.
-L&rsquo;option <code>--global</code> ira lire un fichier <strong>.Brefile</strong> depuis votre <strong>$HOME</strong>.</p></blockquote><p>Après la découverte de <strong>brew bundle</strong>,
+</span></span></code></pre></div><blockquote><p>[!TIP]
+Par défaut, <strong>brew bundle</strong> utilise le fichier <strong>Brewfile</strong> depuis le dossier courant.</p><ul><li>L&rsquo;option <code>--file=path</code> permet de définir un autre chemin vers le fichier <strong>Brewfile</strong>.</li><li>L&rsquo;option <code>--global</code> ira lire un fichier <strong>.Brefile</strong> depuis votre <strong>$HOME</strong>.</li></ul></blockquote><p>Après la découverte de <strong>brew bundle</strong>,
 vous vous dites autant partager la liste des formulas nécessaire pour un projet spécifiquement.</p><p>Pour cela, il suffit de créer un fichier <strong>Brewfile</strong> dans vos sources de projet et de le commiter.
 Comme cela un nouveau développeur n&rsquo;a qu&rsquo;à lancer <code>brew bundle</code> pour être sûr d&rsquo;avoir le nécessaire pour travailler sur le projet.</p><p>Cela tombe bien, vous avez un nouveau projet en Java sous Gradle à faire et qui servira comme outil aux autres développeurs.</p><p>Vous créez un <strong>Brewfile</strong> dans votre nouveau projet avec Java et Gradle</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=display:flex><span>$ cd project-tool
 </span></span><span style=display:flex><span>$ vim Brewfile
@@ -186,7 +185,8 @@ Pour faciliter sa distribution, vous l&rsquo;avez publié dans votre repository 
 Pourquoi ne pas créer une <strong>formula</strong> aussi pour ce projet?</p><p>Avant de la créer, vous vous demandez comment la sauvegarder?
 Homebrew vous propose déjà des <strong>taps</strong> pour avoir plus de <strong>formulas</strong> disponibles.</p><p>Vous pouvez créer un <strong>tap</strong> privé qui est un simple repository git.
 Par défaut, un <em>tap</em> ajouté via <code>brew tap utilisateur/nom_tap</code> corresponds à l&rsquo;url <a href=https://github.com/utilisateur/homebrew-nom_tap.git target=_blank>https://github.com/utilisateur/homebrew-nom_tap.git</a>
-.</p><p>Si vous voulez le stocker ailleurs, l&rsquo;ajout se fait par <code>brew tap utilisateur/nom_tap git@git.client.tld:utilisateur/homebrew-nom_tap.git</code>.</p><p>NOTE: Dans un <strong>Brewfile</strong>, ajouter la ligne <code>tap 'utilisateur/nom_tap', 'git@git.client.tld:utilisateur/homebrew-nom_tap.git'</code> pour déclarer ce tap.</p><p>Une fois que vous avez créé et ajouté ce <strong>tap</strong> privé, vous pouvez passer à la création de la <strong>formula</strong> via la commande <code>create</code>.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=display:flex><span>$ brew create $tool_url --set-name project-tool --set-version 1.0.0 --tap utilisateur/nom_tap
+.</p><p>Si vous voulez le stocker ailleurs, l&rsquo;ajout se fait par <code>brew tap utilisateur/nom_tap git@git.client.tld:utilisateur/homebrew-nom_tap.git</code>.</p><blockquote><p>[!NOTE]
+Dans un <strong>Brewfile</strong>, ajouter la ligne <code>tap 'utilisateur/nom_tap', 'git@git.client.tld:utilisateur/homebrew-nom_tap.git'</code> pour déclarer ce tap.</p></blockquote><p>Une fois que vous avez créé et ajouté ce <strong>tap</strong> privé, vous pouvez passer à la création de la <strong>formula</strong> via la commande <code>create</code>.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=display:flex><span>$ brew create $tool_url --set-name project-tool --set-version 1.0.0 --tap utilisateur/nom_tap
 </span></span><span style=display:flex><span><span style=color:#f92672>==</span>&gt; Downloading https://nexus.client.tld/content/repositories/releases/tld/client/project/tool/1.0.0/tool-1.0.0-distribution.zip
 </span></span><span style=display:flex><span><span style=color:#75715e>######################################################################## 100,0%</span>
 </span></span><span style=display:flex><span>Please <span style=color:#e6db74>`</span>brew audit --new-formula project-tool<span style=color:#e6db74>`</span> before submitting, thanks.
@@ -304,7 +304,7 @@ Via <code>depends_on :java => "1.8+"</code> vous définissez un tel prérequis.<
 </span></span><span style=display:flex><span>git commit
 </span></span></code></pre></div><p>Votre collègue apprécie la nouvelle procédure :</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=display:flex><span>brew tap utilisateur/nom_tap git@git.client.tld:utilisateur/homebrew-nom_tap.git
 </span></span><span style=display:flex><span>brew install project-tool
-</span></span></code></pre></div><blockquote><p>:memo: <strong>Note</strong>
+</span></span></code></pre></div><blockquote><p>[!NOTE]
 Le système de <strong>formula</strong> permet également de gérer l&rsquo;installation depuis les sources (<a href=https://github.com/Homebrew/brew/blob/master/docs/Formula-Cookbook.md#head target=_blank><strong>&ndash;HEAD</strong></a>
 )
 ou les versions bêta (<a href=https://github.com/Homebrew/brew/blob/master/docs/Formula-Cookbook.md#devel target=_blank><strong>&ndash;devel</strong></a>
