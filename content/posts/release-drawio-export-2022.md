@@ -3,7 +3,7 @@ title: "2022 Changelog: All Releases and Updates for 'rlespinasse/drawio-export'
 summary: Changelog of the 3 releases for 2022
 date: 2022-07-26T18:27:37Z
 lastmod: 2022-10-20T18:41:54Z
-toc: false
+showToC: false
 draft: false
 tags:
 - opensource

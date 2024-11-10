@@ -3,7 +3,7 @@ title: "2022 Changelog: All Releases and Updates for 'rlespinasse/release-that'"
 summary: Changelog of the 2 releases for 2022
 date: 2022-10-15T19:57:53Z
 lastmod: 2022-10-31T18:49:09Z
-toc: false
+showToC: false
 draft: false
 tags:
 - opensource

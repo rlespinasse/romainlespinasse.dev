@@ -2,7 +2,7 @@
 title: "Makefile: Streamlining Tasks with Wrapper Functions"
 date: 2019-10-18T10:00:00+01:00
 draft: false
-toc: false
+showToC: false
 summary: Explore Makefile nice features to ease your developer life.
 tags:
   - makefile

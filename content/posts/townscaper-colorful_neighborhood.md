@@ -2,7 +2,7 @@
 title: "Townscaper: Vibrant Neighborhoods - A Kaleidoscope of Urban Design"
 date: 2020-07-04T08:42:00+02:00
 draft: false
-toc: false
+showToC: false
 summary: Multiple neighborhoods, just colorful in theirs own ways.
 tags:
 - townscaper

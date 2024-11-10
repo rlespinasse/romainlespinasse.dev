@@ -3,7 +3,7 @@ title: "2022 Changelog: All Releases and Updates for 'rlespinasse/docker-drawio-
 summary: Changelog of the 2 releases for 2022
 date: 2022-10-01T13:38:37Z
 lastmod: 2022-10-20T18:25:00Z
-toc: false
+showToC: false
 draft: false
 tags:
 - opensource

@@ -3,7 +3,7 @@ title: "2020 Changelog: All Releases and Updates for 'rlespinasse/github-slug-ac
 summary: Changelog of the 6 releases for 2020
 date: 2020-04-26T00:15:42Z
 lastmod: 2020-11-01T19:40:34Z
-toc: false
+showToC: false
 draft: false
 tags:
 - opensource

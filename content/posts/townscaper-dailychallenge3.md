@@ -2,7 +2,7 @@
 title: "Townscaper: Crafting Community - Daily Challenge Day 3"
 date: 2020-07-12T10:42:00+02:00
 draft: false
-toc: false
+showToC: false
 summary: Participation on a daily challenge about Townscaper. Day 3 - world Neighbours.
 tags:
 - townscaper

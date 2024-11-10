@@ -3,7 +3,7 @@ title: "2023 Changelog: All Releases and Updates for 'rlespinasse/git-commit-dat
 summary: Changelog of the 1 releases for 2023
 date: 2023-06-09T19:29:07Z
 lastmod: 2023-06-09T19:29:07Z
-toc: false
+showToC: false
 draft: false
 tags:
 - opensource

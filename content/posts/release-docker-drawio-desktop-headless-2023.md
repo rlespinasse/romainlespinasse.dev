@@ -3,7 +3,7 @@ title: "2023 Changelog: All Releases and Updates for 'rlespinasse/docker-drawio-
 summary: Changelog of the 13 releases for 2023
 date: 2023-06-28T20:18:58Z
 lastmod: 2023-12-25T08:16:27Z
-toc: false
+showToC: false
 draft: false
 tags:
 - opensource

@@ -2,7 +2,7 @@
 title: "Townscaper: Unraveling Mazes - Daily Challenge Day 7"
 date: 2020-07-16T21:42:00+02:00
 draft: false
-toc: false
+showToC: false
 summary: Participation on a daily challenge about Townscaper. Day 7 - world Labyrinth.
 tags:
 - townscaper

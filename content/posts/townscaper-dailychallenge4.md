@@ -2,7 +2,7 @@
 title: "Townscaper: Flowing Waterways - Daily Challenge Day 4"
 date: 2020-07-13T15:42:00+02:00
 draft: false
-toc: false
+showToC: false
 summary: Participation on a daily challenge about Townscaper. Day 4 - world Canal.
 tags:
 - townscaper

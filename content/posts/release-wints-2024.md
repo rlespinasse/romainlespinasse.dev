@@ -3,7 +3,7 @@ title: "2024 Changelog: All Releases and Updates for 'rlespinasse/wints'"
 summary: Changelog of the 1 releases for 2024
 date: 2024-01-07T20:09:50Z
 lastmod: 2024-01-07T20:09:50Z
-toc: false
+showToC: false
 draft: false
 tags:
 - opensource

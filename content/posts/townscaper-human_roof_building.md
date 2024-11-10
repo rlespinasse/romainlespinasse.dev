@@ -2,7 +2,7 @@
 title: "Townscaper: Crafting a Human-Shaped Roof"
 date: 2020-06-30T10:42:00+02:00
 draft: false
-toc: false
+showToC: false
 summary: A building with a root in form of a little human.
 tags:
 - townscaper

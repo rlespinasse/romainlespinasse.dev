@@ -3,7 +3,7 @@ title: "2022 Changelog: All Releases and Updates for 'rlespinasse/git-commit-dat
 summary: Changelog of the 2 releases for 2022
 date: 2022-09-30T20:23:24Z
 lastmod: 2022-09-30T20:33:14Z
-toc: false
+showToC: false
 draft: false
 tags:
 - opensource

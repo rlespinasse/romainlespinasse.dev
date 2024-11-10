@@ -2,7 +2,7 @@
 title: "Townscaper: Harbor City - Where Land and Sea Embrace"
 date: 2020-07-02T10:42:00+02:00
 draft: false
-toc: false
+showToC: false
 summary: City with a big port.
 tags:
 - townscaper

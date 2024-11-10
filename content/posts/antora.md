@@ -2,7 +2,7 @@
 title: "Antora 1.0 : Transformez votre wiki en site de documentation performant"
 date: 2018-04-18T10:42:00+02:00
 draft: false
-toc: false
+showToC: false
 summary: Decouverte d'Antora comme votre prochain site de documentation.
 images: 
 - /img/posts/antora/featured.jpg

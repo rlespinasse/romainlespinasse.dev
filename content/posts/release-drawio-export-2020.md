@@ -3,7 +3,7 @@ title: "2020 Changelog: All Releases and Updates for 'rlespinasse/drawio-export'
 summary: Changelog of the 18 releases for 2020
 date: 2020-05-01T16:08:57Z
 lastmod: 2020-10-21T06:33:54Z
-toc: false
+showToC: false
 draft: false
 tags:
 - opensource

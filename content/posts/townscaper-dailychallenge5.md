@@ -2,7 +2,7 @@
 title: "Townscaper: Soaring Heights - Daily Challenge Day 5"
 date: 2020-07-14T13:42:00+02:00
 draft: false
-toc: false
+showToC: false
 summary: Participation on a daily challenge about Townscaper. Day 5 - world Eyrie.
 tags:
 - townscaper

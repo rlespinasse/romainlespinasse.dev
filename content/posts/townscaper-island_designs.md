@@ -2,7 +2,7 @@
 title: "Townscaper: Exploring Diverse Island Designs - A Journey Through Architectural Creativity"
 date: 2020-07-03T10:42:00+02:00
 draft: false
-toc: false
+showToC: false
 summary: Embark on a creative journey through Townscaper's unique island designs, exploring various architectural styles and layouts.
 tags:
 - townscaper

@@ -3,7 +3,7 @@ title: "2024 Changelog: All Releases and Updates for 'rlespinasse/github-slug-ac
 summary: Changelog of the 3 releases for 2024
 date: 2024-01-28T19:30:37Z
 lastmod: 2024-11-05T23:18:37Z
-toc: false
+showToC: false
 draft: false
 tags:
 - opensource

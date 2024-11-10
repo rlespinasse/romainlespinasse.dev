@@ -3,7 +3,7 @@ title: "2024 Changelog: All Releases and Updates for 'rlespinasse/docker-drawio-
 summary: Changelog of the 20 releases for 2024
 date: 2024-01-01T22:24:56Z
 lastmod: 2024-10-01T22:06:58Z
-toc: false
+showToC: false
 draft: false
 tags:
 - opensource

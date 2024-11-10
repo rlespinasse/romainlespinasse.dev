@@ -2,7 +2,7 @@
 title: "Townscaper: Impregnable Citadels - Daily Challenge Day 6"
 date: 2020-07-15T22:42:00+02:00
 draft: false
-toc: false
+showToC: false
 summary: Participation on a daily challenge about Townscaper. Day 6 - world Fortress.
 tags:
 - townscaper

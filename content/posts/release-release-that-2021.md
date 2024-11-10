@@ -3,7 +3,7 @@ title: "2021 Changelog: All Releases and Updates for 'rlespinasse/release-that'"
 summary: Changelog of the 7 releases for 2021
 date: 2021-10-02T15:17:18Z
 lastmod: 2021-12-15T21:40:38Z
-toc: false
+showToC: false
 draft: false
 tags:
 - opensource

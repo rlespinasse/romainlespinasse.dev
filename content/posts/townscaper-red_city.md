@@ -2,7 +2,7 @@
 title: "Townscaper: Unveiling the Crimson City - An Island with a Hidden Secret"
 date: 2020-07-06T10:42:00+02:00
 draft: false
-toc: false
+showToC: false
 summary: Red city, the island with a little secret.
 tags:
 - townscaper

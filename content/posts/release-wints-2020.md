@@ -3,7 +3,7 @@ title: "2020 Changelog: All Releases and Updates for 'rlespinasse/wints'"
 summary: Changelog of the 2 releases of 2020
 date: 2020-12-20T10:22:08Z
 lastmod: 2020-12-20T23:22:08Z
-toc: false
+showToC: false
 draft: false
 tags:
 - opensource

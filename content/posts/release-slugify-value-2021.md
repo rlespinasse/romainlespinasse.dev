@@ -3,7 +3,7 @@ title: "2021 Changelog: All Releases and Updates for 'rlespinasse/slugify-value'
 summary: Changelog of the 3 releases for 2021
 date: 2021-10-12T11:11:27Z
 lastmod: 2021-12-08T20:49:42Z
-toc: false
+showToC: false
 draft: false
 tags:
 - opensource

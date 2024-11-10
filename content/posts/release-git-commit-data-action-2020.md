@@ -3,7 +3,7 @@ title: "2020 Changelog: All Releases and Updates for 'rlespinasse/git-commit-dat
 summary: Changelog of the 3 releases for 2020
 date: 2020-05-05T07:06:13Z
 lastmod: 2020-12-18T15:44:04Z
-toc: false
+showToC: false
 draft: false
 tags:
 - opensource

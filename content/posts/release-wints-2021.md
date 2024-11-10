@@ -3,7 +3,7 @@ title: "2021 Changelog: All Releases and Updates for 'rlespinasse/wints'"
 summary: Changelog of the 1 releases of 2021
 date: 2021-01-03T23:22:08Z
 lastmod: 2021-01-03T23:22:08Z
-toc: false
+showToC: false
 draft: false
 tags:
 - opensource

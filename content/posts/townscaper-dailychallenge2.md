@@ -2,7 +2,7 @@
 title: "Townscaper: Cultivating Beauty - Daily Challenge Day 2"
 date: 2020-07-11T10:42:00+02:00
 draft: false
-toc: false
+showToC: false
 summary: Participation on a daily challenge about Townscaper. Day 2 - world Garden.
 tags:
 - townscaper

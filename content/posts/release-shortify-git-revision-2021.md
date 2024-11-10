@@ -3,7 +3,7 @@ title: "2021 Changelog: All Releases and Updates for 'rlespinasse/shortify-git-r
 summary: Changelog of the 4 releases for 2021
 date: 2021-12-04T22:52:22Z
 lastmod: 2021-12-09T21:58:00Z
-toc: false
+showToC: false
 draft: false
 tags:
 - opensource

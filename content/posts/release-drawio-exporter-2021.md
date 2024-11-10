@@ -3,7 +3,7 @@ title: "2021 Changelog: All Releases and Updates for 'rlespinasse/drawio-exporte
 summary: Changelog of the 2 releases of 2021
 date: 2021-03-24T23:33:06Z
 lastmod: 2021-03-29T23:33:06Z
-toc: false
+showToC: false
 draft: false
 tags:
 - opensource

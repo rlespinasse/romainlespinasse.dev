@@ -3,7 +3,7 @@ title: "2024 Changelog: All Releases and Updates for 'rlespinasse/drawio-export-
 summary: Changelog of the 15 releases for 2024
 date: 2024-01-03T00:47:00Z
 lastmod: 2024-10-03T11:48:44Z
-toc: false
+showToC: false
 draft: false
 tags:
 - opensource

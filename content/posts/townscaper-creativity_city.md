@@ -2,7 +2,7 @@
 title: "Townscaper: Canvas City - Unleash Your Urban Imagination"
 date: 2020-07-02T09:42:00+02:00
 draft: false
-toc: false
+showToC: false
 summary: A empty city to deploy your creativity.
 tags:
 - townscaper

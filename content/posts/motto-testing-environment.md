@@ -2,7 +2,7 @@
 title: "Motto: Everyone Has a Testing Environment, ..."
 date: 2020-09-20T10:42:00+02:00
 draft: false
-toc: false
+showToC: false
 summary: Some people are lucky enough enough to have a totally separate environment to run production in.
 tags: 
   - quote

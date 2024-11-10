@@ -2,7 +2,7 @@
 title: "Actions Hackathon: Streamlining Workflows with Slug Variables"
 date: 2020-08-16T10:42:00+02:00
 draft: false
-toc: false
+showToC: false
 summary: Submission of github-slug-action project to the dev.to Actions Hackathon.
 tags: 
 - hackathon

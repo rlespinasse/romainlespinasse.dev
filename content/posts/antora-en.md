@@ -2,7 +2,7 @@
 title: "Antora 1.0: Elevate Your Wiki to a Professional Documentation Hub"
 date: 2018-09-11T10:42:00+02:00
 draft: false
-toc: false
+showToC: false
 summary: Discover Antora as your next documentation site.
 images: 
 - /img/posts/antora/featured.jpg

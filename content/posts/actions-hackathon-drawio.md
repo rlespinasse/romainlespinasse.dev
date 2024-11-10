@@ -2,7 +2,7 @@
 title: "Actions Hackathon: Keeping Your draw.io Diagrams in Sync Within Your Repository"
 date: 2020-08-16T12:42:00+02:00
 draft: false
-toc: false
+showToC: false
 summary: Submission of drawio-export project to the dev.to Actions Hackathon.
 tags: 
 - hackathon

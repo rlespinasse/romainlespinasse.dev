@@ -15,7 +15,7 @@ title: "${year} Changelog: All Releases and Updates for 'rlespinasse/${1}'"
 summary: Changelog of the ${releases_count} releases for ${year}
 date: ${date}
 lastmod: ${lastmod}
-toc: false
+showToC: false
 draft: false
 tags:
 - opensource

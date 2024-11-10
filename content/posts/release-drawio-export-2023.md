@@ -3,7 +3,7 @@ title: "2023 Changelog: All Releases and Updates for 'rlespinasse/drawio-export'
 summary: Changelog of the 6 releases for 2023
 date: 2023-06-29T19:54:41Z
 lastmod: 2023-12-26T07:02:21Z
-toc: false
+showToC: false
 draft: false
 tags:
 - opensource

@@ -3,7 +3,7 @@ title: "2021 Changelog: All Releases and Updates for 'rlespinasse/github-slug-ac
 summary: Changelog of the 8 releases for 2021
 date: 2021-01-12T09:23:23Z
 lastmod: 2021-09-15T15:01:27Z
-toc: false
+showToC: false
 draft: false
 tags:
 - opensource
