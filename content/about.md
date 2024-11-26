@@ -17,15 +17,14 @@ In term of automation, I play with **Github Actions**
 * to `slug` any variable : [slugify-value](https://github.com/marketplace/actions/slugify-value),
 * to `short` some git references : [shortify-git-revision](https://github.com/rlespinasse/shortify-git-revision),
 * to expose some git commit data : [git-commit-data-action](https://github.com/marketplace/actions/git-commit-data),
-* to add track capabilities between issues : [issues-tracker-action](https://github.com/marketplace/actions/issues-tracker) (**archived**).
+* to export Draw.io diagrams : [drawio-export-action](https://github.com/rlespinasse/drawio-export-action).
 
-And also
+And a group of repositories dedicated to Draw.io diagrams exports
 
-* [drawio-export-action](https://github.com/rlespinasse/drawio-export-action) : Export Draw.io diagrams within GitHub Actions Workflow,
-* [drawio-export](https://github.com/rlespinasse/drawio-export) : Export Draw.io diagrams using docker,
+* [docker-drawio-desktop-headless](https://github.com/rlespinasse/docker-drawio-desktop-headless) : Docker image to serve Draw.io Desktop in a headless version.
 * [drawio-exporter](https://github.com/rlespinasse/drawio-exporter) : Export Draw.io diagrams using command line,
-* [docker-drawio-desktop-headless](https://github.com/rlespinasse/docker-drawio-desktop-headless) : Docker image to serve Draw.io Desktop in a headless version,
-  * Or its predecessor [drawio-cli](https://github.com/rlespinasse/drawio-cli) (**archived**).
+* [drawio-export](https://github.com/rlespinasse/drawio-export) : Export Draw.io diagrams using docker,
+* [drawio-export-action](https://github.com/rlespinasse/drawio-export-action) : Export Draw.io diagrams within GitHub Actions Workflow,
 
 In the `rust` world,
 
@@ -39,7 +38,6 @@ And all my current and past projects are available on [https://github.com/rlespi
 > <iframe src="https://github.com/sponsors/rlespinasse/button" title="Sponsor rlespinasse" height="35" width="107" style="border: 0;"></iframe>
 
 ## Certifications
-
 
 | Certified | Since | Certifications |
 | - | - | - |
