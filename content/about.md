@@ -32,31 +32,34 @@ In the `rust` world,
 * **W**hat **I** **N**eed **T**o **S**ee ([wints](https://github.com/rlespinasse/wints)), a fuzzy term-based URLs opener,
 * [drawio-exporter](https://github.com/rlespinasse/drawio-exporter) to export Draw.io diagrams using command line.
 
-In the `golang` world,
-
-* [hoff](https://github.com/rlespinasse/hoff) serve as an engine to run workflows composed of high order functions (**archived**),
-* You can manipulate some bytes with [byteslice](https://github.com/rlespinasse/byteslice) (**archived**).
-
-Because I love to play with `bash` scripts, [michel](https://github.com/rlespinasse/michel) help to structure all yours scripts (**archived**).
-> Try **michel**, available as a GitHub template.
-
 And all my current and past projects are available on [https://github.com/rlespinasse](https://github.com/rlespinasse).
 
 > You can also `sponsor me` on GitHub if you want.
 >
 > <iframe src="https://github.com/sponsors/rlespinasse/button" title="Sponsor rlespinasse" height="35" width="107" style="border: 0;"></iframe>
 
-Want more
+## Certifications
 
-* [qanda](https://github.com/rlespinasse/qanda) : a Questions and Answers system based on PlantUML syntax (**archived**),
-* The usage guide of `wraas` speak for itself - [https://wraas.github.io/usage-guide](https://wraas.github.io/usage-guide).
-
-## Certifications & Courses
+* Google Cloud Certified
+    * **since 2019**
+        * Professional Cloud Developer
+    * **since 2020**
+        * Professional Cloud DevOps Engineer
+    * **since 2022**
+        * Professional Cloud Architect
+        * Cloud Digital Leader
+        * **until 2024**
+            * Professional Data Engineer
+* GitLab Certified
+    * **since 2022**
+        * DevOps Professional
+        * Solutions Architect Core Verified Associate
 
 ### Valid Certifications
 
 | Certifications                                                                                                                  | Issue date | Expiration date |
 | ------------------------------------------------------------------------------------------------------------------------------- | ---------- | --------------- |
+| [Google Cloud Certified Professional Cloud Architect](https://www.credly.com/badges/70ccf969-3c6b-44e5-baef-fdd9393d8820)       | 2024-11-21 | 2026-11-21      |
 | [Google Cloud Certified Professional Cloud DevOps Engineer](https://www.credly.com/badges/630d230b-7ef7-4276-8909-cd63695c4d66) | 2022-03-01 | 2026-03-01      |
 | [GitLab Certified DevOps Professional](https://www.credly.com/badges/584848a8-bca8-4549-b1b5-982bb5123105)                      | 2022-12-21 | _No date_       |
 | [GitLab Solutions Architect Core Verified Associate](https://www.credly.com/badges/4bf0c570-7c9f-4d2f-b0a0-676e0eb8043d)        | 2022-12-18 | 2024-12-18      |
@@ -66,10 +69,18 @@ Want more
 | [GitLab Certified Project Management Associate](https://www.credly.com/badges/582b3875-f092-4ef1-8e88-4f32f144de09)             | 2022-12-11 | _No date_       |
 | [GitLab Certified Git Associate](https://www.credly.com/badges/ab36f29b-e0df-4b1b-b715-cb2891dd66cb)                            | 2022-12-11 | _No date_       |
 | [Google Cloud Certified Professional Cloud Developer](https://www.credly.com/badges/16df9b45-1899-4fa5-8fe1-45dd6646df53)       | 2022-11-25 | 2024-11-25      |
+
+### Expired Certifications
+
+| Certifications                                                                                                                  | Issue date | Expiration date |
+| ------------------------------------------------------------------------------------------------------------------------------- | ---------- | --------------- |
 | [Google Cloud Certified Professional Cloud Architect](https://www.credly.com/badges/e8fcd4a6-6881-4d6b-bcdd-e99b095ad112)       | 2022-07-31 | 2024-07-31      |
 | [Google Cloud Certified Professional Data Engineer](https://www.credly.com/badges/e7d6fa27-fef1-4531-8210-4acde2fe3ebc)         | 2022-07-31 | 2024-07-31      |
+| [Google Cloud Certified Professional Cloud DevOps Engineer](https://www.credly.com/badges/630d230b-7ef7-4276-8909-cd63695c4d66) | 2022-03-01 | 2024-03-01      |
+| [Google Cloud Certified Professional Cloud DevOps Engineer](https://www.credly.com/badges/6e44156b-0593-4a6d-a614-8d056ede31b7) | 2020-01-23 | 2022-01-23      |
+| [Google Cloud Certified Professional Cloud Developer](https://www.credly.com/badges/0836b08c-1320-4f63-be8a-7b1bf0d71a62)       | 2019-12-04 | 2021-12-04      |
 
-### Course Certificates
+## Courses
 
 | Certificate                                                                                                           | Issue date |
 | --------------------------------------------------------------------------------------------------------------------- | ---------- |
@@ -78,11 +89,3 @@ Want more
 | [GitLab 201 Certification](/pdf/gitlab-201-certificate.pdf)                                                           | 2022-12-16 |
 | [GitLab 101 Certification](/pdf/gitlab-101-certificate.pdf)                                                           | 2022-12-16 |
 | [Liquibase Fundamentals Certification](/pdf/certification-Liquibase-Fundamentals-Certification-romain.lespinasse.pdf) | 2020-10-03 |
-
-### Expired Certifications
-
-| Certifications                                                                                                                  | Issue date | Expiration date |
-| ------------------------------------------------------------------------------------------------------------------------------- | ---------- | --------------- |
-| [Google Cloud Certified Professional Cloud DevOps Engineer](https://www.credly.com/badges/630d230b-7ef7-4276-8909-cd63695c4d66) | 2022-03-01 | 2024-03-01      |
-| [Google Cloud Certified Professional Cloud DevOps Engineer](https://www.credly.com/badges/6e44156b-0593-4a6d-a614-8d056ede31b7) | 2020-01-23 | 2022-01-23      |
-| [Google Cloud Certified Professional Cloud Developer](https://www.credly.com/badges/0836b08c-1320-4f63-be8a-7b1bf0d71a62)       | 2019-12-04 | 2021-12-04      |
