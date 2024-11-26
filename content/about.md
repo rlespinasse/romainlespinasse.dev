@@ -40,20 +40,16 @@ And all my current and past projects are available on [https://github.com/rlespi
 
 ## Certifications
 
-* Google Cloud Certified
-    * **since 2019**
-        * Professional Cloud Developer
-    * **since 2020**
-        * Professional Cloud DevOps Engineer
-    * **since 2022**
-        * Professional Cloud Architect
-        * Cloud Digital Leader
-        * **until 2024**
-            * Professional Data Engineer
-* GitLab Certified
-    * **since 2022**
-        * DevOps Professional
-        * Solutions Architect Core Verified Associate
+
+| Certified | Since | Certifications |
+| - | - | - |
+| Google Cloud Certified | 2019 | Professional Cloud Developer |
+| | 2020 | Professional Cloud DevOps Engineer |
+| | 2022 | Professional Cloud Architect |
+| | | Cloud Digital Leader |
+| | | `until mid-2024` Professional Data Engineer |
+| GitLab Certified | 2022 | DevOps Professional |
+| | | Solutions Architect Core Verified Associate |
 
 ### Valid Certifications
 
