@@ -1,16 +1,16 @@
 +++
 title = "About me"
-date = "2023-11-10"
+date = "2024-12-11"
 +++
 
-> I'm not young enough to known everything.
+> I'm not young enough to know everything.
 > -- J. M. Barrie.
 
 ## Opensource
 
-This blog is itself [a project based on hugo](https://github.com/rlespinasse/rlespinasse.github.io) with some github actions to automate it.
+This blog is itself [a project based on hugo](https://github.com/rlespinasse/rlespinasse.github.io) with some GitHub actions to automate it.
 
-In term of automation, I play with **Github Actions**
+In terms of automation, I play with **Github Actions**
 
 * to ease the release of a repository : [release-that](https://github.com/marketplace/actions/release-that),
 * to `slug` some environment variables : [github-slug-action](https://github.com/marketplace/actions/github-slug),
@@ -21,15 +21,15 @@ In term of automation, I play with **Github Actions**
 
 And a group of repositories dedicated to Draw.io diagrams exports
 
-* [docker-drawio-desktop-headless](https://github.com/rlespinasse/docker-drawio-desktop-headless) : Docker image to serve Draw.io Desktop in a headless version.
-* [drawio-exporter](https://github.com/rlespinasse/drawio-exporter) : Export Draw.io diagrams using command line,
-* [drawio-export](https://github.com/rlespinasse/drawio-export) : Export Draw.io diagrams using docker,
-* [drawio-export-action](https://github.com/rlespinasse/drawio-export-action) : Export Draw.io diagrams within GitHub Actions Workflow,
+* [docker-drawio-desktop-headless](https://github.com/rlespinasse/docker-drawio-desktop-headless): Docker image to serve Draw.io Desktop in a headless version.
+* [drawio-exporter](https://github.com/rlespinasse/drawio-exporter): Export Draw.io diagrams using the command line,
+* [drawio-export](https://github.com/rlespinasse/drawio-export): Export Draw.io diagrams using docker,
+* [drawio-export-action](https://github.com/rlespinasse/drawio-export-action): Export Draw.io diagrams within GitHub Actions Workflow,
 
 In the `rust` world,
 
 * **W**hat **I** **N**eed **T**o **S**ee ([wints](https://github.com/rlespinasse/wints)), a fuzzy term-based URLs opener,
-* [drawio-exporter](https://github.com/rlespinasse/drawio-exporter) to export Draw.io diagrams using command line.
+* [drawio-exporter](https://github.com/rlespinasse/drawio-exporter) to export Draw.io diagrams using the command line.
 
 And all my current and past projects are available on [https://github.com/rlespinasse](https://github.com/rlespinasse).
 
@@ -47,7 +47,7 @@ And all my current and past projects are available on [https://github.com/rlespi
 | | | [Cloud Digital Leader](https://www.credly.com/badges/ad8a49cd-f599-4694-8fbf-a3d81e1687a5)  |
 | | | [Professional Data Engineer](https://www.credly.com/badges/e7d6fa27-fef1-4531-8210-4acde2fe3ebc) `until mid-2024` |
 | GitLab Certified | 2022 | [DevOps Professional](https://www.credly.com/badges/584848a8-bca8-4549-b1b5-982bb5123105) |
-| | | [Solutions Architect Core Verified Associate](https://www.credly.com/badges/4bf0c570-7c9f-4d2f-b0a0-676e0eb8043d) |
+| | | [Solutions Architect Core Verified Associate](https://www.credly.com/badges/4bf0c570-7c9f-4d2f-b0a0-676e0eb8043d) `until late-2024` |
 
 ### Certifications list
 
