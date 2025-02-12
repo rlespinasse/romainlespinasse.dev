@@ -10,22 +10,21 @@ jobs:
         with:
           submodules: true
 
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v3.0.0
+      - uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: "0.135.0"
+          hugo-version: "latest"
           extended: true
 
-      - name: Build
-        run: |
-          hugo --gc --minify
-          cp CNAME public/
-          touch public/.nojekyll
+      - uses: taiki-e/install-action@just
 
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v4.0.0
-        if: github.ref == 'refs/heads/sources'
+      - run: just generate-site
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        shell: bash
+
+      - uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: site
           publish_dir: ./public
+        if: github.ref == 'refs/heads/sources'
