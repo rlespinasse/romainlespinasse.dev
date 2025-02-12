@@ -79,7 +79,7 @@ used to push GitHub pages.</li></ul><p>In <code>.github/workflows/build.yaml</co
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>    - <span style=color:#f92672>name</span>: <span style=color:#ae81ff>Build</span>
 </span></span><span style=display:flex><span>      <span style=color:#f92672>run</span>: |<span style=color:#e6db74>
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>        hugo --gc --minify</span>        
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>        hugo --gc --minify</span>
 </span></span></code></pre></div><p>In <code>.github/workflows/deploy.yaml</code> file, the following action will, on <code>sources</code> branch :</p><ul><li>checkout the git repository with its submodules,</li><li>build the <code>hugo</code> site,</li><li>deploy the content of <code>public</code> folder to <code>master</code> branch in order to serve as GitHub pages.</li></ul><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=display:flex><span><span style=color:#f92672>name</span>: <span style=color:#ae81ff>deploy</span>
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#f92672>on</span>:
@@ -103,7 +103,7 @@ used to push GitHub pages.</li></ul><p>In <code>.github/workflows/build.yaml</co
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>    - <span style=color:#f92672>name</span>: <span style=color:#ae81ff>Build</span>
 </span></span><span style=display:flex><span>      <span style=color:#f92672>run</span>: |<span style=color:#e6db74>
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>        hugo --gc --minify</span>        
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>        hugo --gc --minify</span>
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>    - <span style=color:#f92672>name</span>: <span style=color:#ae81ff>Deploy</span>
 </span></span><span style=display:flex><span>      <span style=color:#f92672>uses</span>: <span style=color:#ae81ff>peaceiris/actions-gh-pages@v2.5.0</span>
@@ -121,6 +121,6 @@ In addition of GitHub pages settings and Domain <code>DNS</code> settings, I nee
 </span></span><span style=display:flex><span>      <span style=color:#f92672>run</span>: |<span style=color:#e6db74>
 </span></span></span><span style=display:flex><span><span style=color:#e6db74>        hugo --gc --minify
 </span></span></span><span style=display:flex><span><span style=color:#e6db74>        cp CNAME public/
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>        touch public/.nojekyll</span>        
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>        touch public/.nojekyll</span>
 </span></span></code></pre></div><p>Now, <a href=https://romainlespinasse.dev target=_blank>https://romainlespinasse.dev</a>
 is live.</p><nav class=pagenav><a class=prev href=/posts/release-github-slug-action-2019/><span class=direction>« Prev</span><br><span>2019 Changelog: All Releases and Updates for 'rlespinasse/github-slug-action' </span></a><a class=next href=/posts/makefile-wrapper/><span class=direction>Next »</span><br><span>Makefile: Streamlining Tasks with Wrapper Functions</span></a></nav></main><footer><div class=copyright>© 2025 Romain Lespinasse</div></footer></div></body></html>
